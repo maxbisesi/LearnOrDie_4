@@ -1,0 +1,5 @@
+{
+    "editor.fontSize": 18,
+    "editor.cursorStyle": "block",
+    "files.autoSave": "afterDelay"
+}
