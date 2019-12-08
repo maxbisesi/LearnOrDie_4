@@ -36,10 +36,13 @@
   "devDependencies": {
     "@babel/node": "^7.0.0",
     "babel-eslint": "^10.0.3",
+    "css-loader": "^3.2.1",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
     "jest": "^24.9.0",
     "morgan": "^1.9.1",
+    "style-loader": "^1.0.1",
+    "svg-inline-loader": "^0.8.0",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
@@ -68,6 +71,7 @@
     "nodemon": "^2.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-tabs": "^3.0.0",
     "webpack": "^4.41.2"
   }
 }
