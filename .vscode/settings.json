@@ -1,5 +1,7 @@
 {
     "editor.fontSize": 18,
-    "editor.cursorStyle": "block",
-    "files.autoSave": "afterDelay"
+    "editor.cursorStyle": "line",
+    "files.autoSave": "afterDelay",
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false
 }

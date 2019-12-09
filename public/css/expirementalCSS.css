@@ -1,0 +1,61 @@
+@keyframes formAnimation {
+    0% {background-color: #006680; }
+    5% {background-color: #00a3cc; }
+    10% {background-color: #00ccff; }
+    15% {background-color: #66e0ff; }
+    20% {background-color: #ccf5ff; }
+    25% {background-color: #e6fff7; }
+    30% {background-color: #80ffd4; }
+    35% {background-color: #1affb2; }
+    40% {background-color: #00b377; }
+    45% {background-color: #006644; }
+    50% {background-color: #001a11; }
+    55% {background-color: #008020; }
+    60% {background-color: #00e639; }
+    65% {background-color: #4dff79; }
+    70% {background-color: #b3ffc6; }
+    75% {background-color: #e6ffb3; }
+    80% {background-color: #c4ff4d }
+    85% {background-color: #aaff00; }
+    90% {background-color: #77b300; }
+    100% {background-color: #223300; }
+}
+
+    .centerLoginScreen {
+             position: absolute;
+             left: 50%;
+             top: 50%;
+             transform: translate(-50%, -50%); /* Yep! */
+             width: 48%;
+             height: 59%;
+             display: inline-block;
+             background-color: #ADD8E6;
+             animation-name: formAnimation;
+             animation-duration: 60s;
+    }
+    
+    .form {
+        text-align: center;
+    }
+    
+    .username {
+        text-align: center;
+        position: relative;
+        width: 300px;
+        margin: auto;
+    }
+    
+    .password {
+        text-align: center;
+        position: relative;
+        width: 300px;
+        margin: auto;
+    }
+
+    .buttons {
+        text-align: center;
+        position: relative;
+        width: max-content;
+        width: 300px;
+        margin: auto;
+    }
