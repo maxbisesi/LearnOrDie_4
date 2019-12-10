@@ -20,7 +20,6 @@ module.exports = {
     'react/prop-types': ['off'],
     'react/display-name': ['off'],
     'react/no-unescaped-entities': ['off'],
-    quotes: ['error', 'single'],
     semi: ['error', 'always'],
     curly: 'error',
     'no-else-return': 'error',
