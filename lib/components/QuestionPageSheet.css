@@ -1,4 +1,4 @@
-input[type="button"],button{
+.homePageButton{
     background: linear-gradient(to bottom, #ff9933 0%,#ffffff 100%);
     width: 130px;
     height: 40px; 
