@@ -33,6 +33,7 @@ module.exports = {
     yoda: ['error', 'never', { exceptRange: true }],
     'no-unused-vars': 'warn',
     'no-empty': 'off',
-    'no-case-declarations': 'off'
+    'no-case-declarations': 'off',
+    'no-prototype-builtins': 'off'
   },
 };
