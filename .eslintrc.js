@@ -32,6 +32,8 @@ module.exports = {
     'symbol-description': 'error',
     yoda: ['error', 'never', { exceptRange: true }],
     'no-unused-vars': 'warn',
-    'no-empty': 'off'
+    'no-empty': 'off',
+    'no-case-declarations': 'off',
+    'no-prototype-builtins': 'off'
   },
 };
