@@ -1,0 +1,140 @@
+#pointsdiv {
+    position: absolute;
+    border-style: solid;
+    border-width: thin;
+    right: 20px;
+    top:50px;
+    width:260px;
+    height: 100px;
+}
+
+/* =====================================
+ Streak level 1    
+=====================================*/
+@keyframes streakLevel1BackgroundAnimation {
+    from {background-color: #b3ff99;}
+    to {background-color: #66ff33};
+}
+
+.onStreak1 {
+    animation-name: streakLevel1BackgroundAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* =====================================
+ Streak level 2    
+=====================================*/
+
+@keyframes streakLevel2BackgroundAnimation {
+   from {background-color: #ff99ff;}
+   to {background-color: #ff33ff;}
+}
+
+.onStreak2 {
+    animation-name: streakLevel2BackgroundAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* =====================================
+ Streak level 3  
+=====================================*/
+
+@keyframes streakLevel3BackgroundAnimation {
+    0% {background: linear-gradient(90deg, red, yellow);}
+    2.5% {background: linear-gradient(126deg, red, yellow);}
+    5% {background: linear-gradient(162deg, red, yellow);}
+    7.5% {background: linear-gradient(198deg, red, yellow);}
+    10% {background: linear-gradient(234deg, red, yellow);}
+    12.5% {background: linear-gradient(270deg, red, yellow);}
+    15% {background: linear-gradient(306deg, red, yellow);}
+    17.5% {background: linear-gradient(342deg, red, yellow);}
+    20% {background: linear-gradient(18deg, red, yellow);}
+    22.5% {background: linear-gradient(54deg, red, yellow);}
+    25% {background: linear-gradient(90deg, red, yellow);}
+    27.5% {background: linear-gradient(126deg, red, yellow);}
+    30% {background: linear-gradient(162deg, red, yellow);}
+    32.5% {background: linear-gradient(198deg, red, yellow);}
+    35% {background: linear-gradient(234deg, red, yellow);}
+    37.5% {background: linear-gradient(270deg, red, yellow);}
+    40% {background: linear-gradient(306deg, red, yellow);}
+    42.5% {background: linear-gradient(342deg, red, yellow);}
+    45% {background: linear-gradient(18deg, red, yellow);}
+    47.5% {background: linear-gradient(54deg, red, yellow);}
+    50% {background: linear-gradient(90deg, red, yellow);}
+    52.5% {background: linear-gradient(90deg, red, yellow);}
+    55% {background: linear-gradient(126deg, red, yellow);}
+    57.5% {background: linear-gradient(162deg, red, yellow);}
+    60% {background: linear-gradient(198deg, red, yellow);}
+    62.5% {background: linear-gradient(234deg, red, yellow);}
+    65% {background: linear-gradient(270deg, red, yellow);}
+    67.5% {background: linear-gradient(306deg, red, yellow);}
+    70% {background: linear-gradient(342deg, red, yellow);}
+    72.5% {background: linear-gradient(18deg, red, yellow);}
+    75% {background: linear-gradient(54deg, red, yellow);}
+    77.5% {background: linear-gradient(90deg, red, yellow);}
+    80% {background: linear-gradient(126deg, red, yellow);}
+    82.5 {background: linear-gradient(162deg, red, yellow);}
+    85% {background: linear-gradient(198deg, red, yellow);}
+    87.5% {background: linear-gradient(234deg, red, yellow);}
+    90% {background: linear-gradient(270deg, red, yellow);}
+    92.5% {background: linear-gradient(306deg, red, yellow);}
+    95% {background: linear-gradient(342deg, red, yellow);}
+    97.5% {background: linear-gradient(18deg, red, yellow);}
+    100% {background: linear-gradient(54deg, red, yellow);}
+}
+
+.onStreak3 {
+    animation-name: streakLevel3BackgroundAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    box-shadow: 5px 5px;
+}
+
+/* =====================================
+ Streak level 4    
+=====================================*/
+
+.onStreak4 {
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+/* =====================================
+ Streak level 5   
+=====================================*/
+
+.onStreak5 {
+    background: linear-gradient(to right,goldenrod,white,goldenrod);
+}
+
+/* =====================================
+ Streak level 6    
+=====================================*/
+
+.onStreak6 {
+    background: radial-gradient(circle,white,#3333ff,#000066);
+}
+
+/* =====================================
+ Streak level 7    
+=====================================*/
+
+.onStreak7 {
+    
+}
+
+/* ==================================
+    missed Streak
+================================== */
+
+.pointsMissedStreak {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: red;
+}
