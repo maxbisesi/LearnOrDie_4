@@ -34,6 +34,7 @@ module.exports = {
     'no-unused-vars': 'warn',
     'no-empty': 'off',
     'no-case-declarations': 'off',
-    'no-prototype-builtins': 'off'
+    'no-prototype-builtins': 'off',
+    'no-else-return': 'off'
   },
 };

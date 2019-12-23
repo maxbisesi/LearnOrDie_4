@@ -84,18 +84,6 @@ table {
     width: 720px;
 }
 
-.pointsNormal {
-    color: #1484e6;
-    font-size: 60px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    text-shadow: 1px 1px 0 black,
-                 3px 3px 0 black,
-                 5px 5px 0 black;
-}
-
-
 #questinfo {
     color: white;
 }
