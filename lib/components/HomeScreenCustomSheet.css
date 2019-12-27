@@ -16,9 +16,18 @@ input {
     margin: auto;
 }
 
+.rank {
+    position: absolute;
+    left: 710px;
+    top: 75px;
+    border: solid black;
+    width: 220px;
+    height: 220px;
+}
+
 html 
 {
-    background-image: url(./homepagebackground.svg);
+    background-image: url(./Graphics/homepagebackground.svg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
