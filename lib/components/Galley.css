@@ -1,0 +1,128 @@
+.sets{
+    position:relative;
+    width: 100%;
+}
+
+.standardtable {
+    height: 400px;
+    overflow-y: auto;
+    width: 720px;
+    
+}
+
+.setinprogress {
+    background-color: #aaaaaa;
+    border: solid 3px black;
+    color: white;
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    border-radius:25px;
+}
+
+.setitem{
+    height: 50px;
+    background-color: darkorchid;
+    box-shadow: 5px 5px black;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.longtexttd {
+    width: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    height: 100px;
+    max-height: 100px;
+    font-size: 15px;
+ }
+.setitem:hover{
+    cursor:pointer;
+    background-color: darkmagenta;
+}
+
+.clickedset {
+    background-color: orange;
+    color: black;
+}
+
+.clickedset:hover {
+    background-color: #ba8500;
+}
+
+.clickedquestion {
+    background-color: deeppink;
+    color:black;
+}
+
+.clickedquestion:hover {
+    background-color: fuchsia;
+}
+
+.createset{
+    overflow: auto;
+    height: 400px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+}
+
+.setintest{
+    width:50px;
+    height: 25px;
+    background-image: linear-gradient(to right, #999999, #f2f2f2);
+    border-radius: 8px;
+    box-shadow: 3px 5px black;
+    color: #000;
+    font-size: 25px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: absolute;
+}
+
+.setinprogress:hover{
+    transition: all 700ms ease-in-out;
+    transform: rotate(360deg);
+}
+
+.setinfo {
+    border: 1px solid deeppink;
+    border-radius: 4px;
+    box-shadow: 5px 10px #3333ff;
+    width: 200px;
+}
+
+.setinprogressMovedown {
+    transition:all 500ms ease-in;
+    transform: translate(10px,30px) rotate(360deg);
+}
+
+.questioncell:hover{
+    box-shadow: 0px 0px 200px #000000;
+    z-index: 2;
+    -webkit-transition: all 300ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 300ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 300ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 300ms ease-in;
+    transform: scale(1.5) translateX(50px);
+}
+
+#allquestions {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
