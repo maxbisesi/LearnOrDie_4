@@ -1,12 +1,13 @@
 .sets{
     position:relative;
     width: 100%;
+    left: 100px;
 }
 
-.standardtable {
-    height: 400px;
+.galleyTable {
+    height: 900px;
+    width: 100%;
     overflow-y: auto;
-    width: 720px;
 }
 
 .setinprogress {
@@ -107,7 +108,20 @@
     transform: translate(10px,30px) rotate(360deg);
 }
 
-.questioncell:hover{
+.galleyQuestion {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    border-color: #80bfff;
+    border-width: thick;
+    color: black;
+    background-color: #cc33ff;
+}
+
+.galleyQuestion:hover{
     box-shadow: 0px 0px 200px #000000;
     z-index: 2;
     -webkit-transition: all 300ms ease-in;

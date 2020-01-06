@@ -28,7 +28,7 @@ table {
     color: white;
 }
 
-th {
+.categoryHeaders {
     text-align: center;
     margin: 2px;
     padding: 2px;
@@ -38,7 +38,7 @@ th {
     background-color: #80bfff;
 }
 
-td {
+.categories {
     text-align: center;
     margin: 2px;
     padding: 2px;
