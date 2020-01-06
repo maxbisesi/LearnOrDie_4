@@ -1,44 +1,31 @@
-.homePageButton{
+/* Block Element Modifier */
+
+.home-rank {
+    position: absolute;
+    left: 710px;
+    top: 75px;
+    border: solid black;
+    width: 220px;
+    height: 220px;
+}
+
+.home-button {
     background: linear-gradient(to bottom, #ff9933 0%,#ffffff 100%);
     width: 130px;
     height: 40px; 
 }
 
-.maxs-button-disabled {
-    pointer-events: none;
-}
-
-table {
+.home-table {
     width:700px;
 }
 
-.cardsettable{
-    width:400px;
-    padding-top: 20px;
-    /* background-color: #aaaaaa; */
-}
-
-#sessionhistory {
+.home-history {
     height: 400px;
     overflow-y: scroll;
     width: 720px;
 }
 
-#questinfo {
-    color: white;
-}
-
-.categoryHeaders {
-    text-align: center;
-    margin: 2px;
-    padding: 2px;
-    font-size: 20px;
-    border: solid;
-    border-width: thin;
-    background-color: #80bfff;
-}
-
-.categories {
+.home-categories {
     text-align: center;
     margin: 2px;
     padding: 2px;
@@ -51,30 +38,22 @@ table {
     background-color: #80bfff;
 }
 
-#home,#test,#chum,#scuttlebutt{
+.home-category_headers {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    font-size: 20px;
+    border: solid;
+    border-width: thin;
+    background-color: #80bfff;
+}
+
+.home {
     background: linear-gradient(to top,#001a66,#e6ecff 70%);
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-  margin-right: 10px;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-  margin-left:10px;
-}
-
-.ensignia {
-    top: 1px;
-    left: 600px;
-    position: absolute;
-}
-
 /* rank up pop up style */
-.popup {
+.home-popup {
     display: none;
     position: fixed;
     z-index: 1;
@@ -88,7 +67,7 @@ table {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.popup-content {
+.home-popup_content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -102,13 +81,13 @@ table {
     animation-duration: 0.4s;
 }
 
-.popup-header {
+.home-popup_header {
     padding: 2px 16px;
     background-color: #3333ff;
     color: white;
 }
 
-.popup-body {
+.home-popup_body {
     padding: 2px 16px;
     margin: auto;
     vertical-align: middle;
@@ -117,35 +96,16 @@ table {
 
 /*pop up close button */
 /* The Close Button */
-.close {
+.home-close_button {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.home-close:hover,
+.home-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* chum page graphics */
-.rightsidegraph {
-    position: absolute;
-    right: 5px;
-    top: 20px;
-}
-

@@ -1,0 +1,10 @@
+/* chum page graphics */
+.rightsidegraph {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+
+.chum {
+    background: linear-gradient(to top,#001a66,#e6ecff 70%);
+}

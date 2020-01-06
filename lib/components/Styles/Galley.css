@@ -1,16 +1,39 @@
-.sets{
+.galley {
+    height: 1500;
+    background: linear-gradient(to top,#001a66,#e6ecff 70%);
+}
+
+.galley-sets{
     position:relative;
     width: 100%;
     left: 100px;
 }
 
-.galleyTable {
-    height: 900px;
-    width: 100%;
+.galley-question_table {
+    height: 1200px;
+    width: 1200px;
     overflow-y: auto;
 }
 
-.setinprogress {
+.galley-buttons-navigation {
+    position: 'absolute'; 
+    top: 930;
+    left: 30;
+}
+
+.galley-pagenumber {
+    position: 'absolute';
+    top: 930; 
+    left: 200; 
+}
+
+.galley-set_table {
+    width:400px;
+    padding-top: 20px;
+    /* background-color: #aaaaaa; */
+}
+
+.galley-set-in_progress {
     background-color: #aaaaaa;
     border: solid 3px black;
     color: white;
@@ -19,9 +42,18 @@
     position: absolute;
     text-align: center;
     border-radius:25px;
+    display: 'none';
+    top: 880;
+    left: 250;
+    box-shadow: '5 5 black';
+    z-index: 1;
+    height: 10;
+    width: 10;
 }
 
-.setitem{
+.galley-set_buttons { }
+
+.galley-set_item{
     height: 50px;
     background-color: darkorchid;
     box-shadow: 5px 5px black;
@@ -41,6 +73,7 @@
     max-height: 100px;
     font-size: 15px;
  }
+
 .setitem:hover{
     cursor:pointer;
     background-color: darkmagenta;
@@ -108,12 +141,11 @@
     transform: translate(10px,30px) rotate(360deg);
 }
 
-.galleyQuestion {
+.galley-question {
     text-align: center;
     margin: 2px;
-    padding: 2px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 2px; 
+    font-size: 13px;
     border: solid;
     border-color: #80bfff;
     border-width: thick;
@@ -121,7 +153,7 @@
     background-color: #cc33ff;
 }
 
-.galleyQuestion:hover{
+/*.galley-question:hover{
     box-shadow: 0px 0px 200px #000000;
     z-index: 2;
     -webkit-transition: all 300ms ease-in;
@@ -132,6 +164,14 @@
     -moz-transform: scale(1.5);
     transition: all 300ms ease-in;
     transform: scale(1.5) translateX(50px);
+}*/
+
+.galley-question:hover {
+    background-color: #ffff66;
+    transform: scale(1.5) translateX(50px);
+    z-index: 2;
+    transition: all 300ms ease-in;
+    box-shadow: 0px 0px 200px #000000;
 }
 
 #allquestions {
