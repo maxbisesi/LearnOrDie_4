@@ -1,153 +1,183 @@
 .galley {
-    position: absolute;
-    height: 1500;
-    width: 100%;
-    background: linear-gradient(to top,#001a66,#e6ecff 70%);
+  position: relative;
+  height: 1500px;
+  width: 100%;
+  background: linear-gradient(to top, #001a66, #e6ecff 70%);
 }
 
-.galley-sets{
-    position:relative;
-    width: 100%;
-    left: 100px;
+.galley-sets {
+  position: relative;
+  width: 100%;
+  left: 100px;
+}
+
+.galley-button {
+  width: 100px;
+  height: 30px;
+  background-color: #da1244;
+  border: none;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.5;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.galley-button:hover {
+  opacity: 1;
 }
 
 .galley-question_table {
-    height: 100%;
-    width: 1200px;
-    position: absolute;
-    left: 100px;
-    overflow-y: auto;
-    overflow-x: visible;
+  height: 1000px;
+  width: 1200px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  overflow-y: auto;
+  overflow-x: visible;
 }
 
 .galley-buttons-navigation {
-    position:absolute; 
-    top: 330;
-    left: 1530px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
 }
 
 .galley-pagenumber {
-    position: 'absolute';
-    top: 930; 
-    left: 200; 
+  position: 'absolute';
+  top: 930;
+  left: 200;
+}
+
+.galley-question_table-headers { 
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color: Blue;
 }
 
 .galley-set_table {
-    width:400px;
-    padding-top: 20px;
-    /* background-color: #aaaaaa; */
+  width: 400px;
+  padding-top: 20px;
+  /* background-color: #aaaaaa; */
 }
 
 .galley-set-in_progress {
-    background-color: #aaaaaa;
-    border: solid 3px black;
-    color: white;
-    width: 100px;
-    height: 25px;
-    position: absolute;
-    text-align: center;
-    border-radius:25px;
-    display: 'none';
-    top: 880;
-    left: 250;
-    box-shadow: '5 5 black';
-    z-index: 1;
-    height: 10;
-    width: 10;
+  background-color: #aaaaaa;
+  border: solid 3px black;
+  color: white;
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  text-align: center;
+  border-radius: 25px;
+  display: 'none';
+  top: 880;
+  left: 250;
+  box-shadow: '5 5 black';
+  z-index: 1;
+  height: 10;
+  width: 10;
 }
 
-.galley-set_buttons { }
+.galley-set_buttons {
+}
 
-.galley-set_item{
-    height: 50px;
-    background-color: darkorchid;
-    box-shadow: 5px 5px black;
-    border-radius: 5px;
-    width: 100%;
-    color: white;
-    font-size: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.galley-set_item {
+  height: 50px;
+  background-color: darkorchid;
+  box-shadow: 5px 5px black;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .longtexttd {
-    width: 300px;
-    max-width: 300px;
-    overflow: hidden;
-    height: 100px;
-    max-height: 100px;
-    font-size: 15px;
- }
+  width: 300px;
+  max-width: 300px;
+  overflow: hidden;
+  height: 100px;
+  max-height: 100px;
+  font-size: 15px;
+}
 
-.setitem:hover{
-    cursor:pointer;
-    background-color: darkmagenta;
+.setitem:hover {
+  cursor: pointer;
+  background-color: darkmagenta;
 }
 
 .clickedset {
-    background-color: orange;
-    color: black;
+  background-color: orange;
+  color: black;
 }
 
 .clickedset:hover {
-    background-color: #ba8500;
+  background-color: #ba8500;
 }
 
 .clickedquestion {
-    background-color: deeppink;
-    color:black;
+  background-color: deeppink;
+  color: black;
 }
 
 .clickedquestion:hover {
-    background-color: fuchsia;
+  background-color: fuchsia;
 }
 
-.createset{
-    overflow: auto;
-    height: 400px;
-    padding-bottom: 10px;
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px;
+.createset {
+  overflow: auto;
+  height: 400px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
 }
 
-.setintest{
-    width:50px;
-    height: 25px;
-    background-image: linear-gradient(to right, #999999, #f2f2f2);
-    border-radius: 8px;
-    box-shadow: 3px 5px black;
-    color: #000;
-    font-size: 25px;
-    padding-top:5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: absolute;
+.setintest {
+  width: 50px;
+  height: 25px;
+  background-image: linear-gradient(to right, #999999, #f2f2f2);
+  border-radius: 8px;
+  box-shadow: 3px 5px black;
+  color: #000;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: absolute;
 }
 
-.setinprogress:hover{
-    transition: all 700ms ease-in-out;
-    transform: rotate(360deg);
+.setinprogress:hover {
+  transition: all 700ms ease-in-out;
+  transform: rotate(360deg);
 }
 
 .setinfo {
-    border: 1px solid deeppink;
-    border-radius: 4px;
-    box-shadow: 5px 10px #3333ff;
-    width: 200px;
+  border: 1px solid deeppink;
+  border-radius: 4px;
+  box-shadow: 5px 10px #3333ff;
+  width: 200px;
 }
 
 .setinprogressMovedown {
-    transition:all 500ms ease-in;
-    transform: translate(10px,30px) rotate(360deg);
+  transition: all 500ms ease-in;
+  transform: translate(10px, 30px) rotate(360deg);
 }
 
 #allquestions {
-    position: absolute;
-    left: 10px;
-    top: 20px;
+  position: absolute;
+  left: 10px;
+  top: 20px;
 }
