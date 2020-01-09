@@ -61,10 +61,32 @@
     color: Blue;
 }
 
+.galley-popup { 
+  background-color: #ff6666;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  left: 400px;
+  z-index:2;
+}
+
+.galley-popup-button {
+
+}
+
+.popup-button-yes {
+
+}
+
+.popup-button-no {
+
+}
+
+/*
 .galley-set_table {
   width: 400px;
   padding-top: 20px;
-  /* background-color: #aaaaaa; */
+  background-color: #aaaaaa; 
 }
 
 .galley-set-in_progress {
@@ -180,4 +202,4 @@
   position: absolute;
   left: 10px;
   top: 20px;
-}
+} */
