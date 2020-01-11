@@ -52,15 +52,21 @@
 }
 
 .galley-pagenumber {
-  position: 'absolute';
+  position: absolute;
   top: 930;
   left: 200;
 }
 
-.galley-set_table {
-  width: 400px;
+.galley-cardSet_table {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  width: 300px;
+  height: 500px;
   padding-top: 20px;
-  /* background-color: #aaaaaa; */
+  background-color: #f5dfdf;
+  opacity: .5;
+  border: 1px dashed black;
 }
 
 .galley-set-in_progress {
