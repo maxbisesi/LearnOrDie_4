@@ -11,6 +11,9 @@
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
+  "jest": {
+    "verbose": true
+  },
   "babel": {
     "presets": [
       "@babel/react",
@@ -21,6 +24,8 @@
       "@babel/plugin-syntax-import-meta",
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-json-strings",
+      "@babel/plugin-transform-regenerator",
+      "@babel/plugin-transform-runtime",
       [
         "@babel/plugin-proposal-decorators",
         {
@@ -37,6 +42,7 @@
   "devDependencies": {
     "@babel/node": "^7.0.0",
     "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
     "css-loader": "^3.2.1",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
@@ -48,7 +54,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
+    "@babel/core": "^7.8.0",
     "@babel/node": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-decorators": "^7.0.0",
@@ -60,7 +66,8 @@
     "@babel/plugin-proposal-throw-expressions": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
     "@babel/preset-react": "^7.7.4",
     "axios": "^0.19.0",
     "babel-loader": "^8.0.6",
