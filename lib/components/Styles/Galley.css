@@ -14,7 +14,7 @@
 .galley-button {
   width: 100px;
   height: 30px;
-  background-color: #da1244;
+  background-color: black;
   border: none;
   color: white;
   padding: 16px 32px 16px 32px;
@@ -33,12 +33,15 @@
 }
 
 .galley-question_table {
-  height: 1000px;
-  width: 1200px;
   position: absolute;
-  left: 100px;
+  left: 50px;
   top: 100px;
+  overflow-x: visible;
+  list-style-type: none;
   overflow-y: auto;
+  height: 1200px;
+  width: 900px;
+  display: block;
   overflow-x: visible;
 }
 
@@ -52,13 +55,6 @@
   position: 'absolute';
   top: 930;
   left: 200;
-}
-
-.galley-question_table-headers { 
-    border-style: solid;
-    border-color: white;
-    background-color: white;
-    color: Blue;
 }
 
 .galley-set_table {
