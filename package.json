@@ -11,7 +11,8 @@
     "webpack": "webpack -wd",
     "test": "jest --watch",
     "test:file": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:updateSnapshot": "jest --updateSnapshot"
   },
   "jest": {
     "verbose": true,
