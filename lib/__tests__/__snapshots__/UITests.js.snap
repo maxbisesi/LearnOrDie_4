@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Chum Component It renders correctly 1`] = `
+Object {
+  "chumWrapper": ShallowWrapper {},
+  "props": Object {
+    "addCard": [MockFunction],
+  },
+}
+`;
