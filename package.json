@@ -12,7 +12,7 @@
     "test": "jest --watch",
     "test:file": "jest",
     "test:coverage": "jest --coverage",
-    "test:updateSnapshot": "jest --updateSnapshot"
+    "test:updateSnapshots": "jest --updateSnapshot"
   },
   "jest": {
     "verbose": true,
@@ -25,7 +25,16 @@
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "identity-obj-proxy",
       "\\.(gif|ttf|eot|svg)$": "<rootDir>/lib/__mocks__/fileMock.js"
-    }
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./lib/__tests__/setupTests.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/lib/__tests__/setupTests.js"
+    ]
   },
   "babel": {
     "presets": [
