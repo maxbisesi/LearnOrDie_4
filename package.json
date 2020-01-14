@@ -9,10 +9,32 @@
     "dev-windows": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "dev-linux": "nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "test:file": "jest",
+    "test:coverage": "jest --coverage",
+    "test:updateSnapshots": "jest --updateSnapshot"
   },
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/lib/__mocks__/fileMock.js"
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./lib/__tests__/setupTests.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/lib/__tests__/setupTests.js"
+    ]
   },
   "babel": {
     "presets": [
@@ -44,10 +66,14 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "css-loader": "^3.2.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "morgan": "^1.9.1",
+    "react-test-renderer": "^16.12.0",
     "style-loader": "^1.0.1",
     "svg-inline-loader": "^0.8.0",
     "webpack-cli": "^3.3.10"
@@ -76,6 +102,7 @@
     "classnames": "^2.2.6",
     "cors": "^2.8.5",
     "ejs": "^3.0.1",
+    "enzyme-to-json": "^3.4.3",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "lodash.debounce": "^4.0.8",
