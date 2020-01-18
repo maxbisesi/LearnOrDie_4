@@ -30,10 +30,7 @@
       "enzyme-to-json/serializer"
     ],
     "setupFiles": [
-      "./lib/__tests__/setupTests.js"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/lib/__tests__/setupTests.js"
+      "<rootDir>/setupTests.js"
     ]
   },
   "babel": {
