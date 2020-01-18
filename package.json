@@ -31,7 +31,10 @@
     ],
     "setupFiles": [
       "<rootDir>/setupTests.js"
-    ]
+    ],
+    "globalSetup": "<rootDir>/lib/globalSetup.js",
+    "globalTeardown": "<rootDir>/lib/globalTeardown.js",
+    "testEnvironment": "node"
   },
   "babel": {
     "presets": [
