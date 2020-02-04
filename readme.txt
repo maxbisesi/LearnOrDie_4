@@ -47,3 +47,5 @@ A combination of the ratio of total / whiffed, total points, study sessions regi
 Length of a streak, just get all that data to a method and then create an algorithm for it. 
 
 Define ranking algorithm in a strategy pattern.
+
+You can win badges in Chum or Galley but you can only rank up in Test.
