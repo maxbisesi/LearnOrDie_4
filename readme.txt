@@ -32,6 +32,7 @@ https://reactjs.org/docs/conditional-rendering.html
 
 -rank up
   - rank up pop up
+- Don't let a guest test without adding some cards
 -svgs
 -profile
   cutomize color scheme
@@ -51,3 +52,12 @@ Define ranking algorithm in a strategy pattern.
 You can win badges in Chum or Galley but you can only rank up in Test.
 
 Show rankup modal if they acheive a new rank when they log out or make sure it shows next time they log in.
+
+Only care about their rank if theyre logged in, guests don't get no rank.
+
+Will have to persist rank state for a user, to keep track of badges rank etc. 
+
+First define the Ranks and badges ( Can't code without knowing what to code. ):
+
+
+
