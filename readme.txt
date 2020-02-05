@@ -58,6 +58,15 @@ Only care about their rank if theyre logged in, guests don't get no rank.
 Will have to persist rank state for a user, to keep track of badges rank etc. 
 
 First define the Ranks and badges ( Can't code without knowing what to code. ):
+/ may need to be adjusted / 
+
+Recruit: < 5000pts
+BucketBrigade: 3000 - 8000
+Harpoonist: 8000 - 13000 and 2 badges
+FreeDiver: 13000 - 15000 and 5 badges
+CageMaster: 15000 - 20000 and 10 badges
+TheBitten: 20000 and 20 badges
+GreatWhite: 30000 and 25 badges
 
 
 
