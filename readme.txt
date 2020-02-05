@@ -49,3 +49,5 @@ Length of a streak, just get all that data to a method and then create an algori
 Define ranking algorithm in a strategy pattern.
 
 You can win badges in Chum or Galley but you can only rank up in Test.
+
+Show rankup modal if they acheive a new rank when they log out or make sure it shows next time they log in.
