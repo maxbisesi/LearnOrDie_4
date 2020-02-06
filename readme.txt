@@ -41,6 +41,7 @@ https://reactjs.org/docs/conditional-rendering.html
 - weapons
 - avatars
 - unlockables
+- refactor redux use rtk
 
 Can't calculate Rank based on points, if you miss a question you lose points so how would that affect rank ?
 Maybe a badge can be given by acheiving a certain total points. But rank should be a more complex calculation. 
