@@ -54,7 +54,7 @@
 
 .login-screen-background
 {
-    background-image: url('../Graphics/homepagebackground.svg');
+   /* background-image: url('../Graphics/homepagebackground.svg');*/
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
