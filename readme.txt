@@ -32,7 +32,6 @@ https://reactjs.org/docs/conditional-rendering.html
 
 -rank up
   - rank up pop up
-- Don't let a guest test without adding some cards
 -svgs
 -profile
   cutomize color scheme
@@ -40,9 +39,11 @@ https://reactjs.org/docs/conditional-rendering.html
 - badges
 - weapons
 - avatars
-- unlockables
+- unlockables gaff
 - refactor redux use rtk
 - convert to function components
+- youtube tab.
+-typescript
 
 Can't calculate Rank based on points, if you miss a question you lose points so how would that affect rank ?
 Maybe a badge can be given by acheiving a certain total points. But rank should be a more complex calculation. 
