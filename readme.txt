@@ -29,6 +29,8 @@ class Navigation extends React.Component {
 }
 
 https://reactjs.org/docs/conditional-rendering.html
+Jurome
+Jurome
 
 -rank up
   - rank up pop up
