@@ -50,7 +50,8 @@ Jurome
 Can't calculate Rank based on points, if you miss a question you lose points so how would that affect rank ?
 Maybe a badge can be given by acheiving a certain total points. But rank should be a more complex calculation. 
 A combination of the ratio of total / whiffed, total points, study sessions registerd, card sets made & shared.  
-Length of a streak, just get all that data to a method and then create an algorithm for it. 
+Length of a streak, just get all that data to a method and then create an algorithm for it.
+Maybe Instead of deducting points we could use a point multiplier to reward consecutive correct answers andtake it away for missed questions 
 
 Define ranking algorithm in a strategy pattern.
 
