@@ -32,6 +32,7 @@ https://reactjs.org/docs/conditional-rendering.html
 Jurome
 Jurome
 
+-update not working
 -rank up
   - rank up pop up
 -svgs
@@ -42,8 +43,6 @@ Jurome
 - weapons
 - avatars
 - unlockables gaff
-- refactor redux use rtk
-- convert to function components
 - youtube tab.
 -typescript
 
