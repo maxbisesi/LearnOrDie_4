@@ -72,5 +72,6 @@ CageMaster: 15000 - 20000 and 10 badges
 TheBitten: 20000 and 20 badges
 GreatWhite: 30000 and 25 badges
 
+Only thing on the mind of a shark is eat.
 
 
