@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 17,
+    "editor.fontSize": 15,
     "editor.cursorStyle": "line",
     "files.autoSave": "afterDelay",
     "javascript.validate.enable": false,
