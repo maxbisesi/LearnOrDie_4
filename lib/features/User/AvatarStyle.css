@@ -1,8 +1,16 @@
+.avatar {
+  height: 2000px;
+  position: relative;
+  display: block;
+}
 .avatar-grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,1fr);
     background-color: #2196F3;
     padding: 1px;
+    grid-column-gap:5px;
+    position: absolute;
+    width: 600px;
   }
   
   .avatar-grid-item {
@@ -11,4 +19,17 @@
     padding: 2px;
     font-size: 3px;
     text-align: center;
+  }
+
+  .avatar-grid-item:hover{
+    border: 3px solid green;
+  }
+
+  .avatar-char-inprogress {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    height: 350px;
+    width: 200px;
+    position: absolute;
+    left: 700px;
   }

@@ -38,10 +38,10 @@ Jurome
 -svgs
 -profile
   cutomize color scheme
+  Or is this determined by birthstar and rank ? 
 - create card sets
 - badges
 - weapons
-- avatars
 - unlockables gaff
 - youtube tab.
 -typescript
