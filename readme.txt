@@ -32,19 +32,17 @@ https://reactjs.org/docs/conditional-rendering.html
 Jurome
 Jurome
 
-- Avatar db object table
--rank up
-  - rank up pop up
--svgs
+-rank up( algorithm on login )
+  -- rank up pop up
+- define how weapons, avatar, character, and rank interact.
+- weapons
 -profile
   cutomize color scheme
   Or is this determined by birthstar and rank ? 
 - create card sets
 - badges
-- weapons
-- unlockables gaff
-- youtube tab.
--typescript
+- unlockables (gaff)
+-svgs
 
 Can't calculate Rank based on points, if you miss a question you lose points so how would that affect rank ?
 Maybe a badge can be given by acheiving a certain total points. But rank should be a more complex calculation. 
