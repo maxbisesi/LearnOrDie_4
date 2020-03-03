@@ -32,19 +32,20 @@ https://reactjs.org/docs/conditional-rendering.html
 Jurome
 Jurome
 
-- Avatar db object table
--rank up
-  - rank up pop up
--svgs
+-rank up( algorithm on login )
+  -- rank up pop up
+    + popup color should vary according to new rank.
+    + Redo: harpoonist, 
+  -- badges
+- define how weapons, avatar, character, and rank interact.
+- weapons
 -profile
   cutomize color scheme
+  Or is this determined by birthstar and rank ? 
 - create card sets
 - badges
-- weapons
-- avatars
-- unlockables gaff
-- youtube tab.
--typescript
+- unlockables (gaff)
+-svgs
 
 Can't calculate Rank based on points, if you miss a question you lose points so how would that affect rank ?
 Maybe a badge can be given by acheiving a certain total points. But rank should be a more complex calculation. 
@@ -64,11 +65,14 @@ Will have to persist rank state for a user, to keep track of badges rank etc.
 First define the Ranks and badges ( Can't code without knowing what to code. ):
 / may need to be adjusted / 
 
-Recruit: < 5000pts
-BucketBrigade: 3000 - 8000
+Recruit = < 5000pts
+
+to gain the following ranks you must meet their listed criteria:
+
+BucketBrigade: 5000 points
 Harpoonist: 8000 - 13000 and 2 badges
 FreeDiver: 13000 - 15000 and 5 badges
-CageMaster: 15000 - 20000 and 10 badges
+CageMaster: 18000 - 20000 and 10 badges
 TheBitten: 20000 and 20 badges
 GreatWhite: 30000 and 25 badges
 
