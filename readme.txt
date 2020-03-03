@@ -34,6 +34,8 @@ Jurome
 
 -rank up( algorithm on login )
   -- rank up pop up
+    + popup color should vary according to new rank.
+    + Redo: harpoonist, 
   -- badges
 - define how weapons, avatar, character, and rank interact.
 - weapons
