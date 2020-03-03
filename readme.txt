@@ -37,6 +37,7 @@ Jurome
     + popup color should vary according to new rank.
     + Redo: harpoonist, 
   -- badges
+    + Where to define criteria for badges ?
 - define how weapons, avatar, character, and rank interact.
 - weapons
 -profile
@@ -65,7 +66,60 @@ Will have to persist rank state for a user, to keep track of badges rank etc.
 First define the Ranks and badges ( Can't code without knowing what to code. ):
 / may need to be adjusted / 
 
-Recruit = < 5000pts
+Badges:
+--------
+  Bronze badges
+  ==============
+  - Create 100 flashcards
+  - Create 300 flashcards
+  - Nail 100 questions 
+  - Miss 200 questions
+  - achieve streak 4
+  - create and Share a card set.
+  - Have someone else download your cardset
+  - Kill a shark
+  - Kill 10 sharks
+  - Review 20 cards.
+  - update 10 cards
+  
+  Silver badges
+  ============
+  - Create 300 flashcards
+  - Create 500 flashcards
+  - Nail 200 questions 
+  - Miss 300 questions
+  - achieve streak 4, Maintain for 10 questions
+  - create and Share 5 card sets.
+  - Have someone else download 5 of your cardset
+  - Kill 5 sharks
+  - Kill 20 sharks
+  - Review 30 cards.
+  - update 20 cards
+
+Shark fins
+-----------
+ - Kill 5 sharks 
+
+Weapons:
+---------
+ - Shark Sword
+ - Parrot gun
+ - Ghaff
+ - Black Beard's Club
+ - Harpoon
+ - Harpoon gun
+ - Galley oar
+ - rusty shiv
+ - Shark Tooth tommy
+ - NAvy pistol
+ - cat of nine tails
+ - hand cannon
+ - double pistol
+ - AK
+ - burning whale fat torch
+
+ Characters:
+ -----------
 
 to gain the following ranks you must meet their listed criteria:
 
