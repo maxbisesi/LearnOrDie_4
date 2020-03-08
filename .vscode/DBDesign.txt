@@ -17,4 +17,44 @@ Store Notes the users make.
 
 Store sets of cards users create.
 
+Subject List
 
+
+Avatars
+    - style
+    - birthstar
+    - 
+
+CardSets
+    - setid
+    -setname
+    -description
+
+FlashCards
+    -cardid
+    -card
+    -answer
+    -category
+    
+
+FlashUsers
+    -user_id
+    -username
+    -password
+    -email
+    -points
+
+Notes
+    -noteid
+    -note
+
+Weapons
+    Primary and secondary weapons will be represented here. The ONLY
+    is the boolean Primary field.
+
+    -weaponid
+    -name
+    -Primary boolean
+    -damage
+
+UserSessions
