@@ -1,0 +1,60 @@
+
+Mission statement: 
+
+The purpose of the FlashCardShark database is to keep track of support the LearnOrDie application.
+
+Mission objectives:
+
+Keep track of all site users.
+
+Store FlashCards created by users.
+
+Store attributes and items related to the users.
+
+Keep track of users' sessions, card they see, dates, ratings etc.
+
+Store Notes the users make.
+
+Store sets of cards users create.
+
+Subject List
+
+
+Avatars
+    - style
+    - birthstar
+    - 
+
+CardSets
+    - setid
+    -setname
+    -description
+
+FlashCards
+    -cardid
+    -card
+    -answer
+    -category
+    
+
+FlashUsers
+    -user_id
+    -username
+    -password
+    -email
+    -points
+
+Notes
+    -noteid
+    -note
+
+Weapons
+    Primary and secondary weapons will be represented here. The ONLY
+    is the boolean Primary field.
+
+    -weaponid
+    -name
+    -Primary boolean
+    -damage
+
+UserSessions

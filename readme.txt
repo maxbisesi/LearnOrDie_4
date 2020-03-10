@@ -87,4 +87,8 @@ An Avatar consists of
  - Color Style
  -=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+Characters
+===========
+Fish wife
+
 
