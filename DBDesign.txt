@@ -19,25 +19,120 @@ Store sets of cards users create.
 
 Subject List
 
+| Tables_in_FlashCardShark |
++--------------------------+
+| Avatars                  |
+| CardSetCards             |
+| CardSetUsers             |
+| CardSets                 |
+| FlashCardUsers           |
+| FlashCards               |
+| FlashUsers               |
+| Notes                    |
+| UserSession              |
+| Weapons                  |
++--------------------------+
+10 rows in set (0.00 sec)
 
-    
+Avatars
++------------------+-------------+------+-----+---------+----------------+
+| Field            | Type        | Null | Key | Default | Extra          |
++------------------+-------------+------+-----+---------+----------------+
+| avatar_id        | int(11)     | NO   | PRI | NULL    | auto_increment |
+| style            | varchar(20) | YES  |     | NULL    |                |
+| birthstar        | varchar(20) | YES  |     | NULL    |                |
+| user_id          | int(11)     | NO   | MUL | NULL    |                |
+| primary_weapon   | int(11)     | NO   | MUL | NULL    |                |
+| secondary_weapon | int(11)     | NO   | MUL | NULL    |                |
++------------------+-------------+------+-----+---------+----------------+
 
+CardSetCards
++---------+---------+------+-----+---------+-------+
+| Field   | Type    | Null | Key | Default | Extra |
++---------+---------+------+-----+---------+-------+
+| card_id | int(11) | NO   | PRI | NULL    |       |
+| set_id  | int(11) | NO   | PRI | NULL    |       |
++---------+---------+------+-----+---------+-------+
 
+CardSetUsers
++---------+---------+------+-----+---------+-------+
+| Field   | Type    | Null | Key | Default | Extra |
++---------+---------+------+-----+---------+-------+
+| user_id | int(11) | NO   | PRI | NULL    |       |
+| set_id  | int(11) | NO   | PRI | NULL    |       |
++---------+---------+------+-----+---------+-------+
 
+CardSets
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| set_id      | int(11)     | NO   | PRI | NULL    | auto_increment |
+| setname     | varchar(15) | NO   |     | NULL    |                |
+| description | varchar(40) | YES  |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
 
+FlashCardUsers
++-----------+---------+------+-----+---------+-------+
+| Field     | Type    | Null | Key | Default | Extra |
++-----------+---------+------+-----+---------+-------+
+| card_id   | int(11) | NO   | PRI | NULL    |       |
+| user_id   | int(11) | NO   | PRI | NULL    |       |
+| correct   | int(11) | NO   |     | 0       |       |
+| incorrect | int(11) | NO   |     | 0       |       |
++-----------+---------+------+-----+---------+-------+
 
+FlashCards
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| card_id  | int(11)      | NO   | PRI | NULL    | auto_increment |
+| card     | varchar(500) | NO   |     | NULL    |                |
+| answer   | varchar(250) | NO   |     | NULL    |                |
+| category | varchar(20)  | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+
+FlashUsers
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| user_id  | int(11)     | NO   | PRI | NULL    | auto_increment |
+| username | varchar(15) | NO   |     | NULL    |                |
+| password | varchar(10) | NO   |     | NULL    |                |
+| email    | varchar(15) | YES  |     | NULL    |                |
+| points   | int(11)     | NO   |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
 
 Notes
-    -noteid
-    -note
-    -fk_user_id CPK
-    -fk_card_id CPK
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| note_id | int(11)      | NO   | PRI | NULL    | auto_increment |
+| note    | varchar(500) | NO   |     | NULL    |                |
+| user_id | int(11)      | YES  | MUL | NULL    |                |
+| card_id | int(11)      | YES  | MUL | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
 
+UserSession
++-----------------+----------+------+-----+-------------------+----------------+
+| Field           | Type     | Null | Key | Default           | Extra          |
++-----------------+----------+------+-----+-------------------+----------------+
+| session_id      | int(11)  | NO   | PRI | NULL              | auto_increment |
+| cards_seen      | int(11)  | NO   |     | NULL              |                |
+| correct         | int(11)  | NO   |     | NULL              |                |
+| incorrect       | int(11)  | NO   |     | NULL              |                |
+| cards_added     | int(11)  | NO   |     | NULL              |                |
+| points_added    | int(11)  | NO   |     | NULL              |                |
+| card_sets_added | int(11)  | NO   |     | NULL              |                |
+| date            | datetime | YES  |     | CURRENT_TIMESTAMP |                |
+| user_id         | int(11)  | NO   |     | NULL              |                |
++-----------------+----------+------+-----+-------------------+----------------+
 
-UserSessions
-    -session_id
-    -cards_seen
-    -correct
-    -incorrect
-    -date
-    -fk_user_id
+Weapons
++----------------+-------------+------+-----+---------+----------------+
+| Field          | Type        | Null | Key | Default | Extra          |
++----------------+-------------+------+-----+---------+----------------+
+| weapon_id      | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name           | varchar(30) | NO   |     | NULL    |                |
+| damage         | int(11)     | NO   |     | NULL    |                |
+| primary_weapon | tinyint(1)  | NO   |     | NULL    |                |
++----------------+-------------+------+-----+---------+----------------+
