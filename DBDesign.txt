@@ -20,43 +20,12 @@ Store sets of cards users create.
 Subject List
 
 
-Avatars done
-    - avatar_id
-    - style varchar
-    - birthstar varchar
-    - fk_user_id
-    - fk_primary_weapon_id
-    - fk_secondary_weapon_id
     
 
-CardSets
-    -setid
-    -setname
-    -description
 
-CardSetCards
-    - fk_cardset_id
-    - fk_card_id
 
-FlashCards
-    -cardid
-    -card
-    -answer
-    -category
 
-FlashCardUsers
-    -fk_card_id
-    -fk_user_id
-    -correct
-    -incorrect
-    -fk_note_id
 
-FlashUsers done 
-    -user_id
-    -username
-    -password
-    -email
-    -points
 
 Notes
     -noteid
@@ -64,11 +33,6 @@ Notes
     -fk_user_id CPK
     -fk_card_id CPK
 
-Weapons done
-    -weaponid
-    -name
-    -Primary boolean
-    -damage
 
 UserSessions
     -session_id
