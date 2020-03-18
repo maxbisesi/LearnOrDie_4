@@ -92,3 +92,14 @@ Characters
 Fish wife
 
 
+03/18
+-------
+ Url listeners to convert: 
+- Convert save session from old reducers to new RTK, then use new DataDAO
+- Update cards
+- Register
+- Login
+- get Cards
+
+
+
