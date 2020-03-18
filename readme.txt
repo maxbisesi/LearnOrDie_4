@@ -98,7 +98,6 @@ Fish wife
 - Convert save session from old reducers to new RTK, then use new DataDAO
 - Update cards
 - Register
-- Login
 - get Cards
 
 
