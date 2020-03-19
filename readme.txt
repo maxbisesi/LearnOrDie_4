@@ -101,4 +101,16 @@ Fish wife
 - get Cards
 
 
+  characters: [],
+  availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
+  availableSecondWeapons: ['Parrot','Club','Net'],
+  availableBirthStars: ['Southern Moon','Black Sun','The Virgin','Golden Eyed Skull'],
+  availableStyles: ['Rogue','Princely','Theive in the Night'],
+  lockedCharacters: [],
+  lockedPrimaryWeapons: [],
+  lockedSecondWeapons: [],
+  lockedBirthStars: [],
+  bosses: []
+
+
 
