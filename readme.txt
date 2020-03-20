@@ -92,3 +92,25 @@ Characters
 Fish wife
 
 
+03/18
+-------
+ Url listeners to convert: 
+- Convert save session from old reducers to new RTK, then use new DataDAO
+- Update cards
+- Register
+- get Cards
+
+
+  characters: [],
+  availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
+  availableSecondWeapons: ['Parrot','Club','Net'],
+  availableBirthStars: ['Southern Moon','Black Sun','The Virgin','Golden Eyed Skull'],
+  availableStyles: ['Rogue','Princely','Theive in the Night'],
+  lockedCharacters: [],
+  lockedPrimaryWeapons: [],
+  lockedSecondWeapons: [],
+  lockedBirthStars: [],
+  bosses: []
+
+
+

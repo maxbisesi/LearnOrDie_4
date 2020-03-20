@@ -29,6 +29,7 @@ CREATE TABLE `Avatars` (
   `user_id` int(11) NOT NULL,
   `primary_weapon` int(11) NOT NULL,
   `secondary_weapon` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
   PRIMARY KEY (`avatar_id`),
   KEY `user_id` (`user_id`),
   KEY `fk_prime_weapon` (`primary_weapon`),
@@ -73,6 +74,7 @@ CREATE TABLE `CardSetCards` (
 
 LOCK TABLES `CardSetCards` WRITE;
 /*!40000 ALTER TABLE `CardSetCards` DISABLE KEYS */;
+INSERT INTO `CardSetCards` VALUES (1,1);
 /*!40000 ALTER TABLE `CardSetCards` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -99,6 +101,7 @@ CREATE TABLE `CardSetUsers` (
 
 LOCK TABLES `CardSetUsers` WRITE;
 /*!40000 ALTER TABLE `CardSetUsers` DISABLE KEYS */;
+INSERT INTO `CardSetUsers` VALUES (1,1);
 /*!40000 ALTER TABLE `CardSetUsers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,7 +117,7 @@ CREATE TABLE `CardSets` (
   `setname` varchar(15) NOT NULL,
   `description` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`set_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,6 +126,7 @@ CREATE TABLE `CardSets` (
 
 LOCK TABLES `CardSets` WRITE;
 /*!40000 ALTER TABLE `CardSets` DISABLE KEYS */;
+INSERT INTO `CardSets` VALUES (1,'TEST','TEEEST');
 /*!40000 ALTER TABLE `CardSets` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -151,6 +155,7 @@ CREATE TABLE `FlashCardUsers` (
 
 LOCK TABLES `FlashCardUsers` WRITE;
 /*!40000 ALTER TABLE `FlashCardUsers` DISABLE KEYS */;
+INSERT INTO `FlashCardUsers` VALUES (1,1,0,0);
 /*!40000 ALTER TABLE `FlashCardUsers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -167,7 +172,7 @@ CREATE TABLE `FlashCards` (
   `answer` varchar(250) NOT NULL,
   `category` varchar(20) NOT NULL,
   PRIMARY KEY (`card_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -176,6 +181,7 @@ CREATE TABLE `FlashCards` (
 
 LOCK TABLES `FlashCards` WRITE;
 /*!40000 ALTER TABLE `FlashCards` DISABLE KEYS */;
+INSERT INTO `FlashCards` VALUES (1,'TEST','TEST','TESSTT');
 /*!40000 ALTER TABLE `FlashCards` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,12 +194,12 @@ DROP TABLE IF EXISTS `FlashUsers`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `FlashUsers` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(15) NOT NULL,
-  `password` varchar(10) NOT NULL,
-  `email` varchar(15) DEFAULT NULL,
+  `username` varchar(30) DEFAULT NULL,
+  `password` varchar(30) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL,
   `points` int(11) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -202,6 +208,7 @@ CREATE TABLE `FlashUsers` (
 
 LOCK TABLES `FlashUsers` WRITE;
 /*!40000 ALTER TABLE `FlashUsers` DISABLE KEYS */;
+INSERT INTO `FlashUsers` VALUES (1,'maxbisesi','Basketball12','max.bisesi@gmail.com',0);
 /*!40000 ALTER TABLE `FlashUsers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -235,13 +242,13 @@ LOCK TABLES `Notes` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `UserSession`
+-- Table structure for table `UserSessions`
 --
 
-DROP TABLE IF EXISTS `UserSession`;
+DROP TABLE IF EXISTS `UserSessions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `UserSession` (
+CREATE TABLE `UserSessions` (
   `session_id` int(11) NOT NULL AUTO_INCREMENT,
   `cards_seen` int(11) NOT NULL,
   `correct` int(11) NOT NULL,
@@ -252,17 +259,18 @@ CREATE TABLE `UserSession` (
   `date` datetime DEFAULT CURRENT_TIMESTAMP,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`session_id`),
-  CONSTRAINT `fk_session_user_id` FOREIGN KEY (`session_id`) REFERENCES `FlashUsers` (`user_id`) ON DELETE CASCADE
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `UserSessions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `FlashUsers` (`user_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `UserSession`
+-- Dumping data for table `UserSessions`
 --
 
-LOCK TABLES `UserSession` WRITE;
-/*!40000 ALTER TABLE `UserSession` DISABLE KEYS */;
-/*!40000 ALTER TABLE `UserSession` ENABLE KEYS */;
+LOCK TABLES `UserSessions` WRITE;
+/*!40000 ALTER TABLE `UserSessions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `UserSessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -299,4 +307,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-17 19:55:06
+-- Dump completed on 2020-03-20  9:33:20
