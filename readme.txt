@@ -97,7 +97,6 @@ Fish wife
  Url listeners to convert: 
 - Convert save session from old reducers to new RTK, then use new DataDAO
 - Update cards
-- Register
 - get Cards
 
 

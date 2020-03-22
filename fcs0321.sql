@@ -166,6 +166,7 @@ CREATE TABLE `FlashCardUsers` (
   `user_id` int NOT NULL,
   `correct` int NOT NULL DEFAULT '0',
   `incorrect` int NOT NULL DEFAULT '0',
+  `owner_id` int NOT NULL,
   PRIMARY KEY (`card_id`,`user_id`),
   KEY `fk_user_id` (`user_id`),
   CONSTRAINT `fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `FlashCards` (`card_id`) ON DELETE CASCADE,
@@ -179,7 +180,7 @@ CREATE TABLE `FlashCardUsers` (
 
 LOCK TABLES `FlashCardUsers` WRITE;
 /*!40000 ALTER TABLE `FlashCardUsers` DISABLE KEYS */;
-INSERT INTO `FlashCardUsers` VALUES (1,1,0,0);
+INSERT INTO `FlashCardUsers` VALUES (1,1,0,0,0);
 /*!40000 ALTER TABLE `FlashCardUsers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -306,4 +307,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-21 17:28:30
+-- Dump completed on 2020-03-21 19:32:32
