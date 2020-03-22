@@ -102,6 +102,9 @@ Fish wife
 
 While testing you should be able to see new cards you just created and update them
 
+Use thunks to keep DB in sync with store for users, for guests do the normal thing and 
+only save their stuff if they REGISTER otherwise forget it.
+
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
