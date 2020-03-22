@@ -97,7 +97,10 @@ Fish wife
  Url listeners to convert: 
 - Convert save session from old reducers to new RTK, then use new DataDAO
 - Update cards
+  Cards need to have Id and ownerId throughout.
 - get Cards
+
+While testing you should be able to see new cards you just created and update them
 
 
   characters: [],
