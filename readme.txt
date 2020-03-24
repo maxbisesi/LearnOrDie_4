@@ -96,19 +96,9 @@ Fish wife
 -------
  Url listeners to convert: 
 - Convert save session from old reducers to new RTK, then use new DataDAO
-- Update cards
-  Cards need to have Id and ownerId throughout.
-- get Cards
-
-While testing you should be able to see new cards you just created and update them
-
-Use thunks to keep DB in sync with store for users, for guests do the normal thing and 
-
-only save their stuff if they REGISTER otherwise forget it.
-
-Owner Id is now stored on the FlashCard, that way when you're updating you can 
-make sure that only the cards owner can update.
-
+- Test new API.
+- only save their stuff if they REGISTER otherwise forget it.
+  Add API Call to save their cards should they register.
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
