@@ -96,9 +96,9 @@ Fish wife
 -------
  Url listeners to convert: 
 - Convert save session from old reducers to new RTK, then use new DataDAO
-- Update cards
-- get Cards
-
+- Test new API.
+- only save their stuff if they REGISTER otherwise forget it.
+  Add API Call to save their cards should they register.
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
