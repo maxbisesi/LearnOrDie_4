@@ -1,5 +1,9 @@
 Buy a bunch of sprites.
 
+Can only play game to certain level as guest.
+Map
+Bosses
+
 If they die ever they loose. Game is over go back to studying.
 =======================
 2 misses = Shark Level 1. 
