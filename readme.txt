@@ -103,7 +103,11 @@ Fish wife
 While testing you should be able to see new cards you just created and update them
 
 Use thunks to keep DB in sync with store for users, for guests do the normal thing and 
+
 only save their stuff if they REGISTER otherwise forget it.
+
+Owner Id is now stored on the FlashCard, that way when you're updating you can 
+make sure that only the cards owner can update.
 
 
   characters: [],
