@@ -29,8 +29,6 @@ class Navigation extends React.Component {
 }
 
 https://reactjs.org/docs/conditional-rendering.html
-Jurome
-Jurome
 
 -rank up( algorithm on login )
   -- rank up pop up
@@ -99,6 +97,9 @@ Fish wife
 - Test new API.
 - only save their stuff if they REGISTER otherwise forget it.
   Add API Call to save their cards should they register.
+  Everytime they log in that's a new session.
+- Rank modal.
+- Game Tab.
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
