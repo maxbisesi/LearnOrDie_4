@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Shark_attack_1_000 {
+    width: 1075px;
+    height: 529px;
+    background-position: -5px -5px;
+}
+
+.sprite-Shark_attack_1_001 {
+    width: 1075px;
+    height: 529px;
+    background-position: -1090px -5px;
+}
+
+.sprite-Shark_attack_1_002 {
+    width: 1075px;
+    height: 529px;
+    background-position: -5px -544px;
+}
+
+.sprite-Shark_attack_1_003 {
+    width: 1075px;
+    height: 529px;
+    background-position: -1090px -544px;
+}
+
+.sprite-Shark_attack_1_004 {
+    width: 1075px;
+    height: 529px;
+    background-position: -5px -1083px;
+}
+
+.sprite-Shark_attack_1_005 {
+    width: 1075px;
+    height: 529px;
+    background-position: -1090px -1083px;
+}
+
+.sprite-Shark_attack_1_006 {
+    width: 1075px;
+    height: 529px;
+    background-position: -5px -1622px;
+}
+
+.sprite-Shark_attack_1_007 {
+    width: 1075px;
+    height: 529px;
+    background-position: -1090px -1622px;
+}
+
+.sprite-Shark_attack_1_008 {
+    width: 1075px;
+    height: 529px;
+    background-position: -2175px -5px;
+}
+
+.sprite-Shark_attack_1_009 {
+    width: 1075px;
+    height: 529px;
+    background-position: -2175px -544px;
+}
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -3260px -5px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -3300px -5px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -3340px -5px;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -3380px -5px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -3420px -5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -3460px -5px;
+}
