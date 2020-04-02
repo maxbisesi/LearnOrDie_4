@@ -4,6 +4,12 @@
     margin: '0px';
 }
 
+.gameTab {
+    height: 680px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
 .SandBag {
     background-image: url('./Objects/SandBag.png');
 }
