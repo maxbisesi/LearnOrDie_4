@@ -106,6 +106,7 @@
     "enzyme-to-json": "^3.4.3",
     "express": "^4.17.1",
     "file-loader": "^6.0.0",
+    "gsap": "^3.2.6",
     "lodash": "^4.17.15",
     "lodash.debounce": "^4.0.8",
     "mime": "^2.4.4",
