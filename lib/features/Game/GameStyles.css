@@ -5,9 +5,9 @@
 }
 
 .gameTab {
-    height: 680px;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .SandBag {
@@ -18,10 +18,3 @@
     background-color:rgb(174, 237, 252);
 }
 
-.Urchin {
-    background-image: url('./Objects/Urchin.png');
-}
-
-.fish {
-    
-}
