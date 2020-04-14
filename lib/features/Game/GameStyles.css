@@ -4,6 +4,12 @@
     margin: '0px';
 }
 
+.gameTab {
+    height: 800px;
+    width: 800px;
+    overflow: hidden;
+}
+
 .SandBag {
     background-image: url('./Objects/SandBag.png');
 }
@@ -12,10 +18,3 @@
     background-color:rgb(174, 237, 252);
 }
 
-.Urchin {
-    background-image: url('./Objects/Urchin.png');
-}
-
-.fish {
-    
-}

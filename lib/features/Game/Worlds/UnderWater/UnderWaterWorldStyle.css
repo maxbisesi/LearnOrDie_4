@@ -1,0 +1,28 @@
+.underwater-layer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    cursor: 'none';
+}
+
+.layer-1 {
+    background-image: url('./underwaterworld4/layers/1.png');
+}
+
+.layer-2 {
+    background-image: url('./underwaterworld4/layers/2.png');
+}
+
+.layer-3 {
+    background-image: url('./underwaterworld4/layers/3.png');
+}
+
+.layer-4 {
+    background-image: url('./underwaterworld4/layers/4.png');
+}
+
+.layer-5 {
+    background-image: url('./underwaterworld4/layers/5.png');
+}
