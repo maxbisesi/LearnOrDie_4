@@ -1,9 +1,8 @@
 .underwater-layer {
     display: flex;
-    position:'relative';
+    position: absolute;
     width: 100%;
     height: 700px;
-    background-size: 1000px;
     background-repeat: no-repeat;
     cursor: 'none';
 }
