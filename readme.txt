@@ -93,6 +93,7 @@ Fish wife
 03/18
 -------
  Url listeners to convert: 
+
 - Convert save session from old reducers to new RTK, then use new DataDAO
 - Test new API.
 - only save their stuff if they REGISTER otherwise forget it.
@@ -100,6 +101,18 @@ Fish wife
   Everytime they log in that's a new session.
 - Rank modal.
 - Game Tab.
+
+Test tab:
+----------
+() - Review
+() - update
+(*) - switch tabs stay on same question
+(*) - refresh don't log out
+() - 
+
+Chum tab
+----------
+() - add card
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
