@@ -108,7 +108,7 @@ Test tab:
 () - update
 (*) - switch tabs stay on same question
 (*) - refresh don't log out
-() - 
+() - CAN STILL USE KEYBOARD without loggin in 
 
 Chum tab
 ----------
