@@ -10,11 +10,11 @@
     "dev-linux": "nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch",
-    "test-feature-Cards": "jest ",
-    "test-feature-Game": "jest ",
-    "test-feature-Global": "jest ",
-    "test-feature-Test": "jest ",
-    "test-feature-User": "jest ",
+    "test-feature-Cards": "jest lib/features/Cards/__tests__/cardUI.test.js",
+    "test-feature-Game": "jest lib/features/Game/__tests__/gameUI.test.js",
+    "test-feature-Global": "jest lib/features/Global/__tests__/globalUI.test.js",
+    "test-feature-Test": "jest ./lib/features/Test/__tests__/testUI.test.js",
+    "test-feature-User": "jest lib/features/User/__tests__/userUI.test.js",
     "test:coverage": "jest --coverage",
     "test:updateSnapshots": "jest --updateSnapshot"
   },
@@ -27,18 +27,11 @@
       "node_modules"
     ],
     "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-      "\\.(gif|ttf|eot|svg)$": "<rootDir>/lib/__mocks__/fileMock.js"
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     },
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "setupFiles": [
-      "<rootDir>/setupTests.js"
-    ],
     "globalSetup": "<rootDir>/lib/globalSetup.js",
     "globalTeardown": "<rootDir>/lib/globalTeardown.js",
-    "testEnvironment": "node"
+    "testEnvironment": "jsdom"
   },
   "babel": {
     "presets": [
