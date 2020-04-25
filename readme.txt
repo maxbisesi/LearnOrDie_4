@@ -99,7 +99,38 @@ Fish wife
   Add API Call to save their cards should they register.
   Everytime they log in that's a new session.
 - Rank modal.
-- Game Tab.
+- If a user is deleted nullify his cards' owner_ids
+- The Many to Many relationship for cards and users is designed to allow deleting of either one of the other records,
+    without much effect other than deleting the linking table. 
+
+    There's a little bit of a defect here because the cards' owner_id is not linked.
+
+Home tab:
+----------
+() - 
+
+Test tab:
+----------
+() - Next,previous
+() - Show
+() - Review
+() - Update
+(*) - switch tabs stay on same question
+(*) - refresh don't log out
+() - CAN STILL USE KEYBOARD without loggin in 
+() - As guest and as user
+() - tests for All
+() - Points
+
+Chum tab
+----------
+() - Add card
+
+Login tab
+---------
+() - Login
+() - profile
+() - register
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],

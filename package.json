@@ -10,7 +10,12 @@
     "dev-linux": "nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch",
-    "test:file": "jest",
+    "test-feature-Cards": "jest lib/features/Cards/__tests__/cardUI.test.js",
+    "test-feature-Game": "jest lib/features/Game/__tests__/gameUI.test.js",
+    "test-feature-Global": "jest lib/features/Global/__tests__/globalUI.test.js",
+    "test-feature-Test": "jest ./lib/features/Test/__tests__/testUI.test.js",
+    "test-feature-User": "jest lib/features/User/__tests__/userUI.test.js",
+    "test-api": "jest lib/api.test.js --detectOpenHandles",
     "test:coverage": "jest --coverage",
     "test:updateSnapshots": "jest --updateSnapshot"
   },
@@ -24,17 +29,11 @@
     ],
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-      "\\.(gif|ttf|eot|svg)$": "<rootDir>/lib/__mocks__/fileMock.js"
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/__mocks__/fileMock.js"
     },
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "setupFiles": [
-      "<rootDir>/setupTests.js"
-    ],
     "globalSetup": "<rootDir>/lib/globalSetup.js",
     "globalTeardown": "<rootDir>/lib/globalTeardown.js",
-    "testEnvironment": "node"
+    "testEnvironment": "jsdom"
   },
   "babel": {
     "presets": [
@@ -66,15 +65,14 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "css-loader": "^3.2.1",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "morgan": "^1.9.1",
-    "react-test-renderer": "^16.12.0",
+    "react-test-renderer": "^16.13.1",
     "style-loader": "^1.0.1",
+    "supertest": "^4.0.2",
     "svg-inline-loader": "^0.8.0",
     "webpack-cli": "^3.3.10"
   },
@@ -96,6 +94,7 @@
     "@babel/preset-env": "^7.8.0",
     "@babel/preset-react": "^7.7.4",
     "@reduxjs/toolkit": "^1.2.3",
+    "@testing-library/react": "^10.0.2",
     "axios": "^0.19.0",
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
@@ -103,7 +102,6 @@
     "classnames": "^2.2.6",
     "cors": "^2.8.5",
     "ejs": "^3.0.1",
-    "enzyme-to-json": "^3.4.3",
     "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "gsap": "^3.2.6",
@@ -114,7 +112,7 @@
     "nodemon": "^2.0.1",
     "react": "^16.12.0",
     "react-beforeunload": "^2.1.0",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.1",
     "react-redux": "^7.1.3",
     "react-router-dom": "^5.1.2",
     "react-spring": "^8.0.27",
