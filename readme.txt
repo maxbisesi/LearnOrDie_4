@@ -132,7 +132,7 @@ Test tab:
 Chum tab
 ----------
 (*) - Add card as user
-() - Add card as guest and see them
+(*) - Add card as guest and see them
 () - Add card as guest, register, then keep those cards.
 
 Login tab
