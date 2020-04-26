@@ -117,7 +117,9 @@ Home tab:
 
 Test tab:
 ----------
-() - Next,previous
+() - Animation
+() - randomize questions
+(*) - Next
 () - Show
 () - Review
 (*) - Update
@@ -125,16 +127,17 @@ Test tab:
 () - refresh don't log out
 () - CAN STILL USE KEYBOARD without loggin in 
 () - As guest and as user
-() - tests for All
 (*) - Points
 
 Chum tab
 ----------
-() - Add card
+(*) - Add card as user
+() - Add card as guest and see them
+() - Add card as guest, register, then keep those cards.
 
 Login tab
 ---------
-() - Login
+(*) - Login
 () - profile
 () - register
 
