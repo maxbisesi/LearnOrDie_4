@@ -131,9 +131,10 @@ Test tab:
 
 Chum tab
 ----------
-(*) - Add card as user
-(*) - Add card as guest and see them
-() - Add card as guest, register, then keep those cards.
+(*) - Add cards as user
+(*) - Add cards as guest and see them
+(*) - Add cards as guest, register, then keep those cards.
+() - Add cards as guest, login as existing user, then keep those cards
 
 Login tab
 ---------
@@ -151,6 +152,7 @@ Login tab
   lockedSecondWeapons: [],
   lockedBirthStars: [],
   bosses: []
+
 
 
 
