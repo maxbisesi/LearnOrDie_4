@@ -102,8 +102,14 @@ Fish wife
 - If a user is deleted nullify his cards' owner_ids
 - The Many to Many relationship for cards and users is designed to allow deleting of either one of the other records,
     without much effect other than deleting the linking table. 
+- Logger
+  creates files on server
+  line numbers
+- card submission for users
 
-    There's a little bit of a defect here because the cards' owner_id is not linked.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+TESTS
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Home tab:
 ----------
@@ -111,24 +117,27 @@ Home tab:
 
 Test tab:
 ----------
-() - Next,previous
+() - Animation
+() - randomize questions
+(*) - Next
 () - Show
 () - Review
-() - Update
+(*) - Update
 (*) - switch tabs stay on same question
-(*) - refresh don't log out
+() - refresh don't log out
 () - CAN STILL USE KEYBOARD without loggin in 
 () - As guest and as user
-() - tests for All
-() - Points
+(*) - Points
 
 Chum tab
 ----------
-() - Add card
+(*) - Add card as user
+(*) - Add card as guest and see them
+() - Add card as guest, register, then keep those cards.
 
 Login tab
 ---------
-() - Login
+(*) - Login
 () - profile
 () - register
 

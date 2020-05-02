@@ -15,9 +15,10 @@
     "test-feature-Global": "jest lib/features/Global/__tests__/globalUI.test.js",
     "test-feature-Test": "jest ./lib/features/Test/__tests__/testUI.test.js",
     "test-feature-User": "jest lib/features/User/__tests__/userUI.test.js",
-    "test-api": "jest lib/api.test.js --detectOpenHandles",
+    "test-api": "jest lib/apiUnit.test.js --detectOpenHandles",
     "test:coverage": "jest --coverage",
-    "test:updateSnapshots": "jest --updateSnapshot"
+    "test:updateSnapshots": "jest --updateSnapshot",
+    "test-integration": "jest lib/integration.test.js --detectOpenHandles"
   },
   "jest": {
     "verbose": true,
