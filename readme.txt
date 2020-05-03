@@ -142,6 +142,10 @@ Login tab
 () - profile
 () - register
 
+Misc TODO
+========
+ - reset auto inc ids after tests, to not greatly throw off id numbers.
+
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
   availableSecondWeapons: ['Parrot','Club','Net'],
