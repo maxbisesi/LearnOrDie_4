@@ -113,11 +113,12 @@ TESTS
 
 Home tab:
 ----------
-() - 
+() - Categories 
+() - Rank
+() - Settings
 
 Test tab:
 ----------
-() - Animation
 (*) - randomize questions
 (*) - Next
 (*) - Show
@@ -141,12 +142,20 @@ Login tab
 (*) - profile
 (*) - register
 
+Ranks
+=========
+() - badge graphics
+() = Rank up modal
+() - badges
+
 DEFECTS
 ========
  () - reset auto inc ids after tests, to not greatly throw off id numbers.
  () - Usersession saving
  (*) - POINTS
  () - CAN STILL USE KEYBOARD without loggin in 
+ () - User logs in as guest
+ () - Harpoonist badge
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],

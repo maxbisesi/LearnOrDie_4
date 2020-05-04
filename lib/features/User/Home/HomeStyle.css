@@ -2,11 +2,11 @@
 
 .home-rank {
     position: absolute;
-    left: 710px;
+    left: 810px;
     top: 75px;
     border: solid black;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
 }
 
 .home-button {
@@ -49,7 +49,8 @@
 }
 
 .home {
-    background: linear-gradient(to top,#001a66,#e6ecff 70%);
+    /*background: linear-gradient(to top,#001a66,#e6ecff 70%); */
+    height: 1000px;
 }
 
 /* rank up pop up style */
