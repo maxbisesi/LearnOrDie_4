@@ -113,21 +113,22 @@ TESTS
 
 Home tab:
 ----------
-() - 
+() - Categories 
+() - Rank
+() - Settings
 
 Test tab:
 ----------
-() - Animation
-() - randomize questions
+(*) - randomize questions
 (*) - Next
 (*) - Show
-() - Review
+(*) - Review
 (*) - Update
 (*) - switch tabs stay on same question
 (*) - refresh don't log out
-() - CAN STILL USE KEYBOARD without loggin in 
 (*) - As guest and as user
 (*) - Points
+(*) - Review for guests 
 
 Chum tab
 ----------
@@ -141,11 +142,22 @@ Login tab
 (*) - Login
 (*) - profile
 (*) - register
-(FIXED) - DEFECT switches back to login after changing tabs.
 
-Misc TODO
+Ranks
+=========
+() - badge graphics
+() = Rank up modal
+() - badges
+
+DEFECTS
 ========
- - reset auto inc ids after tests, to not greatly throw off id numbers.
+ () - reset auto inc ids after tests, to not greatly throw off id numbers.
+ () - Usersession saving
+ (*) - POINTS
+ () - CAN STILL USE KEYBOARD without loggin in 
+ () - User logs in as guest
+ () - Harpoonist badge
+ () - key in galley questions
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
