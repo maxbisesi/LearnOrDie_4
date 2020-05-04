@@ -120,13 +120,13 @@ Test tab:
 () - Animation
 () - randomize questions
 (*) - Next
-() - Show
+(*) - Show
 () - Review
 (*) - Update
 (*) - switch tabs stay on same question
-() - refresh don't log out
+(*) - refresh don't log out
 () - CAN STILL USE KEYBOARD without loggin in 
-() - As guest and as user
+(*) - As guest and as user
 (*) - Points
 
 Chum tab
@@ -134,13 +134,14 @@ Chum tab
 (*) - Add cards as user
 (*) - Add cards as guest and see them
 (*) - Add cards as guest, register, then keep those cards.
-() - Add cards as guest, login as existing user, then keep those cards
+(*) - Add cards as guest, login as existing user, then keep those cards
 
 Login tab
 ---------
 (*) - Login
-() - profile
-() - register
+(*) - profile
+(*) - register
+(FIXED) - DEFECT switches back to login after changing tabs.
 
 Misc TODO
 ========
