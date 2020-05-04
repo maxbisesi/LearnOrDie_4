@@ -118,10 +118,10 @@ Home tab:
 Test tab:
 ----------
 () - Animation
-() - randomize questions
+(*) - randomize questions
 (*) - Next
 (*) - Show
-() - Review
+(*) - Review
 (*) - Update
 (*) - switch tabs stay on same question
 (*) - refresh don't log out
@@ -143,10 +143,11 @@ Login tab
 (*) - register
 (FIXED) - DEFECT switches back to login after changing tabs.
 
-Misc TODO
+DEFECTS
 ========
  - reset auto inc ids after tests, to not greatly throw off id numbers.
-
+ - Usersession saving
+ 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
   availableSecondWeapons: ['Parrot','Club','Net'],
