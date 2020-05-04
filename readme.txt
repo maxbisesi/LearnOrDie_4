@@ -125,7 +125,6 @@ Test tab:
 (*) - Update
 (*) - switch tabs stay on same question
 (*) - refresh don't log out
-() - CAN STILL USE KEYBOARD without loggin in 
 (*) - As guest and as user
 (*) - Points
 
@@ -141,13 +140,14 @@ Login tab
 (*) - Login
 (*) - profile
 (*) - register
-(FIXED) - DEFECT switches back to login after changing tabs.
 
 DEFECTS
 ========
- - reset auto inc ids after tests, to not greatly throw off id numbers.
- - Usersession saving
- 
+ () - reset auto inc ids after tests, to not greatly throw off id numbers.
+ () - Usersession saving
+ (*) - POINTS
+ () - CAN STILL USE KEYBOARD without loggin in 
+
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
   availableSecondWeapons: ['Parrot','Club','Net'],
