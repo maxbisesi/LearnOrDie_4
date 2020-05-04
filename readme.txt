@@ -128,6 +128,7 @@ Test tab:
 (*) - refresh don't log out
 (*) - As guest and as user
 (*) - Points
+(*) - Review for guests 
 
 Chum tab
 ----------
@@ -156,6 +157,7 @@ DEFECTS
  () - CAN STILL USE KEYBOARD without loggin in 
  () - User logs in as guest
  () - Harpoonist badge
+ () - key in galley questions
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],

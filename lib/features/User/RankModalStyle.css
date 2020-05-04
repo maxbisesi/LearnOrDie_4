@@ -16,7 +16,7 @@
   
   /* Modal Content */
   .rankModal-content {
-    background-color: RGB(156, 151, 151);
+    background-color: #03dbfc;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -27,9 +27,9 @@
   
   /* The Close Button */
   .rankModal-close {
-    color: black;
-    left: 1300px;
-    font-size: 28px;
+    color: rgba(117,117,117,0.5);
+    left: 950px;
+    font-size: 35px;
     font-weight: bold;
     position: absolute;
   }
@@ -52,7 +52,7 @@
     background-color: black;
     background-image: radial-gradient(RGB(214, 210, 210) 20%,RGB(156, 151, 151)); 
     position: absolute;
-    left: 500px;
+    left: 300px;
     padding-left:20px;
     top: 150px;
     border-bottom: 1px solid black;
