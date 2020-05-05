@@ -146,7 +146,7 @@ Login tab
 Ranks
 =========
 () - badge graphics
-() = Rank up modal
+(*) = Rank up modal
 () - badges
 
 DEFECTS
