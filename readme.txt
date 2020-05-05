@@ -113,7 +113,7 @@ TESTS
 
 Home tab:
 ----------
-() - Categories 
+(*) - Categories 
 () - Rank
 () - Settings
 
@@ -158,6 +158,7 @@ DEFECTS
  () - User logs in as guest
  () - Harpoonist badge
  () - key in galley questions
+ () - implement other point levels
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
