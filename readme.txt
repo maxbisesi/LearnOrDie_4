@@ -152,7 +152,7 @@ Ranks
 DEFECTS
 ========
  () - reset auto inc ids after tests, to not greatly throw off id numbers.
- () - Usersession saving
+ (*) - Usersession saving
  (*) - POINTS
  () - CAN STILL USE KEYBOARD without loggin in 
  () - User logs in as guest
