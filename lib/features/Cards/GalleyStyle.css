@@ -5,10 +5,12 @@
   background: linear-gradient(to top, #001a66, #e6ecff 70%);
 }
 
-.galley-sets {
+.galley-set-container {
   position: relative;
-  width: 100%;
-  left: 100px;
+  left: 990px;
+  width: 200px;
+  padding-top: 20px;
+  /* background-color: #aaaaaa; */
 }
 
 .galley-button {
@@ -57,12 +59,6 @@
   left: 200;
 }
 
-.galley-set_table {
-  width: 400px;
-  padding-top: 20px;
-  /* background-color: #aaaaaa; */
-}
-
 .galley-set-in_progress {
   background-color: #aaaaaa;
   border: solid 3px black;
@@ -79,9 +75,6 @@
   z-index: 1;
   height: 10;
   width: 10;
-}
-
-.galley-set_buttons {
 }
 
 .cardset-set {
