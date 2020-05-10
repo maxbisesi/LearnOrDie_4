@@ -14,7 +14,7 @@
 }
 
 .galley-button {
-  width: 100px;
+  width: 150px;
   height: 30px;
   background-color: black;
   border: none;
@@ -170,3 +170,41 @@
   left: 10px;
   top: 20px;
 }
+
+.galley-modal {
+      /*display: none;  Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 100; /* Sit on top */
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0,.4); 
+      background-size: cover;
+}
+
+.galley-modalContent {
+  background-color: rgb(3, 111, 252);
+  margin: 30px 70px 30px;
+  border: 1px solid black;
+  width: 60%;
+  padding: 30px;
+  height: 210px;
+  position: absolute;
+}
+
+.galley-modalLabel {
+  color: white;
+  padding-right:5px;
+  display:block;
+  font-size: 50px
+}
+
+.galley-modalButton {
+  width: 45px;
+  height: 30px;
+  background-color: rgb(252, 123, 3);
+  color: black;
+  display: block;
+
+}
+
