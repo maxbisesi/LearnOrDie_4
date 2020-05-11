@@ -149,9 +149,12 @@ Ranks
 (*) = Rank up modal
 () - badges
 
+GALLEY
+---------
+
 DEFECTS
 ========
- () - reset auto inc ids after tests, to not greatly throw off id numbers.
+ (*) - reset auto inc ids after tests, to not greatly throw off id numbers.
  (*) - Usersession saving
  (*) - POINTS
  () - CAN STILL USE KEYBOARD without loggin in 

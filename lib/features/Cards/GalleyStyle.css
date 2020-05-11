@@ -5,14 +5,26 @@
   background: linear-gradient(to top, #001a66, #e6ecff 70%);
 }
 
-.galley-sets {
+.galley-createdSets-container {
   position: relative;
-  width: 100%;
-  left: 100px;
+  left: 990px;
+  width: 300px;
+  top:100px;
+  border: 1px solid black;
+  /* background-color: #aaaaaa; */
+}
+
+.galley-set-ProgressContainer {
+  position: relative;
+  left: 1100px;
+  width: 200px;
+  top:30px;
+  padding-top: 20px;
+  /* background-color: #aaaaaa; */
 }
 
 .galley-button {
-  width: 100px;
+  width: 150px;
   height: 30px;
   background-color: black;
   border: none;
@@ -57,18 +69,10 @@
   left: 200;
 }
 
-.galley-set_table {
-  width: 400px;
-  padding-top: 20px;
-  /* background-color: #aaaaaa; */
-}
-
 .galley-set-in_progress {
   background-color: #aaaaaa;
   border: solid 3px black;
   color: white;
-  width: 100px;
-  height: 25px;
   position: absolute;
   text-align: center;
   border-radius: 25px;
@@ -77,21 +81,18 @@
   left: 250;
   box-shadow: '5 5 black';
   z-index: 1;
-  height: 10;
-  width: 10;
+  width: 100px;
+  height: 25px;
 }
 
-.galley-set_buttons {
-}
-
-.galley-set_item {
+.cardset-set {
   height: 50px;
   background-color: darkorchid;
   box-shadow: 5px 5px black;
   border-radius: 5px;
   width: 100%;
   color: white;
-  font-size: 35px;
+  font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -177,3 +178,41 @@
   left: 10px;
   top: 20px;
 }
+
+.galley-modal {
+      /*display: none;  Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 100; /* Sit on top */
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0,.4); 
+      background-size: cover;
+}
+
+.galley-modalContent {
+  background-color: rgb(3, 111, 252);
+  margin: 30px 70px 30px;
+  border: 1px solid black;
+  width: 60%;
+  padding: 30px;
+  height: 210px;
+  position: absolute;
+}
+
+.galley-modalLabel {
+  color: white;
+  padding-right:5px;
+  display:block;
+  font-size: 50px
+}
+
+.galley-modalButton {
+  width: 45px;
+  height: 30px;
+  background-color: rgb(252, 123, 3);
+  color: black;
+  display: block;
+
+}
+
