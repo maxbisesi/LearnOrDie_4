@@ -81,6 +81,8 @@
   left: 250;
   box-shadow: '5 5 black';
   z-index: 1;
+  width: 100px;
+  height: 25px;
 }
 
 .cardset-set {
