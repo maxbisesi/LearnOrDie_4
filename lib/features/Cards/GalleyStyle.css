@@ -14,10 +14,11 @@
   /* background-color: #aaaaaa; */
 }
 
-.galley-set-container {
+.galley-set-ProgressContainer {
   position: relative;
-  left: 990px;
+  left: 1100px;
   width: 200px;
+  top:30px;
   padding-top: 20px;
   /* background-color: #aaaaaa; */
 }
@@ -72,8 +73,6 @@
   background-color: #aaaaaa;
   border: solid 3px black;
   color: white;
-  width: 100px;
-  height: 25px;
   position: absolute;
   text-align: center;
   border-radius: 25px;
@@ -82,8 +81,6 @@
   left: 250;
   box-shadow: '5 5 black';
   z-index: 1;
-  height: 10;
-  width: 10;
 }
 
 .cardset-set {
