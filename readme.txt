@@ -151,6 +151,7 @@ Ranks
 
 GALLEY
 ---------
+() - cancel button on cardset modal
 
 DEFECTS
 ========

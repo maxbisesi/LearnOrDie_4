@@ -87,7 +87,7 @@
 
 .cardset-set {
   height: 50px;
-  background-color: darkorchid;
+  background-color: rgb(50, 168, 153);
   box-shadow: 5px 5px black;
   border-radius: 5px;
   width: 100%;
@@ -95,6 +95,16 @@
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.cardset-set:hover {
+  height: 52px;
+  background-color: black;
+  box-shadow: 6px 6px black;
+  border-radius: 5px;
+  width: 100%;
+  color: green;
+  font-size: 16px;
 }
 
 .longtexttd {
