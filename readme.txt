@@ -90,23 +90,6 @@ Characters
 Fish wife
 
 
-03/18
--------
- Url listeners to convert: 
-- Convert save session from old reducers to new RTK, then use new DataDAO
-- Test new API.
-- only save their stuff if they REGISTER otherwise forget it.
-  Add API Call to save their cards should they register.
-  Everytime they log in that's a new session.
-- Rank modal.
-- If a user is deleted nullify his cards' owner_ids
-- The Many to Many relationship for cards and users is designed to allow deleting of either one of the other records,
-    without much effect other than deleting the linking table. 
-- Logger
-  creates files on server
-  line numbers
-- card submission for users
-
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 TESTS
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -152,6 +135,11 @@ Ranks
 GALLEY
 ---------
 () - cancel button on cardset modal
+() - Study a set 
+() - Delete a set does not delete the cards 
+() - Delete card
+() - Share
+() - Search
 
 DEFECTS
 ========
