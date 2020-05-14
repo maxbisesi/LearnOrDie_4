@@ -140,7 +140,7 @@ GALLEY
 () - Delete card
 () - Share
 () - Search
-() - DEFECT = Moving to next page de selects question
+(*) - DEFECT = Moving to next page de selects question
 
 DEFECTS
 ========
