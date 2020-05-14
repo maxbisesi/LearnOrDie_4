@@ -134,7 +134,7 @@ Ranks
 
 GALLEY
 ---------
-() - cancel button on cardset modal
+(*) - cancel button on cardset modal
 () - Study a set 
 () - Delete a set does not delete the cards 
 () - Delete card
