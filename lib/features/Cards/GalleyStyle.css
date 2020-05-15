@@ -195,6 +195,7 @@
   top: 20px;
 }
 
+/* ========================== GALLEY MODAL ========================== */
 .galley-modal {
       /*display: none;  Hidden by default */
       position: fixed; /* Stay in place */
@@ -212,8 +213,22 @@
   border: 1px solid black;
   width: 60%;
   padding: 30px;
-  height: 210px;
+  height: 240px;
+  right: 300px;
   position: absolute;
+  animation-name: showModal;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-duration: 2s;
+}
+
+@keyframes showModal {
+  from {
+    right: 1px;
+  }
+  to {
+    right: 300px;
+  }
 }
 
 .galley-modalLabel {
@@ -224,11 +239,12 @@
 }
 
 .galley-modalButton {
-  width: 45px;
+  width: 95px;
   height: 30px;
+  margin: 5px 2px 5px;
   background-color: rgb(252, 123, 3);
   color: black;
   display: block;
-
+  border-radius: 8px;
 }
-
+/* ================================================================= */

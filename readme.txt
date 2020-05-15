@@ -119,6 +119,7 @@ Chum tab
 (*) - Add cards as guest and see them
 (*) - Add cards as guest, register, then keep those cards.
 (*) - Add cards as guest, login as existing user, then keep those cards
+() - Increase font size
 
 Login tab
 ---------
