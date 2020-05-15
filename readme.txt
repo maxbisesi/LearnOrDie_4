@@ -99,6 +99,7 @@ Home tab:
 (*) - Categories 
 () - Rank
 () - Settings
+() - DELETE ALL CARDS IN Category
 
 Test tab:
 ----------

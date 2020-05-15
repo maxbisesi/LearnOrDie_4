@@ -4,15 +4,6 @@
   width: 100%;
 }
 
-.galley-createdSets-container {
-  position: relative;
-  left: 990px;
-  width: 300px;
-  top:100px;
-  border: 1px solid black;
-  /* background-color: #aaaaaa; */
-}
-
 .galley-set-ProgressContainer {
   position: relative;
   left: 1100px;
@@ -54,18 +45,6 @@
   overflow-x: visible;
 }
 
-.galley-buttons-navigation {
-  position: absolute;
-  top: 50px;
-  left: 100px;
-}
-
-.galley-pagenumber {
-  position: 'absolute';
-  top: 930;
-  left: 200;
-}
-
 .galley-set-in_progress {
   background-color: #aaaaaa;
   border: solid 3px black;
@@ -82,7 +61,17 @@
   height: 25px;
 }
 
-/* - CARD SETS - */
+/* ========================== CARD SETS ========================== */
+
+.galley-createdSets-container {
+  position: relative;
+  left: 990px;
+  width: 300px;
+  top:100px;
+  border: 1px solid black;
+  /* background-color: #aaaaaa; */
+}
+
 .cardset-set {
   height: 50px;
   background-color: rgb(50, 168, 153);
@@ -93,6 +82,8 @@
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
 }
 
 .cardset-set:hover {
@@ -103,97 +94,49 @@
   width: 100%;
   color: green;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .cardset-set-clicked {
-  height: 60px;
-  background-color: rgb(113, 241, 124);
-  color: white;
-}
-
-/* ------------------- */
-
-.longtexttd {
-  width: 300px;
-  max-width: 300px;
-  overflow: hidden;
-  height: 100px;
-  max-height: 100px;
-  font-size: 15px;
-}
-
-.setitem:hover {
-  cursor: pointer;
-  background-color: darkmagenta;
-}
-
-.clickedset {
-  background-color: orange;
+  height: 300px;
+  background-color: rgb(52, 241, 210);
   color: black;
+  position: relative;
+  font-size: 17px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  box-shadow: 5px 5px black;
+  animation-name: growModal;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-duration: 2s;
 }
 
-.clickedset:hover {
-  background-color: #ba8500;
+.cardset-set-clicked:hover {
+  border: 3px solid blue;
 }
 
-.clickedquestion {
-  background-color: deeppink;
-  color: black;
+@keyframes growModal {
+  from {
+    height: 50px;
+    background-color: rgb(50, 168, 153);
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  to {
+    height: 300px;
+    background-color: rgb(52, 241, 210);
+    color: white;
+    font-size: 17px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
 }
+/*================================================================= */
 
-.clickedquestion:hover {
-  background-color: fuchsia;
-}
 
-.createset {
-  overflow: auto;
-  height: 400px;
-  padding-bottom: 10px;
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px 50px;
-}
-
-.setintest {
-  width: 50px;
-  height: 25px;
-  background-image: linear-gradient(to right, #999999, #f2f2f2);
-  border-radius: 8px;
-  box-shadow: 3px 5px black;
-  color: #000;
-  font-size: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  display: absolute;
-}
-
-.setinprogress:hover {
-  transition: all 700ms ease-in-out;
-  transform: rotate(360deg);
-}
-
-.setinfo {
-  border: 1px solid deeppink;
-  border-radius: 4px;
-  box-shadow: 5px 10px #3333ff;
-  width: 200px;
-}
-
-.setinprogressMovedown {
-  transition: all 500ms ease-in;
-  transform: translate(10px, 30px) rotate(360deg);
-}
-
-#allquestions {
-  position: absolute;
-  left: 10px;
-  top: 20px;
-}
 
 /* ========================== GALLEY MODAL ========================== */
 .galley-modal {
