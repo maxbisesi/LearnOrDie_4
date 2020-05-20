@@ -143,6 +143,7 @@ GALLEY
 () - Share
 () - Search
 (*) - DEFECT = Moving to next page de selects question
+() - Fix up confirm boxes with Custom dialogs or dailog library
 
 DEFECTS
 ========
