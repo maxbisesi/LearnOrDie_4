@@ -146,6 +146,10 @@ GALLEY
 () - Fix up confirm boxes with Custom dialogs or dailog library
 () - randomize study set
 
+Utils
+------
+() - test cases for bs and rank.
+
 DEFECTS
 ========
  (*) - reset auto inc ids after tests, to not greatly throw off id numbers.
@@ -156,6 +160,8 @@ DEFECTS
  () - Harpoonist badge
  () - key in galley questions
  () - implement other point levels
+
+
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],
