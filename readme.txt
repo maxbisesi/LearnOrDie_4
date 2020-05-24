@@ -137,9 +137,9 @@ Ranks
 GALLEY
 ---------
 (*) - cancel button on cardset modal
-() - Study a set 
+(*) - Study a set 
 () - Delete a set does not delete the cards 
-() - Delete card
+(*) - Delete card
 () - Share
 () - Search
 (*) - DEFECT = Moving to next page de selects question
@@ -160,6 +160,8 @@ DEFECTS
  () - Harpoonist badge
  () - key in galley questions
  () - implement other point levels
+ () - Make sure they know when they are deleting the last cards from a Set
+ 
 
 
 
