@@ -24,3 +24,9 @@
     transition: all 200ms ease-in;
     box-shadow: 0px 0px 200px #000000;
 }
+
+.galley-question-deleted {
+    background-color: #919191;
+    opacity: .7;
+    border: 1px solid rgb(0, 0, 0);
+}

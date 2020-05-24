@@ -13,6 +13,12 @@
   /* background-color: #aaaaaa; */
 }
 
+.galley-buttons-navigation {
+  position: absolute;
+  left: 100px;
+  top: 30px;
+}
+
 .galley-button {
   width: 150px;
   height: 50px;
