@@ -97,9 +97,8 @@ TESTS
 Home tab:
 ----------
 (*) - Categories 
-() - Rank
 () - Settings
-() - DELETE ALL CARDS IN Category
+(*) - DELETE ALL CARDS IN Category
 
 Test tab:
 ----------
@@ -140,7 +139,6 @@ GALLEY
 (*) - Study a set 
 () - Delete a set does not delete the cards 
 (*) - Delete card
-() - Share
 () - Search
 (*) - DEFECT = Moving to next page de selects question
 () - Fix up confirm boxes with Custom dialogs or dailog library
