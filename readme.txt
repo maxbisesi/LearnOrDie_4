@@ -161,6 +161,7 @@ DEFECTS
  () - key in galley questions
  () - implement other point levels
  () - Make sure they know when they are deleting the last cards from a Set
+ () - user with no cards, error in galley
  
 
 
