@@ -99,7 +99,8 @@ Home tab:
 (*) - Categories 
 () - Rank
 () - Settings
-() - DELETE ALL CARDS IN Category
+(*) - DELETE ALL CARDS IN Category
+() - Sub-categories
 
 Test tab:
 ----------
@@ -120,13 +121,16 @@ Chum tab
 (*) - Add cards as guest and see them
 (*) - Add cards as guest, register, then keep those cards.
 (*) - Add cards as guest, login as existing user, then keep those cards
-() - Increase font size
+(*) - Increase font size
+() - Chum animation
+(*) - Quesiton count in session
 
 Login tab
 ---------
 (*) - Login
 (*) - profile
 (*) - register
+(*) - Encrypt pw
 
 Ranks
 =========
@@ -162,6 +166,7 @@ DEFECTS
  () - implement other point levels
  () - Make sure they know when they are deleting the last cards from a Set
  () - user with no cards, error in galley
+ () - re dump DB before sending to production. 
  
 
 
