@@ -167,6 +167,9 @@ DEFECTS
  () - Make sure they know when they are deleting the last cards from a Set
  () - user with no cards, error in galley
  () - re dump DB before sending to production. 
+ () - Rating undefined, Id not updating in Test tab
+ () - Filter without selecting categories causes error
+ 
  
 
 
