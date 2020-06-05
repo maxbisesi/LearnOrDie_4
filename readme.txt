@@ -133,6 +133,7 @@ Login tab
 (*) - profile
 (*) - register
 (*) - Encrypt pw
+() - JSON web tokens
 
 Ranks
 =========
