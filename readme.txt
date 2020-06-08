@@ -99,7 +99,8 @@ Home tab:
 (*) - Categories 
 () - Rank
 () - Settings
-() - DELETE ALL CARDS IN Category
+(*) - DELETE ALL CARDS IN Category
+() - Sub-categories
 
 Test tab:
 ----------
@@ -113,6 +114,8 @@ Test tab:
 (*) - As guest and as user
 (*) - Points
 (*) - Review for guests 
+() - Study random filter on
+() - implement other point levels
 
 Chum tab
 ----------
@@ -120,13 +123,17 @@ Chum tab
 (*) - Add cards as guest and see them
 (*) - Add cards as guest, register, then keep those cards.
 (*) - Add cards as guest, login as existing user, then keep those cards
-() - Increase font size
+(*) - Increase font size
+() - Chum animation
+(*) - Quesiton count in session
 
 Login tab
 ---------
 (*) - Login
 (*) - profile
 (*) - register
+(*) - Encrypt pw
+() - JSON web tokens
 
 Ranks
 =========
@@ -159,8 +166,16 @@ DEFECTS
  () - User logs in as guest
  () - Harpoonist badge
  () - key in galley questions
- () - implement other point levels
  () - Make sure they know when they are deleting the last cards from a Set
+ () - user with no cards, error in galley
+ () - re dump DB before sending to production. 
+ () - Rating undefined, Id not updating in Test tab
+ (*) - Filter without selecting categories causes error
+ () - Maintain sessions
+ () - Category size inaccurate 
+ () - Randomization algorithm throws off 'Next' sequence because there is a chance the 
+      next random index is the same as the current index, in which case there would be no update.
+      The smaller the size of the filtered cards the greater chance of this happening.
  
 
 

@@ -5,6 +5,12 @@
     top: 20px;
 }
 
+.chumQuestion {
+    resize: none;
+    font-size: 18px;
+    height: 300px;
+}
+
 .chum {
     background: linear-gradient(to top,#001a66,#e6ecff 70%);
 }

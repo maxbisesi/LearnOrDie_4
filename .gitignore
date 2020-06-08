@@ -2,3 +2,5 @@ node_modules
 public/bundle.js
 bundle
 bundle.js
+keys
+.env
