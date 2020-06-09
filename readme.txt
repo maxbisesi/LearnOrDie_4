@@ -100,7 +100,7 @@ Home tab:
 () - Rank
 () - Settings
 (*) - DELETE ALL CARDS IN Category
-() - Sub-categories
+() - Super-categories
 
 Test tab:
 ----------
@@ -133,7 +133,7 @@ Login tab
 (*) - profile
 (*) - register
 (*) - Encrypt pw
-() - JSON web tokens
+(*) - tokens
 
 Ranks
 =========
