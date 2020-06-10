@@ -37,6 +37,19 @@
     background-color: #80bfff;
 }
 
+.home-category-boxName {
+    border: solid;
+    border-color: #80bfff;
+    border-width: 2px;
+}
+
+.home-category-boxName:hover {
+    border: dashed;
+    border-color: #f513f5;
+    border-width: 4px;
+    cursor: pointer;
+}
+
 .home-category_headers {
     text-align: center;
     margin: 2px;
