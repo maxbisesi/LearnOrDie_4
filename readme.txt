@@ -180,7 +180,7 @@ DEFECTS
 
   New Features Needed
   --------------------
-  () - Collections
+  (redacted) - Collections
         cardsets are groups of cards
         collection are group of categories
   () - Notes
