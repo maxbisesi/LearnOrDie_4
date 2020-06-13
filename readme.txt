@@ -186,7 +186,7 @@ DEFECTS
   () - Notes
   () - Animations
   () - Logger
- 
+  () - Sessions  
 
 
 
