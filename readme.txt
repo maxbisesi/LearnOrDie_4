@@ -100,7 +100,7 @@ Home tab:
 () - Rank
 () - Settings
 (*) - DELETE ALL CARDS IN Category
-() - Sub-categories
+() - Super-categories
 
 Test tab:
 ----------
@@ -133,7 +133,7 @@ Login tab
 (*) - profile
 (*) - register
 (*) - Encrypt pw
-() - JSON web tokens
+(*) - tokens
 
 Ranks
 =========
@@ -176,6 +176,16 @@ DEFECTS
  () - Randomization algorithm throws off 'Next' sequence because there is a chance the 
       next random index is the same as the current index, in which case there would be no update.
       The smaller the size of the filtered cards the greater chance of this happening.
+
+
+  New Features Needed
+  --------------------
+  (redacted) - Collections
+        cardsets are groups of cards
+        collection are group of categories
+  () - Notes
+  () - Animations
+  () - Logger
  
 
 
