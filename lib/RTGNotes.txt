@@ -20,3 +20,5 @@ This allows you to define different behavior for when appearing is done and when
 using selectors like .fade-enter-done:not(.fade-appear-done). 
 For example, you could apply an epic entrance animation when element first appears in the DOM using Animate.css. 
 Otherwise you can simply use fade-enter-done for defining both cases.
+
+timeout={{ enter: 300, exit: 500 }}

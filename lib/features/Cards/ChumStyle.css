@@ -11,6 +11,32 @@
     height: 300px;
 }
 
+.urchin-enter {
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.urchin-enter-active {
+    opacity: 1;
+    transform: translateY(50px) rotate(200deg);
+    transition: transform 5s ease-in, opacity 2s ease-in;
+}
+
+.urchin-exit {
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.urchin-exit-active {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: transform 5s ease-in, opacity 2s ease-in;;
+}
+
 .chum {
     background: linear-gradient(to top,#001a66,#e6ecff 70%);
 }
