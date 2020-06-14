@@ -1,0 +1,22 @@
+ appear: 'my-appear',
+ appearActive: 'my-active-appear',
+ appearDone: 'my-done-appear'
+
+ The animation classNames applied to the component as it appears, enters, exits or has finished the transition. A single name can be provided, which will be suffixed for each stage, e.g. classNames="fade" applies:
+
+fade-appear, fade-appear-active, fade-appear-done
+fade-enter, fade-enter-active, fade-enter-done
+fade-exit, fade-exit-active, fade-exit-done
+A few details to note about how these classes are applied:
+
+They are joined with the ones that are already defined on the child component, 
+so if you want to add some base styles, you can use className without worrying that it will be overridden.
+
+If the transition component mounts with in={false}, no classes are applied yet. 
+You might be expecting *-exit-done, but if you think about it, a component cannot finish exiting if it hasn't entered yet.
+
+fade-appear-done and fade-enter-done will both be applied. 
+This allows you to define different behavior for when appearing is done and when regular entering is done, 
+using selectors like .fade-enter-done:not(.fade-appear-done). 
+For example, you could apply an epic entrance animation when element first appears in the DOM using Animate.css. 
+Otherwise you can simply use fade-enter-done for defining both cases.

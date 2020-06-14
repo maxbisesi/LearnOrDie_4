@@ -19,17 +19,45 @@
     font-family: Arial;
 }
 
-.login-screen-subtitle {
-    top: 30px;
-    left: 70px;
-    font-size: 30px;
+/* Put what you don't want to change here */
+
+.subtitle-appear {
+    opacity: 0.01;
+    left: 0;
+    top: 130px;
+    font-size: 40px;
     color: maroon;
-    position: relative;
+    position: absolute;
     font-style:oblique;
     font-weight: bold;
     font-family:cursive;
 }
 
+.subtitle-appear-active {
+    opacity: 1;
+    left: 60px;
+    transition: opacity 2s ease-in, left 2s ease-in;
+    top: 130px;
+    font-size: 40px;
+    color: maroon;
+    position: absolute;
+    font-style:oblique;
+    font-weight: bold;
+    font-family:cursive;
+}
+
+.subtitle-appear-done {
+    opacity: 1;
+    left: 60px;
+    top: 130px;
+    font-size: 40px;
+    color: maroon;
+    position: absolute;
+    font-style:oblique;
+    font-weight: bold;
+    font-family:cursive;
+}
+  
 .login-loginbutton {
     background-color:blueviolet;
     font-size: large;
