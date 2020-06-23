@@ -126,6 +126,7 @@ Chum tab
 (*) - Increase font size
 () - Chum animation
 (*) - Quesiton count in session
+() - Make Category a combo box.
 
 Login tab
 ---------
@@ -183,10 +184,14 @@ DEFECTS
   (redacted) - Collections
         cardsets are groups of cards
         collection are group of categories
-  () - Notes
   () - Animations
   () - Logger
   () - Sessions  
+  () - Key listeners
+  () - Backups to Azure.
+  () - Logout !
+  () - Notes
+
 
 
 
