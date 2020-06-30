@@ -24,7 +24,7 @@
     width: 720px;
 }
 
-.home-categories {
+.home-category {
     text-align: center;
     margin: 2px;
     padding: 2px;
@@ -63,4 +63,18 @@
 .home {
     /*background: linear-gradient(to top,#001a66,#e6ecff 70%); */
     height: 1000px;
+}
+
+.collection{
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    border-color: #80bfff;
+    border-width: thick;
+    color: black;
+    background-color: #80bfff;
+    width:700px;
 }
