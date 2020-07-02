@@ -104,3 +104,21 @@
     border-color:rgb(255, 253, 253);
     height: 50px;
 }
+
+.home-collection-expand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-collection-expand:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+}
+
+.home-collection-name {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
