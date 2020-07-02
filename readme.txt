@@ -193,6 +193,14 @@ DEFECTS
   () - Notes
 
 
+Collections and Categories
+--------------------------
+- Not every category has to be in a collection.
+- Collections can be empty.
+- Collection is a nullable field on FlashCard
+- If you add a collection and then never a category to it, it won't be saved.
+
+
 
 
   characters: [],
