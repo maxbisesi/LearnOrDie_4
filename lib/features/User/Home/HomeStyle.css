@@ -104,3 +104,41 @@
     border-color:rgb(255, 253, 253);
     height: 50px;
 }
+
+.home-collection-expand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-collection-expand:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+}
+
+.home-collection-name {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.home-collection-category {
+    text-align: left;
+    margin: 5px 10px 5px 0;
+    padding: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    border: solid;
+    border-color: #1f8cfa;
+    border-width: 1px;
+    color: black;
+    background-color: #1f8cfa;
+    width: 500px;
+    height: 25px;
+}
+
+.home-collection-category:hover {
+    background-color: #e5eff8;
+    border-color: #e5eff8;
+}
