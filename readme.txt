@@ -191,6 +191,8 @@ DEFECTS
   () - Backups to Azure.
   () - Logout !
   () - Notes
+  () - track changes by users, git style
+  () - Give option to access general categories when registering
 
 
 Collections and Categories
