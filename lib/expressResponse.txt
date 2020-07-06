@@ -1,0 +1,44 @@
+data:
+
+{"card_id":6916
+"card":"What are some considerations when deciding the location of your VM ?"
+"answer":"You want to place your VM as close as possible to the customer
+ this imporoves performance and lets you comply with regulations.\n\nDifferent location support differenet hardware configurations.\n\nThere are alos price differences between locations.\n"
+"category":"Azure:VMs"
+"owner_id":1}
+
+"status":200
+"statusText":"OK"
+"headers":{"connection":"keep-alive"
+"content-length":"393"
+"content-type":"application/json; charset=utf-8"
+"date":"Sun
+ 05 Jul 2020 21:05:21 GMT"
+"etag":"W/\"189-++66eh4BMs+yFj42uEfGIWkqdRA\""
+"x-powered-by":"Express"}
+"config":{"url":"/insertCard"
+"method":"post"
+"data":"{\"card\":{\"card_id\":\"GUESTCARD\"
+\"card\":\"What are some considerations when deciding the location of your VM ?\"
+\"answer\":\"You want to place your VM as close as possible to the customer
+ this imporoves performance and lets you comply with regulations.\\n\\nDifferent location support differenet hardware configurations.\\n\\nThere are alos price differences between locations.\\n\"
+\"category\":\"Azure:VMs\"
+\"owner_id\":1}
+\"user\":{\"user_id\":1
+\"username\":\"maxbisesi\"
+\"email\":\"max.bisesi@gmail.com\"
+\"points\":0
+\"userrank\":\"FreeDiver\"
+\"token\":\"dcb8a064-72e5-4de8-8254-43cf629c41c4\"}}"
+"headers":
+
+Headers:
+{"Accept":"application/json,text/plain, */*"
+"Content-Type":"application/json;charset=utf-8"}
+"transformRequest":[null]
+"transformResponse":[null]
+"timeout":0
+"xsrfCookieName":"XSRF-TOKEN"
+"xsrfHeaderName":"X-XSRF-TOKEN"
+"maxContentLength":-1}
+"request":{}} 
