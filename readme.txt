@@ -181,9 +181,6 @@ DEFECTS
 
   New Features Needed
   --------------------
-  (redacted) - Collections
-        cardsets are groups of cards
-        collection are group of categories
   () - Animations
   () - Logger
   () - Sessions  
