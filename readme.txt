@@ -190,6 +190,9 @@ DEFECTS
   () - Notes
   () - track changes by users, git style
   () - Give option to access general categories when registering
+  () - Animation when filter gets set. 
+  () - Newly added categories to collections don't show up when filtering
+  () - Move Categories out of collections. 
 
 
 Collections and Categories
