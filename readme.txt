@@ -193,6 +193,7 @@ DEFECTS
   () - Animation when filter gets set. 
   () - Newly added categories to collections don't show up when filtering
   () - Move Categories out of collections. 
+  () - filter categories from collections 
 
 
 Collections and Categories
