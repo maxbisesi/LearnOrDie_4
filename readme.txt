@@ -177,6 +177,8 @@ DEFECTS
  () - Randomization algorithm throws off 'Next' sequence because there is a chance the 
       next random index is the same as the current index, in which case there would be no update.
       The smaller the size of the filtered cards the greater chance of this happening.
+() - With new persistance feature, token is not created becuase it is only created in login method.
+      So all future requests will fail after persisting. 
 
 
   New Features Needed
@@ -194,7 +196,7 @@ DEFECTS
   () - Newly added categories to collections don't show up when filtering
   () - Move Categories out of collections. 
   () - filter categories from collections 
-
+  () - Shark graphic on loading screen.
 
 Collections and Categories
 --------------------------
