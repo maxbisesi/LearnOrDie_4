@@ -142,3 +142,10 @@
     background-color: #e5eff8;
     border-color: #e5eff8;
 }
+
+.home-collection-removecategory {
+    cursor: pointer;
+    color: white;
+    text-align: right;
+    font-size: 8px;
+}
