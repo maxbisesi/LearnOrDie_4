@@ -172,13 +172,15 @@ DEFECTS
  () - re dump DB before sending to production. 
  () - Rating undefined, Id not updating in Test tab
  (*) - Filter without selecting categories causes error
- () - Maintain sessions
+ (*) - Maintain sessions redux-persist.
+
  () - Category size inaccurate 
+
  () - Randomization algorithm throws off 'Next' sequence because there is a chance the 
       next random index is the same as the current index, in which case there would be no update.
       The smaller the size of the filtered cards the greater chance of this happening.
-() - With new persistance feature, token is not created becuase it is only created in login method.
-      So all future requests will fail after persisting. 
+(*) - With new persistance feature, token is not created becuase it is only created in login method.
+      So all future requests will fail after persisting. WAS happening when server restarts.
 
 
   New Features Needed
