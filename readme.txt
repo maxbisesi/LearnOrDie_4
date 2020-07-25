@@ -182,7 +182,6 @@ DEFECTS
 (*) - With new persistance feature, token is not created becuase it is only created in login method.
       So all future requests will fail after persisting. WAS happening when server restarts.
 
-
   New Features Needed
   --------------------
   () - Animations
@@ -199,6 +198,7 @@ DEFECTS
   () - Move Categories out of collections. 
   () - filter categories from collections 
   () - Shark graphic on loading screen.
+  () - Back to login button on registration
 
 Collections and Categories
 --------------------------
