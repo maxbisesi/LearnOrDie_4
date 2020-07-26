@@ -1,0 +1,76 @@
+html{
+    background-image: url('images/homepagebackground.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: calc(100% * 3 / 4);
+}
+.centerLoginScreen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Yep! */
+    width: 48%;
+    height: 59%;
+    display: inline-block;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+#bttw {
+    position: relative;
+    left: 100px;
+    top: 20px;
+    font-size:50px;
+    font-family: Arial;
+}
+
+#lod {
+    top: 30px;
+    left: 70px;
+    font-size: 30px;
+    color: maroon;
+    position: relative;
+    font-style:oblique;
+    font-weight: bold;
+    font-family:cursive;
+}
+
+#loginbutton {
+    background-color:blueviolet;
+    font-size: large;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor:pointer;
+    transition-duration: .3s;
+    margin-bottom: 10px;
+}
+
+#loginbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+#registerbutton {
+    background-color:blueviolet;
+    font-size: large;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor:pointer;
+    transition-duration: .3s;
+}
+
+#registerbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
