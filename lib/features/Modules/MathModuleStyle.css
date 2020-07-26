@@ -1,0 +1,10 @@
+.module-container {
+    background-color: #737373;
+    border: 2px solid black;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
