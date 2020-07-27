@@ -207,8 +207,12 @@ Collections and Categories
 - Collection is a nullable field on FlashCard
 - If you add a collection and then never a category to it, it won't be saved.
 
-
-
+Profiles
+-------------
+  Settings
+  () - Modules to add: Math Module
+  () - Color Scheme
+  () - Avatar
 
   characters: [],
   availableWeapons: ['Ghaff','Anchor and Chain','Hook hand','Cannon','Axe','Harpoon gun'],

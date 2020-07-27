@@ -1,8 +1,10 @@
 /* chum page graphics */
-.rightsidegraph {
+.rightsidegraphic {
     position: absolute;
-    right: 5px;
+    right: 40px;
     top: 20px;
+    height: 450px;
+    width: 200px;
 }
 
 .chumQuestion {
@@ -38,5 +40,6 @@
 }
 
 .chum {
+    position: relative;
     background: linear-gradient(to top,#001a66,#e6ecff 70%);
 }
