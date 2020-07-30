@@ -1,7 +1,16 @@
 .profile-modules-label {
-    border-bottom: 5px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    top: 100px;
+}
+
+.profile-settings-container { 
+    position: relative;
 }
 
 .profile-modules-container {
     border: 1px solid black;
+    margin: 2px 2px 2px 2px;
+    display: block;
+    position: absolute;
 }
