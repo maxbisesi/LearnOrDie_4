@@ -173,6 +173,7 @@ DEFECTS
  () - Rating undefined, Id not updating in Test tab
  (*) - Filter without selecting categories causes error
  (*) - Maintain sessions redux-persist.
+ () - When renaming categories, all categories are displayed outside of collections.
 
  () - Category size inaccurate 
 
