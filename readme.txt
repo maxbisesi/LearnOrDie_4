@@ -207,6 +207,11 @@ Collections and Categories
 - Collection is a nullable field on FlashCard
 - If you add a collection and then never a category to it, it won't be saved.
 
+Images
+--------
+() - Can add them through chum, only predefined images though. Guest users too.
+() - Can see them on question through test.
+
 Profiles
 -------------
   Settings
