@@ -173,6 +173,7 @@ DEFECTS
  () - Rating undefined, Id not updating in Test tab
  (*) - Filter without selecting categories causes error
  (*) - Maintain sessions redux-persist.
+ () - When renaming categories, all categories are displayed outside of collections.
 
  () - Category size inaccurate 
 
@@ -206,6 +207,11 @@ Collections and Categories
 - Collections can be empty.
 - Collection is a nullable field on FlashCard
 - If you add a collection and then never a category to it, it won't be saved.
+
+Images
+--------
+() - Can add them through chum, only predefined images though. Guest users too.
+() - Can see them on question through test.
 
 Profiles
 -------------
