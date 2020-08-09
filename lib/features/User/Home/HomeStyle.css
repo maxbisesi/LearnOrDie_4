@@ -192,3 +192,14 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.home-category_removed-animation {
+    display: block;
+    opacity: 0;
+    font-size: 30px;
+    color: rgb(253, 80, 80);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    left: 70px;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+}
+
