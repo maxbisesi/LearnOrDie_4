@@ -1,0 +1,6 @@
+.points-star-container {
+    position:absolute;
+    right: 15px;
+    top:20px;
+    z-index:3;
+}
