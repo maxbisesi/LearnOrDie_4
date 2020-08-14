@@ -213,6 +213,12 @@ Images
 () - Can add them through chum, only predefined images though. Guest users too.
 () - Can see them on question through test.
 
+
+Test Cases
+=============
+() - Can chum card as guest or user. Guest cards save in store, User cards go to DB and Store
+
+
 Profiles
 -------------
   Settings

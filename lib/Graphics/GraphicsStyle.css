@@ -6,5 +6,6 @@
 }
 
 .star {
-    opacity: .5;
+    display:block;
+    opacity: 0;
 }
