@@ -4,3 +4,7 @@
     top:20px;
     z-index:3;
 }
+
+.star {
+    opacity: .5;
+}
