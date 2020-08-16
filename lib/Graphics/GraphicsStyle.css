@@ -1,4 +1,4 @@
-.points-star-container {
+.test-points-star-container {
     position:absolute;
     right: 15px;
     top:20px;
@@ -8,4 +8,9 @@
 .star {
     display:block;
     opacity: 0;
+}
+
+.bingo {
+    display:block;
+    opacity: 0; 
 }
