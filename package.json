@@ -18,7 +18,8 @@
     "test-api": "jest lib/apiUnit.test.js --detectOpenHandles",
     "test:coverage": "jest --coverage",
     "test:updateSnapshots": "jest --updateSnapshot",
-    "test-integration": "jest lib/integration.test.js --detectOpenHandles"
+    "test-integration": "jest lib/integration.test.js --detectOpenHandles",
+    "test:e2e": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps"
   },
   "jest": {
     "verbose": true,
@@ -63,9 +64,11 @@
   },
   "devDependencies": {
     "@babel/node": "^7.0.0",
+    "@babel/register": "^7.10.5",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "css-loader": "^3.2.1",
+    "cucumber": "^6.0.5",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
     "identity-obj-proxy": "^3.0.0",
