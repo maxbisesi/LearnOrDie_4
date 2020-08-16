@@ -1,4 +1,4 @@
-.test-points-star-container {
+.point-anim-container {
     position:absolute;
     right: 15px;
     top:20px;
@@ -6,11 +6,19 @@
 }
 
 .star {
+    position: absolute;
     display:block;
     opacity: 0;
+    right: 15px;
+    top:20px;
+    z-index:3;
 }
 
 .bingo {
+    position: absolute;
     display:block;
     opacity: 0; 
+    right: 15px;
+    top:20px;
+    z-index:3;
 }
