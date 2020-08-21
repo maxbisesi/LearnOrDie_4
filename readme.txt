@@ -1,50 +1,3 @@
-If the user is a guest render certain components in Main,
-If they logged in render the logged in components in main,
-User context to access the logged in user object or guest object.\
-https://redux.js.org/faq/performance
-https://stackoverflow.com/questions/34995822/how-to-get-best-practice-react-redux-nested-array-data?noredirect=1&lq=1
-https://hackernoon.com/shape-your-redux-store-like-your-database-98faa4754fd5
-https://stackoverflow.com/questions/39695768/mapstatetoprops-in-redux-app-nesting-state-within-state
-
-
-var links = [
-  { endpoint: '/america' },
-  { endpoint: '/canada' },
-  { endpoint: '/norway' },
-  { endpoint: '/bahamas' }
-];
-
-class Navigation extends React.Component {
-  render() {
-    const listItems = links.map((link) =>
-        <li key={link.endpoint}>{link.endpoint}</li> 
-    );
-    return (
-      <div className="navigation">
-        <ul>
-          {listItems}
-        </ul>
-      </div>
-    );
-}
-
-https://reactjs.org/docs/conditional-rendering.html
-
--rank up( algorithm on login )
-  -- rank up pop up
-    + popup color should vary according to new rank.
-    + Redo: harpoonist, 
-  -- badges
-- define how weapons, avatar, character, and rank interact.
-- weapons
--profile
-  cutomize color scheme
-  Or is this determined by birthstar and rank ? 
-- create card sets
-- badges
-- unlockables (gaff)
--svgs
-
 Can't calculate Rank based on points, if you miss a question you lose points so how would that affect rank ?
 Maybe a badge can be given by acheiving a certain total points. But rank should be a more complex calculation. 
 A combination of the ratio of total / whiffed, total points, study sessions registerd, card sets made & shared.  
@@ -160,6 +113,7 @@ Utils
 
 DEFECTS
 ========
+  () - something weird with math module, using unicode in answer
  (*) - reset auto inc ids after tests, to not greatly throw off id numbers.
  (*) - Usersession saving
  (*) - POINTS
