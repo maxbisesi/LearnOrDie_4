@@ -12,8 +12,6 @@ Scenario: API calls return the right response with good parameters
     And renames a Category
     And adds a Category to a Collection
     And removes a Category from a Collection
-    # Covered in registration test. --->
-    # And The client trys to register a user that already exists
     And The client registers a new user
     
 

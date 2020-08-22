@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Flash Card Shark",
   "main": "lib/server.js",
-  "author": "Max ",
+  "author": "Max Bises",
   "license": "MIT",
   "scripts": {
-    "dev-windows": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
-    "dev-linux": "nodemon --exec babel-node lib/server.js",
+    "dev-linux": "nodemon -r dotenv/config --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "tags": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps --tags",
     "test:e2e": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps"
@@ -24,8 +23,6 @@
       "\\.(css|less|sass|scss)$": "identity-obj-proxy",
       "\\.(jpg|jpeg|png|gif)$": "<rootDir>/__mocks__/fileMock.js"
     },
-    "globalSetup": "<rootDir>/lib/globalSetup.js",
-    "globalTeardown": "<rootDir>/lib/globalTeardown.js",
     "testEnvironment": "jsdom"
   },
   "babel": {
