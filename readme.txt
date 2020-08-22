@@ -140,6 +140,7 @@ DEFECTS
 
   New Features Needed
   --------------------
+  () - Unit testing on expressApp
   () - Animations
   () - Logger
   () - Sessions  

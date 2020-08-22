@@ -9,7 +9,8 @@
     "dev-linux": "nodemon -r dotenv/config --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "tags": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps --tags",
-    "test:e2e": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps"
+    "test:e2e": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps",
+    "test:unit:coverage": "nyc --reporter=html --reporter=text yarn tags @AdminAPI"
   },
   "jest": {
     "verbose": true,
@@ -61,6 +62,7 @@
     "eslint-plugin-react": "^7.17.0",
     "identity-obj-proxy": "^3.0.0",
     "morgan": "^1.9.1",
+    "nyc": "^15.1.0",
     "react-test-renderer": "^16.13.1",
     "style-loader": "^1.0.1",
     "svg-inline-loader": "^0.8.0",

@@ -1,4 +1,4 @@
-Feature: API
+Feature: API unit tests
 
 @AdminAPI
 Scenario: API calls return the right response with good parameters
