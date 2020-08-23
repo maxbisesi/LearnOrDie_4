@@ -1,3 +1,4 @@
+@User
 Feature: A user can log in and interact with their profile
     If a newly registered user is created, they can interact with their profile
     Guest users can: Add and Study cards, see categories and filter by them
@@ -11,6 +12,8 @@ Feature: A user can log in and interact with their profile
 
 @UserAfterLoginSeeProfile
 Scenario: After a users successfully logs in they see their profile
+    When The user navigates to FlashCardShark
+    Then The App is shown
 
 Scenario: Newly registered users can interact with their profile
 
