@@ -1,5 +1,5 @@
 {
-  "name": "LOD",
+  "name": "learnordie",
   "version": "1.0.0",
   "description": "Flash Card Shark",
   "main": "lib/server.js",
@@ -8,8 +8,8 @@
   "scripts": {
     "dev-linux": "nodemon -r dotenv/config --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
-    "tags": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps --tags",
-    "test:e2e": "npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps",
+    "tags": "./scripts/e2e.test.tags.sh",
+    "test:e2e": "./scripts/e2e.test.sh",
     "test:unit:coverage": "nyc --reporter=html --reporter=text yarn tags @AdminAPI"
   },
   "jest": {
@@ -29,7 +29,15 @@
   "babel": {
     "presets": [
       "@babel/react",
-      "@babel/env"
+      "@babel/env",
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
     ],
     "plugins": [
       "@babel/plugin-syntax-dynamic-import",
@@ -63,6 +71,7 @@
     "dotenv-cli": "^3.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
+    "geckodriver": "^1.20.0",
     "identity-obj-proxy": "^3.0.0",
     "morgan": "^1.9.1",
     "nyc": "^15.1.0",
@@ -99,6 +108,7 @@
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "dotenv-export": "^2.0.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
