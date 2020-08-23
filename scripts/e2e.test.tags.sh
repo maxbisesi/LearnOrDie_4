@@ -14,4 +14,4 @@ echo "Run UI tests in: $browser"
 source <(dotenv-export | sed 's/\\n/\n/g')
 export TEST_BROWSER="$browser"
 
-npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps --tags @UserAfterLoginSeeProfile
+npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps --tags @FCSisShown

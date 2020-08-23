@@ -10,10 +10,14 @@ Feature: A user can log in and interact with their profile
     Users are promoted if they meet the new criteria.
     Newly Registered users are given the Recruit rank when they first register. 
 
-@UserAfterLoginSeeProfile
-Scenario: After a users successfully logs in they see their profile
+@FCSisShown
+Scenario: The user opens the App, Login is the first tab
     When The user navigates to FlashCardShark
-    Then The App is shown
+    Then The "Login" Tab is shown
+
+@UserAfterLoginSeeProfile
+Scenario: After a user successfully logs in they see their profile
+
 
 Scenario: Newly registered users can interact with their profile
 
