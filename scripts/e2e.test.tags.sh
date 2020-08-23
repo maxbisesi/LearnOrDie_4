@@ -13,4 +13,5 @@ echo "Run UI tests in: $browser"
 # Set environment variables from .env and set NODE_ENV to test
 source <(dotenv-export | sed 's/\\n/\n/g')
 export TEST_BROWSER="$browser"
-#npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps --tags
+
+npx cucumber-js lib/cucumber/features --require-module @babel/register --require lib/Cucumber/steps --tags @UserAfterLoginSeeProfile
