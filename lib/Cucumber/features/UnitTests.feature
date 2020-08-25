@@ -14,7 +14,6 @@ Scenario: API calls return the right response with good parameters
     And removes a Category from a Collection
     And The client registers a new user
     
-
 @AdminAPINegative
 Scenario: The client logs in as a test User
     When The client logs in as Admin
