@@ -1,8 +1,8 @@
-Feature: API tests
+Feature: API unit tests
 
 @AdminAPI
-Scenario: Admin tests the api
-    When The client logs in as Admin
+Scenario: API calls return the right response with good parameters
+    When The client logs in as a test User
     And creates a Card
     And creates a Card List
     And saves a Session
@@ -12,13 +12,10 @@ Scenario: Admin tests the api
     And renames a Category
     And adds a Category to a Collection
     And removes a Category from a Collection
-    # Covered in registration test. --->
-    # And The client trys to register a user that already exists
     And The client registers a new user
     
-
 @AdminAPINegative
-Scenario: Admin negative tests
+Scenario: The client logs in as a test User
     When The client logs in as Admin
     And The Client tries to something strange
     And I try to login as an Admin but use the wrong password

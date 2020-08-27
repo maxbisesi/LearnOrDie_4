@@ -113,6 +113,7 @@ Utils
 
 DEFECTS
 ========
+ () - points animation plays when updating
   () - something weird with math module, using unicode in answer
  (*) - reset auto inc ids after tests, to not greatly throw off id numbers.
  (*) - Usersession saving
@@ -139,6 +140,7 @@ DEFECTS
 
   New Features Needed
   --------------------
+  () - Unit testing on expressApp
   () - Animations
   () - Logger
   () - Sessions  
