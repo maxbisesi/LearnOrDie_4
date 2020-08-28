@@ -20,11 +20,11 @@ Feature: A user can log in and interact with their profile
         When The user navigates to FlashCardShark
         And The user logs in as: "TestUser01"
         Then The "Profile" Tab is shown
-        Then The following fields are available:
-            | Module Name | User Field |
-            | Math        | name |
-            | Chat        | poinsts |
-            | Draw tab    | rank |
+        Then The form matches the following values:
+            | Field Name  | Value  |
+            | Math Module | exists |
+            | Chat Module | exists |
+            | Draw tab    | exists |
 
     Scenario: Newly registered users can interact with their profile
 
