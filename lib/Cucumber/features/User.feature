@@ -26,7 +26,23 @@ Feature: A user can log in and interact with their profile
             | Chat Module | exists |
             | Draw tab    | exists |
 
+    @UserRegisterUser
     Scenario: Newly registered users can interact with their profile
+        When The user navigates to FlashCardShark
+        And The user clicks the "Come Aboard" button
+        And The user fills the form with the following values:
+            | Field Name | Value                |
+            | username   | QATester02           |
+            | password   | lodqa0828            |
+            | confirm    | lodqa0828            |
+            | email      | max.bisesi@gmail.com |
+        And The user clicks the "Choose Your Destiny" button
+        Then The form matches the following values:
+            | Field Name  | Value  |
+            | Math Module | exists |
+            | Chat Module | exists |
+            | Draw tab    | exists |
+
 
     Scenario: Guest users can add Cards, Study Cards, see catogries and Filter, but that's it
 
