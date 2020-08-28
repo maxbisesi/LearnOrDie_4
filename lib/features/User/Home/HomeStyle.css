@@ -3,15 +3,6 @@
     position: relative;
 }
 
-.home-rank {
-    position: absolute;
-    left: 810px;
-    top: 75px;
-    border: solid black;
-    width: 250px;
-    height: 250px;
-}
-
 .home-button {
     background: linear-gradient(to bottom, #ff9933 0%,#ffffff 100%);
     width: 130px;

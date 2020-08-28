@@ -5,12 +5,41 @@
 }
 
 .profile-settings-container { 
-    position: relative;
+    position: absolute;
+    top: 100px;
 }
 
 .profile-modules-container {
     border: 1px solid black;
     margin: 2px 2px 2px 2px;
+    padding-left: 10px;
     display: block;
     position: absolute;
+    left: 5px;
+}
+
+.profile-bio {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    border: 1px solid black;
+    margin: 2px 2px 2px 2px;
+    display: block;
+}
+
+.profile-bio-cell {
+    padding: 2px 2px 2px 2px;
+    margin: 1px 1px 1px 1px;
+    width: 50px;
+    height: 45px;
+    font-size: 25px;
+}
+
+.profile-rank {
+    position: absolute;
+    left: 810px;
+    top: 75px;
+    border: solid black;
+    width: 250px;
+    height: 250px;
 }
