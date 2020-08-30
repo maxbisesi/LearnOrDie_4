@@ -18,7 +18,7 @@ Feature: A user can log in and interact with their profile
         And The user switches to the "Chum" Tab
         And The user switches to the "Test" Tab
         And The user switches to the "Chum" Tab
-        
+
     @UserAfterLoginSeeProfile
     Scenario: After a user successfully logs in they see their profile
         When The user navigates to FlashCardShark
@@ -47,23 +47,29 @@ Feature: A user can log in and interact with their profile
             | Chat Module | exists |
             | Draw tab    | exists |
 
-
+    @UserGuestUserAddCards
     Scenario: Guest users can add Cards, Study Cards, see catogries and Filter, but that's it
-        When the user navigates to FlashCardShark
-        And They use the app as a Guest
+        When The user navigates to FlashCardShark
+        And The user uses the app as a Guest
         And The user switches to the "Chum" Tab
-        Then the "Chum" Tab is shown
+        And The user fills the form with the following values:
+            | Field Name | Value              |
+            | Card       | SeleniumTestCard   |
+            | Answer     | SeleniumTestAnswer |
+            | Category   | SeleniumTests      |
+        And The user clicks the "Submit" button
 
-   # Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
 
-    # Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
+# Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
 
-    # Scenario: Session is saved after loggin out
+# Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
 
-    # Scenario: Only Users can use the Galley, not guest Users
+# Scenario: Session is saved after loggin out
 
-    # Scenario: Users are promoted if they earn the next rank
+# Scenario: Only Users can use the Galley, not guest Users
 
-    # Scenario: Newly registered users are given the Recruit rank after register.
+# Scenario: Users are promoted if they earn the next rank
 
-    # Scenario: A user can activate Modules in their profile
+# Scenario: Newly registered users are given the Recruit rank after register.
+
+# Scenario: A user can activate Modules in their profile
