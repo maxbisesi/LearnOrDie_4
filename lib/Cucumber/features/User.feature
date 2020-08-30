@@ -57,7 +57,18 @@ Feature: A user can log in and interact with their profile
             | Card       | SeleniumTestCard   |
             | Answer     | SeleniumTestAnswer |
             | Category   | SeleniumTests      |
+        Then The form matches the following values:
+            | Field Name | Value              |
+            | Card       | SeleniumTestCard   |
+            | Answer     | SeleniumTestAnswer |
+            | Category   | SeleniumTests      |
         And The user clicks the "Submit" button
+        #Animation should play and TextAreas should be cleared if this worked
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Card       |       |
+            | Answer     |       |
+            | Category   |       |
         And The user switches to the "Home" Tab
 
 
