@@ -14,7 +14,11 @@ Feature: A user can log in and interact with their profile
     Scenario: The user opens the App, Login is the first tab
         When The user navigates to FlashCardShark
         Then The "Login" Tab is shown
-
+        And The user switches to the "Home" Tab
+        And The user switches to the "Chum" Tab
+        And The user switches to the "Test" Tab
+        And The user switches to the "Chum" Tab
+        
     @UserAfterLoginSeeProfile
     Scenario: After a user successfully logs in they see their profile
         When The user navigates to FlashCardShark
@@ -47,19 +51,19 @@ Feature: A user can log in and interact with their profile
     Scenario: Guest users can add Cards, Study Cards, see catogries and Filter, but that's it
         When the user navigates to FlashCardShark
         And They use the app as a Guest
-        And The user goes to the "Chum" Tab
+        And The user switches to the "Chum" Tab
         Then the "Chum" Tab is shown
 
-    Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
+   # Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
 
-    Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
+    # Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
 
-    Scenario: Session is saved after loggin out
+    # Scenario: Session is saved after loggin out
 
-    Scenario: Only Users can use the Galley, not guest Users
+    # Scenario: Only Users can use the Galley, not guest Users
 
-    Scenario: Users are promoted if they earn the next rank
+    # Scenario: Users are promoted if they earn the next rank
 
-    Scenario: Newly registered users are given the Recruit rank after register.
+    # Scenario: Newly registered users are given the Recruit rank after register.
 
-    Scenario: A user can activate Modules in their profile
+    # Scenario: A user can activate Modules in their profile
