@@ -63,12 +63,13 @@ Feature: A user can log in and interact with their profile
             | Answer     | SeleniumTestAnswer |
             | Category   | SeleniumTests      |
         And The user clicks the "Submit" button
-        #Animation should play and TextAreas should be cleared if this worked
+        # Animation should play and TextAreas should be cleared if this worked
+        # Category doesn't get cleared though
         Then The form matches the following values:
-            | Field Name | Value |
-            | Card       |       |
-            | Answer     |       |
-            | Category   |       |
+            | Field Name | Value         |
+            | Card       |               |
+            | Answer     |               |
+            | Category   | SeleniumTests |
         And The user switches to the "Home" Tab
 
 
