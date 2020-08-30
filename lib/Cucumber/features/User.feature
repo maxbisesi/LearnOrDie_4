@@ -45,6 +45,10 @@ Feature: A user can log in and interact with their profile
 
 
     Scenario: Guest users can add Cards, Study Cards, see catogries and Filter, but that's it
+        When the user navigates to FlashCardShark
+        And They use the app as a Guest
+        And The user goes to the "Chum" Tab
+        Then the "Chum" Tab is shown
 
     Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
 
