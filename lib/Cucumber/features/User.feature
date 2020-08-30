@@ -58,6 +58,7 @@ Feature: A user can log in and interact with their profile
             | Answer     | SeleniumTestAnswer |
             | Category   | SeleniumTests      |
         And The user clicks the "Submit" button
+        And The user switches to the "Home" Tab
 
 
 # Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
