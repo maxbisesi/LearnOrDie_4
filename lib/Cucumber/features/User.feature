@@ -71,9 +71,8 @@ Feature: A user can log in and interact with their profile
             | Answer     |               |
             | Category   | SeleniumTests |
         And The user switches to the "Home" Tab
-        Then The following Categorie are shown:
-            | Field Name | Value |
-            |            |       |
+        Then The following Categories are shown:
+            | SeleniumTests |
 
 
 
