@@ -72,11 +72,12 @@ Feature: A user can log in and interact with their profile
             | Category   | SeleniumTests |
         And The user switches to the "Home" Tab
         Then The following Categories are shown:
-            | SeleniumTests |
+            | Field Name    | Value |
+            | SeleniumTests | 1     |
 
 
 
-# Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
+#Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
 
 # Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
 
