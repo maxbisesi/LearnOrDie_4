@@ -116,6 +116,23 @@ Feature: A user can log in and interact with their profile
             | Field Name | Value |
             | SeleniumQA | 2     |
         And The user switches to the "Login/Profile" Tab
+        And The user clicks the "Come Aboard" button
+        And The user fills the form with the following values:
+            | Field Name | Value                |
+            | username   | randomusername       |
+            | password   | lodqa0828            |
+            | confirm    | lodqa0828            |
+            | email      | max.bisesi@gmail.com |
+        And The user clicks the "Choose Your Destiny" button
+        Then The form matches the following values:
+            | Field Name  | Value  |
+            | Math Module | exists |
+            | Chat Module | exists |
+            | Draw tab    | exists |
+        And The user switches to the "Home" Tab
+        Then The following Categories are shown:
+            | Field Name | Value |
+            | SeleniumQA | 2     |
 
 
 # Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
