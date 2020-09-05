@@ -134,8 +134,29 @@ Feature: A user can log in and interact with their profile
             | Field Name | Value |
             | SeleniumQA | 2     |
 
+    @currentUserAddsCardsAsGuest
+    Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
+        When The user navigates to FlashCardShark
+        And The user uses the app as a Guest
+        And The user switches to the "Chum" Tab
+        And The user fills the form with the following values:
+            | Field Name | Value      |
+            | Card       | ""         |
+            | Answer     | ""         |
+            | Category   | SeleniumQA |
+        Then The form matches the following values:
+            | Field Name | Value      |
+            | Card       | ""         |
+            | Answer     | ""         |
+            | Category   | SeleniumQA |
+        And The user clicks the "Submit" button
+        Then The form matches the following values:
+            | Field Name | Value      |
+            | Card       |            |
+            | Answer     |            |
+            | Category   | SeleniumQA |
+        And The user navigates to the "Login/Profile" Tab
 
-# Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
 
 # Scenario: Session is saved after loggin out
 
