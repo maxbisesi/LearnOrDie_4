@@ -77,23 +77,64 @@ Feature: A user can log in and interact with their profile
 
 
     @UserGuestCardsSavedonRegister
-    Scenario Outline: If guest user adds some cards then registers, their cards get saved and are accessible
-     When The user navigates to FlashCardShark
+    Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
+        When The user navigates to FlashCardShark
         And The user uses the app as a Guest
         And The user switches to the "Chum" Tab
         And The user fills the form with the following values:
-            | Field Name | Value              |
-            | Card       | SeleniumTestCard   |
-            | Answer     | SeleniumTestAnswer |
-            | Category   | SeleniumTests      |
+            | Field Name | Value                         |
+            | Card       | "What's a QA's goal in life?" |
+            | Answer     | "Not quality, Equality."      |
+            | Category   | SeleniumQA                    |
         Then The form matches the following values:
-            | Field Name | Value              |
-            | Card       | SeleniumTestCard   |
-            | Answer     | SeleniumTestAnswer |
-            | Category   | SeleniumTests      |
+            | Field Name | Value                         |
+            | Card       | "What's a QA's goal in life?" |
+            | Answer     | "Not quality, Equality."      |
+            | Category   | SeleniumQA                    |
         And The user clicks the "Submit" button
-    Examples:
-    
+        Then The form matches the following values:
+            | Field Name | Value      |
+            | Card       |            |
+            | Answer     |            |
+            | Category   | SeleniumQA |
+        And The user fills the form with the following values:
+            | Field Name | Value                        |
+            | Card       | "How many Dev's equal a QA?" |
+            | Answer     | "1 QA for every 4 Devs"      |
+        Then The form matches the following values:
+            | Field Name | Value                        |
+            | Card       | "How many Dev's equal a QA?" |
+            | Answer     | "1 QA for every 4 Devs"      |
+        And The user clicks the "Submit" button
+        Then The form matches the following values:
+            | Field Name | Value      |
+            | Card       |            |
+            | Answer     |            |
+            | Category   | SeleniumQA |
+        And The user switches to the "Home" Tab
+        Then The following Categories are shown:
+            | Field Name | Value |
+            | SeleniumQA | 2     |
+        And The user switches to the "Login/Profile" Tab
+        And The user clicks the "Come Aboard" button
+        And The user fills the form with the following values:
+            | Field Name | Value                |
+            | username   | randomusername       |
+            | password   | lodqa0828            |
+            | confirm    | lodqa0828            |
+            | email      | max.bisesi@gmail.com |
+        And The user clicks the "Choose Your Destiny" button
+        Then The form matches the following values:
+            | Field Name  | Value  |
+            | Math Module | exists |
+            | Chat Module | exists |
+            | Draw tab    | exists |
+        And The user switches to the "Home" Tab
+        Then The following Categories are shown:
+            | Field Name | Value |
+            | SeleniumQA | 2     |
+
+
 # Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
 
 # Scenario: Session is saved after loggin out
