@@ -22,7 +22,7 @@ Feature: A user can log in and interact with their profile
     @UserAfterLoginSeeProfile
     Scenario: After a user successfully logs in they see their profile
         When The user navigates to FlashCardShark
-        And The user logs in as: "TestUser01"
+        And The user logs in as: "QATestUser"
         Then The "Profile" Tab is shown
         Then The form matches the following values:
             | Field Name  | Value  |
@@ -82,15 +82,15 @@ Feature: A user can log in and interact with their profile
         And The user uses the app as a Guest
         And The user switches to the "Chum" Tab
         And The user fills the form with the following values:
-            | Field Name | Value                         |
-            | Card       | "What's a QA's goal in life?" |
-            | Answer     | "Not quality, Equality."      |
-            | Category   | SeleniumQA                    |
+            | Field Name | Value                       |
+            | Card       | What's a QA's goal in life? |
+            | Answer     | Not quality, Equality.      |
+            | Category   | SeleniumQA                  |
         Then The form matches the following values:
-            | Field Name | Value                         |
-            | Card       | "What's a QA's goal in life?" |
-            | Answer     | "Not quality, Equality."      |
-            | Category   | SeleniumQA                    |
+            | Field Name | Value                       |
+            | Card       | What's a QA's goal in life? |
+            | Answer     | Not quality, Equality.      |
+            | Category   | SeleniumQA                  |
         And The user clicks the "Submit" button
         Then The form matches the following values:
             | Field Name | Value      |
@@ -98,13 +98,13 @@ Feature: A user can log in and interact with their profile
             | Answer     |            |
             | Category   | SeleniumQA |
         And The user fills the form with the following values:
-            | Field Name | Value                        |
-            | Card       | "How many Dev's equal a QA?" |
-            | Answer     | "1 QA for every 4 Devs"      |
+            | Field Name | Value                      |
+            | Card       | How many Dev's equal a QA? |
+            | Answer     | 1 QA for every 4 Devs      |
         Then The form matches the following values:
-            | Field Name | Value                        |
-            | Card       | "How many Dev's equal a QA?" |
-            | Answer     | "1 QA for every 4 Devs"      |
+            | Field Name | Value                      |
+            | Card       | How many Dev's equal a QA? |
+            | Answer     | 1 QA for every 4 Devs      |
         And The user clicks the "Submit" button
         Then The form matches the following values:
             | Field Name | Value      |
@@ -140,25 +140,30 @@ Feature: A user can log in and interact with their profile
         And The user uses the app as a Guest
         And The user switches to the "Chum" Tab
         And The user fills the form with the following values:
-            | Field Name | Value      |
-            | Card       | ""         |
-            | Answer     | ""         |
-            | Category   | SeleniumQA |
+            | Field Name | Value                         |
+            | Card       | Why did you forget to log in? |
+            | Answer     | Because this test will pass   |
+            | Category   | randomcategory                |
         Then The form matches the following values:
-            | Field Name | Value      |
-            | Card       | ""         |
-            | Answer     | ""         |
-            | Category   | SeleniumQA |
+            | Field Name | Value                         |
+            | Card       | Why did you forget to log in? |
+            | Answer     | Because this test will pass   |
+            | Category   | randomcategory                |
         And The user clicks the "Submit" button
         Then The form matches the following values:
-            | Field Name | Value      |
-            | Card       |            |
-            | Answer     |            |
-            | Category   | SeleniumQA |
-        And The user navigates to the "Login/Profile" Tab
+            | Field Name | Value          |
+            | Card       |                |
+            | Answer     |                |
+            | Category   | randomcategory |
+        And The user switches to the "Login/Profile" Tab
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Home" Tab
+        Then The following Categories are shown:
+            | Field Name     | Value |
+            | randomcategory | 1     |
 
 
-# Scenario: Session is saved after loggin out
+# Scenario: Session is saved after logging out
 
 # Scenario: Only Users can use the Galley, not guest Users
 
