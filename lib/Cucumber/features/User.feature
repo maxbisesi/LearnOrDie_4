@@ -13,11 +13,11 @@ Feature: A user can log in and interact with their profile
     @FCSisShown
     Scenario: The user opens the App, Login is the first tab
         When The user navigates to FlashCardShark
+        And The user uses the app as a Guest
         Then The "Login" Tab is shown
         And The user switches to the "Home" Tab
         And The user switches to the "Chum" Tab
         And The user switches to the "Test" Tab
-        And The user switches to the "Chum" Tab
 
     @UserAfterLoginSeeProfile
     Scenario: After a user successfully logs in they see their profile
@@ -162,12 +162,27 @@ Feature: A user can log in and interact with their profile
             | Field Name     | Value |
             | randomcategory | 1     |
 
+    @UserSessionSavedLogout
+    Scenario: Session is saved after logging out
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Home" Tab
+        And The user clicks the "Logout" button
+        Then The form matches the following values:
+            | Field Name                   | Value  |
+            | Brave the Treacherour Waters | exists |
 
-# Scenario: Session is saved after logging out
+    @UserOnlyUsersSeeGalley
+    Scenario: Only Users can use the Galley, not guest Users
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Galley" Tab
 
-# Scenario: Only Users can use the Galley, not guest Users
+    @UserRanksUp
+    Scenario: Users are promoted if they earn the next rank
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
 
-# Scenario: Users are promoted if they earn the next rank
 
 # Scenario: Newly registered users are given the Recruit rank after register.
 
