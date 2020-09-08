@@ -177,6 +177,9 @@ Feature: A user can log in and interact with their profile
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
+        Then The form matches the following values:
+            | Field Name                     | Value  |
+            | Add some cards to a collection | exists |
 
     @UserRanksUp
     Scenario: Users are promoted if they earn the next rank
