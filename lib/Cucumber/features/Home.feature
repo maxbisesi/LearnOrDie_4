@@ -12,6 +12,9 @@ Feature: Interact with Home tab
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
         And The user creates a new Collection named: "SeleniumCollection"
+        Then The form matches the following values:
+            | Field Name  | Value              |
+            | Collections | SeleniumCollection |
 
 
     @HomeAddCategoryToCollection
