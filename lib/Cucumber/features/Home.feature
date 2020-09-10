@@ -29,14 +29,14 @@ Feature: Interact with Home tab
             | Field Name | Value                 |
             | Card       | Drag and Drop Testing |
             | Answer     | It works              |
-            | Category   | DragAndDropTesting    |
+            | Category   | randomcategory        |
         And The user clicks the "Submit" button
         And The user switches to the "Home" Tab
         Then The following Categories are shown:
-            | Field Name         | Value |
-            | DragAndDropTesting | >1    |
+            | Field Name     | Value |
+            | randomcategory | 1     |
         And The user creates a new Collection named: "SeleniumCollection"
-        And The user drags the "DragAndDropTesting" Category into the "SeleniumCollection" Collection
+        And The user drags the "randomcategory" Category into the "SeleniumCollection" Collection
     # Then The "SeleniumCollection" Collection has the following Categories:
     #     | DragAndDropTesting |
     # And The user removes the "DragAndDropTesting" Category from the "SeleniumCollection" Collection
