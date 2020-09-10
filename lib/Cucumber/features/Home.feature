@@ -37,15 +37,15 @@ Feature: Interact with Home tab
             | randomcategory | 1     |
         And The user creates a new Collection named: "SeleniumCollection"
         And The user drags the "randomcategory" Category into the "SeleniumCollection" Collection
-    # Then The "SeleniumCollection" Collection has the following Categories:
-    #     | DragAndDropTesting |
-    # And The user removes the "DragAndDropTesting" Category from the "SeleniumCollection" Collection
-    # Then The form matches the following values:
-    #     | Field Name  | Value              |
-    #     | Collections | SeleniumCollection |
-    # Then The following Categories are shown:
-    #     | Field Name         | Value |
-    #     | DragAndDropTesting | 1     |
+        Then The "SeleniumCollection" Collection has the following Categories:
+        #     | DragAndDropTesting |
+        # And The user removes the "DragAndDropTesting" Category from the "SeleniumCollection" Collection
+        # Then The form matches the following values:
+        #     | Field Name  | Value              |
+        #     | Collections | SeleniumCollection |
+        # Then The following Categories are shown:
+        #     | Field Name         | Value |
+        #     | DragAndDropTesting | 1     |
 
 
     @HomeRemoveCategoryFromCollection
