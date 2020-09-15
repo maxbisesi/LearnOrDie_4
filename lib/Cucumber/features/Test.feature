@@ -11,7 +11,6 @@ Feature: Interact with the Test Tab
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Test" Tab
-        And I cl
 
     @TestMissedIt
     Scenario: Clicking Missed it updates the Points and changes to the next Card, changing Card,Category and Answer.
