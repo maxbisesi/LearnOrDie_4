@@ -49,8 +49,10 @@ Feature: Interact with Home tab
 
     @HomeRemoveCategoryFromCollection
     Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
-
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Home" Tab
+        
     @HomeFilterByCategory
     Scenario: On the Home tab the User creates a new Collection
         When The client logs in as a test User
