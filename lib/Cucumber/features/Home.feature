@@ -16,7 +16,7 @@ Feature: Interact with Home tab
             | Field Name  | Value              |
             | Collections | SeleniumCollection |
 
-    @HomeAddCategoryToCollection
+    @HomeDragNDrop_CategoryToCollection
     Scenario: On the Home tab the User creates a new Collection
         . This will create a new Collection locally but until
         . a category is saved to it a Collection is just an empty vessle
@@ -48,8 +48,38 @@ Feature: Interact with Home tab
 
 
     @HomeRemoveCategoryFromCollection
+    @HomeAddCategoriesByCheckboxes
     Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Home" Tab
+        When The user selects the following Categories' checkboxes:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "5" seconds
+        And The user creates a new Collection named: "SeleniumCollection"
+        And The user waits "5" seconds
+        Then The "SeleniumCollection" Collection has the following Categories:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "3" seconds
+        When The user removes the "Birchum Bounty Hunter" Category from the "SeleniumCollection" Collection
+         And The user waits "3" seconds
+        When The user removes the "Birchum Big Foot" Category from the "SeleniumCollection" Collection
+         And The user waits "3" seconds
+        When The user removes the "Birchum Pop Warner" Category from the "SeleniumCollection" Collection
+         And The user waits "3" seconds
+        Then The following Categories are shown:
+            | Field Name            | Value |
+            | Birchum Bounty Hunter | 1     |
+            | Birchum Big Foot      | 1     |
+            | Birchum Pop Warner    | 1     |
+        And The user waits "10" seconds
+
 
     @HomeFilterByCategory
     Scenario: On the Home tab the User creates a new Collection
