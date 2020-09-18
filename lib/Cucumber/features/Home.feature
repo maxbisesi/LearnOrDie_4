@@ -58,20 +58,26 @@ Feature: Interact with Home tab
             | Birchum Bounty Hunter |
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
+        And The user waits "5" seconds
         And The user creates a new Collection named: "SeleniumCollection"
+        And The user waits "5" seconds
         Then The "SeleniumCollection" Collection has the following Categories:
             | Category              |
             | Birchum Bounty Hunter |
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
+        And The user waits "3" seconds
         When The user removes the "Birchum Bounty Hunter" Category from the "SeleniumCollection" Collection
+         And The user waits "3" seconds
         When The user removes the "Birchum Big Foot" Category from the "SeleniumCollection" Collection
+         And The user waits "3" seconds
         When The user removes the "Birchum Pop Warner" Category from the "SeleniumCollection" Collection
+         And The user waits "3" seconds
         Then The following Categories are shown:
-            | Category              |
-            | Birchum Bounty Hunter |
-            | Birchum Big Foot      |
-            | Birchum Pop Warner    |
+            | Field Name            | Value |
+            | Birchum Bounty Hunter | 1     |
+            | Birchum Big Foot      | 1     |
+            | Birchum Pop Warner    | 1     |
         And The user waits "10" seconds
 
 
