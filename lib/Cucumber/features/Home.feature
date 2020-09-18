@@ -68,11 +68,11 @@ Feature: Interact with Home tab
             | Birchum Pop Warner    |
         And The user waits "3" seconds
         When The user removes the "Birchum Bounty Hunter" Category from the "SeleniumCollection" Collection
-         And The user waits "3" seconds
+        And The user waits "3" seconds
         When The user removes the "Birchum Big Foot" Category from the "SeleniumCollection" Collection
-         And The user waits "3" seconds
+        And The user waits "3" seconds
         When The user removes the "Birchum Pop Warner" Category from the "SeleniumCollection" Collection
-         And The user waits "3" seconds
+        And The user waits "3" seconds
         Then The following Categories are shown:
             | Field Name            | Value |
             | Birchum Bounty Hunter | 1     |
@@ -83,7 +83,50 @@ Feature: Interact with Home tab
 
     @HomeFilterByCategory
     Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Home" Tab
+        When The user selects the following Categories' checkboxes:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user clicks the "Filter" button
+        And The user waits "3" seconds
+        Then The user switches to the "Test" Tab
+        Then The form matches the following values:
+            | Field Name          | Value          |
+            | Rating              | 0 / 0          |
+            | Card Number         | STARTER        |
+            | Questions To Review | 0              |
+            | Points              | 0              |
+            | Question            | starterMessage |
+        And The user waits "3" seconds
+        And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "3" seconds
+        And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "3" seconds
+        And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "3" seconds
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | 3     |
+
 
     @HomeFilterByCollection
     Scenario: On the Home tab the User creates a new Collection
