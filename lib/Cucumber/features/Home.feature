@@ -16,7 +16,7 @@ Feature: Interact with Home tab
             | Field Name  | Value              |
             | Collections | SeleniumCollection |
 
-    @HomeAddCategoryToCollection
+    @HomeDragNDrop_CategoryToCollection
     Scenario: On the Home tab the User creates a new Collection
         . This will create a new Collection locally but until
         . a category is saved to it a Collection is just an empty vessle
@@ -48,11 +48,33 @@ Feature: Interact with Home tab
 
 
     @HomeRemoveCategoryFromCollection
+    @HomeAddCategoriesByCheckboxes
     Scenario: On the Home tab the User creates a new Collection
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
-        
+        When The user selects the following Categories' checkboxes:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user creates a new Collection named: "SeleniumCollection"
+        Then The "SeleniumCollection" Collection has the following Categories:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        When The user removes the "Birchum Bounty Hunter" Category from the "SeleniumCollection" Collection
+        When The user removes the "Birchum Big Foot" Category from the "SeleniumCollection" Collection
+        When The user removes the "Birchum Pop Warner" Category from the "SeleniumCollection" Collection
+        Then The following Categories are shown:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "10" seconds
+
+
     @HomeFilterByCategory
     Scenario: On the Home tab the User creates a new Collection
         When The client logs in as a test User
