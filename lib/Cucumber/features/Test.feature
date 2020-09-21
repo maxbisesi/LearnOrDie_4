@@ -19,22 +19,22 @@ Feature: Interact with the Test Tab
         Then The form matches the following values:
             | Field Name | Value |
             | Points     | 1     |
-        When The user clicks the "Nailed it" button "4" times
+        When The user clicks the "Nailed it" button 4 times
         Then The form matches the following values:
             | Field Name | Value |
             | Points     | 14    |
-        When The user clicks the "Nailed it" button "4" times
+        When The user clicks the "Nailed it" button 5 times
         Then The form matches the following values:
             | Field Name | Value |
             | Points     | 74    |
-        When The user clicks the "Nailed it" button "21" times
-        Then The form matches the following values:
-            | Field Name | Value |
-            | Points     | 504   |
-        And The user clicks the "Nailed it" button
+        When The user clicks the "Nailed it" button 21 times
         Then The form matches the following values:
             | Field Name | Value |
             | Points     | 554   |
+        And The user clicks the "Nailed it" button
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | 604   |
 
     @TestMissedIt
     Scenario: Clicking Missed it updates the Points and changes to the next Card, changing Card,Category and Answer.
