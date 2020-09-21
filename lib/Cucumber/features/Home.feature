@@ -92,7 +92,7 @@ Feature: Interact with Home tab
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
         And The user clicks the "Filter" button
-        And The user waits "3" seconds
+        And The user waits "2" seconds
         Then The user switches to the "Test" Tab
         Then The form matches the following values:
             | Field Name          | Value          |
@@ -101,7 +101,7 @@ Feature: Interact with Home tab
             | Questions To Review | 0              |
             | Points              | 0              |
             | Question            | starterMessage |
-        And The user waits "3" seconds
+        And The user waits "2" seconds
         And The user clicks the "Nailed it" button
         Then The "Category" field value is one of the following:
             | Values                |
@@ -191,13 +191,126 @@ Feature: Interact with Home tab
         When The user removes the "Birchum Pop Warner" Category from the "CollectionFilterTest" Collection
         And The user waits "5" seconds
 
-    @HomeFilterByMultipleCategories
-    Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
-
     @HomeFilterByMultipleCollections
-    Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
+    Scenario: On the Home tab the user filters by two collections and a cateogry
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Home" Tab
+        When The user selects the following Categories' checkboxes:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "2" seconds
+        And The user creates a new Collection named: "CollectionFilterTest"
+        Then The "CollectionFilterTest" Collection has the following Categories:
+            | Category              |
+            | Birchum Bounty Hunter |
+            | Birchum Big Foot      |
+            | Birchum Pop Warner    |
+        And The user waits "2" seconds
+        When The user selects the following Categories' checkboxes:
+            | Category               |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+        And The user creates a new Collection named: "BirchumGreatestHits"
+        Then The "BirchumGreatestHits" Collection has the following Categories:
+            | Category               |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+        When The user selects the following Collections' checkboxes:
+            | Collection           |
+            | BirchumGreatestHits  |
+            | CollectionFilterTest |
+        And The user clicks the "Filter" button
+        And The user switches to the "Test" Tab
+        Then The form matches the following values:
+            | Field Name          | Value          |
+            | Rating              | 0 / 0          |
+            | Card Number         | STARTER        |
+            | Questions To Review | 0              |
+            | Points              | 0              |
+            | Question            | starterMessage |
+        And The user waits "2" seconds
+        And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                 |
+            | Birchum Bounty Hunter  |
+            | Birchum Big Foot       |
+            | Birchum Pop Warner     |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+        And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                 |
+            | Birchum Bounty Hunter  |
+            | Birchum Big Foot       |
+            | Birchum Pop Warner     |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+        And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                 |
+            | Birchum Bounty Hunter  |
+            | Birchum Big Foot       |
+            | Birchum Pop Warner     |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+         And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                 |
+            | Birchum Bounty Hunter  |
+            | Birchum Big Foot       |
+            | Birchum Pop Warner     |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+         And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                 |
+            | Birchum Bounty Hunter  |
+            | Birchum Big Foot       |
+            | Birchum Pop Warner     |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+         And The user clicks the "Nailed it" button
+        Then The "Category" field value is one of the following:
+            | Values                 |
+            | Birchum Bounty Hunter  |
+            | Birchum Big Foot       |
+            | Birchum Pop Warner     |
+            | Shoulda Sent it Sooner |
+            | Birchum Security Guard |
+            | Birchum Lost Leg       |
+        And The user waits "2" seconds
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | 24     |
+        And The user switches to the "Home" Tab
+        When The user removes the "Birchum Bounty Hunter" Category from the "CollectionFilterTest" Collection
+        And The user waits "1" seconds
+        When The user removes the "Birchum Big Foot" Category from the "CollectionFilterTest" Collection
+        And The user waits "1" seconds
+        When The user removes the "Birchum Pop Warner" Category from the "CollectionFilterTest" Collection
+        And The user waits "1" seconds
+        When The user removes the "Shoulda Sent it Sooner" Category from the "BirchumGreatestHits" Collection
+        And The user waits "1" seconds
+        When The user removes the "Birchum Security Guard" Category from the "BirchumGreatestHits" Collection
+        And The user waits "1" seconds
+        When The user removes the "Birchum Lost Leg" Category from the "BirchumGreatestHits" Collection
 
     @HomeFilterByCategoryAndCollection
     Scenario: On the Home tab the User creates a new Collection
