@@ -145,11 +145,11 @@ Feature: Interact with Home tab
             | Birchum Bounty Hunter |
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
-        And The user waits "3" seconds
+        And The user waits "2" seconds
         When The user selects the following Collections' checkboxes:
             | Collection           |
             | CollectionFilterTest |
-        And The user clicks the "Filter" button 
+        And The user clicks the "Filter" button
         And The user switches to the "Test" Tab
         Then The form matches the following values:
             | Field Name          | Value          |
@@ -158,31 +158,37 @@ Feature: Interact with Home tab
             | Questions To Review | 0              |
             | Points              | 0              |
             | Question            | starterMessage |
-        And The user waits "3" seconds
+        And The user waits "2" seconds
         And The user clicks the "Nailed it" button
         Then The "Category" field value is one of the following:
             | Values                |
             | Birchum Bounty Hunter |
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
-        And The user waits "3" seconds
+        And The user waits "2" seconds
         And The user clicks the "Nailed it" button
         Then The "Category" field value is one of the following:
             | Values                |
             | Birchum Bounty Hunter |
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
-        And The user waits "3" seconds
+        And The user waits "2" seconds
         And The user clicks the "Nailed it" button
         Then The "Category" field value is one of the following:
             | Values                |
             | Birchum Bounty Hunter |
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
-        And The user waits "3" seconds
+        And The user waits "2" seconds
         Then The form matches the following values:
             | Field Name | Value |
             | Points     | 3     |
+        And The user switches to the "Home" Tab
+        When The user removes the "Birchum Bounty Hunter" Category from the "SeleniumCollection" Collection
+        And The user waits "1" seconds
+        When The user removes the "Birchum Big Foot" Category from the "SeleniumCollection" Collection
+        And The user waits "1" seconds
+        When The user removes the "Birchum Pop Warner" Category from the "SeleniumCollection" Collection
 
 
     @HomeFilterByMultipleCategories
