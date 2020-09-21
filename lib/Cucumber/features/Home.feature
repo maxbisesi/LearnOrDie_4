@@ -320,10 +320,6 @@ Feature: Interact with Home tab
     Scenario: On the Home tab the User creates a new Collection
         When The client logs in as a test User
 
-    @HomeDeleteCollection
-    Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
-
     @HomeRemoveFilter
     Scenario: On the Home tab the User creates a new Collection
         When The client logs in as a test User
