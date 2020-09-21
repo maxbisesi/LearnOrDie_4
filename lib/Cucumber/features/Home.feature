@@ -184,12 +184,12 @@ Feature: Interact with Home tab
             | Field Name | Value |
             | Points     | 3     |
         And The user switches to the "Home" Tab
-        When The user removes the "Birchum Bounty Hunter" Category from the "SeleniumCollection" Collection
+        When The user removes the "Birchum Bounty Hunter" Category from the "CollectionFilterTest" Collection
         And The user waits "1" seconds
-        When The user removes the "Birchum Big Foot" Category from the "SeleniumCollection" Collection
+        When The user removes the "Birchum Big Foot" Category from the "CollectionFilterTest" Collection
         And The user waits "1" seconds
-        When The user removes the "Birchum Pop Warner" Category from the "SeleniumCollection" Collection
-
+        When The user removes the "Birchum Pop Warner" Category from the "CollectionFilterTest" Collection
+        And The user waits "5" seconds
 
     @HomeFilterByMultipleCategories
     Scenario: On the Home tab the User creates a new Collection
