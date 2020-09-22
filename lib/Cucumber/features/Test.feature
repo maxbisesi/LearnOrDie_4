@@ -7,7 +7,7 @@ Feature: Interact with the Test Tab
     Points should update as intended.
 
     @TestNailedIt
-    Scenario: Clicking Nailed it updates the Points and changes to the next Card, changing Card,Category and Answer.
+    Scenario: Clicking Nailed it updates the Points and changes to the next Card changing the Points.
         . Streak < five = streak 1, + 1
         . Streak >= 5 and currentStreak < 10 = streak 2, + 10
         . Streak > 10 and < 30 = streak 3, + 20
@@ -38,6 +38,25 @@ Feature: Interact with the Test Tab
 
     @TestMissedIt
     Scenario: Clicking Missed it updates the Points and changes to the next Card, changing Card,Category and Answer.
+        . Rut <= 5 && currentRut > 0  -= 10;
+        . Rut > 5 && currentRut <= 10  -= 20;
+        . Rut > 10 && currentRut <= 15 -= 50;
+        . Rut > 15 -= 150;
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Test" Tab
+        When The user clicks the "Missed it" button 5 times
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | -50   |
+        When The user clicks the "Missed it" button 5 times
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | -150   |
+        When The user clicks the "Missed it" button 5 times
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | -400   |
 
     @TestNoShowUpdateCard
     Scenario: The user cannot update a card without showing the answer first
