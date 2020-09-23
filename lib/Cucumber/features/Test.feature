@@ -52,14 +52,21 @@ Feature: Interact with the Test Tab
         When The user clicks the "Missed it" button 5 times
         Then The form matches the following values:
             | Field Name | Value |
-            | Points     | -150   |
+            | Points     | -150  |
         When The user clicks the "Missed it" button 5 times
         Then The form matches the following values:
             | Field Name | Value |
-            | Points     | -400   |
+            | Points     | -400  |
 
     @TestNoShowUpdateCard
     Scenario: The user cannot update a card without showing the answer first
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Test" Tab
+        When The user clicks the "Nailed it" button 3 times
+        And The user clicks the "Update" button
+        And The user waits "2" seconds
+        Then The "Make a change first..." alert message is shown
 
     @TestUpdateCard
     Scenario: The user can update a card they own

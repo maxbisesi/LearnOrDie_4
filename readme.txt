@@ -173,6 +173,13 @@ Images
 Test Cases
 =============
 () - Can chum card as guest or user. Guest cards save in store, User cards go to DB and Store
+() - All selenium tests need to also be done for guests
+
+() - The category must be one of the following... need to exclude a category after a positive test,
+  otherwise you get false positives.
+
+() - Move api tests to Jest
+
 
 
 Profiles
