@@ -68,9 +68,6 @@ Feature: Interact with the Test Tab
         And The user waits "2" seconds
         Then The "Make a change first..." alert message is shown
 
-
-
-
     @TestUpdateCard
     Scenario: The user can update a card they own
 
