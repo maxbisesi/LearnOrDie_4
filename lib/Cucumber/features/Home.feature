@@ -322,7 +322,7 @@ Feature: Interact with Home tab
             | Birchum Bounty Hunter |
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
-        And The user waits "2" seconds
+        And The user waits "1" seconds
         And The user creates a new Collection named: "CollectionCategoryFilterTest"
         Then The "CollectionCategoryFilterTest" Collection has the following Categories:
             | Category              |
@@ -330,8 +330,10 @@ Feature: Interact with Home tab
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
         When The user selects the following Categories' checkboxes:
-            | Category       |
-            | randomCategory |
+            | Category                     |
+            | CollectionCategoryFilterTest |
+            | randomCategory               |
+        And The user waits "1" seconds
         And The user clicks the "Filter" button
         And The user switches to the "Test" Tab
         Then The form matches the following values:
@@ -348,7 +350,7 @@ Feature: Interact with Home tab
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
             | randomCategory        |
-        And The user waits "2" seconds
+        And The user waits "1" seconds
         And The user clicks the "Nailed it" button
         Then The "Category" field value is one of the following:
             | Values                |
@@ -356,7 +358,7 @@ Feature: Interact with Home tab
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
             | randomCategory        |
-        And The user waits "2" seconds
+        And The user waits "1" seconds
         And The user clicks the "Nailed it" button
         Then The "Category" field value is one of the following:
             | Values                |
@@ -364,7 +366,7 @@ Feature: Interact with Home tab
             | Birchum Big Foot      |
             | Birchum Pop Warner    |
             | randomCategory        |
-        And The user waits "2" seconds
+        And The user waits "1" seconds
         And The user clicks the "Nailed it" button
         Then The "Category" field value is one of the following:
             | Values                |
@@ -378,7 +380,6 @@ Feature: Interact with Home tab
         When The user removes the "Birchum Big Foot" Category from the "CollectionCategoryFilterTest" Collection
         And The user waits "1" seconds
         When The user removes the "Birchum Pop Warner" Category from the "CollectionCategoryFilterTest" Collection
-        And The user waits "2" seconds
 
     @HomeDeleteCategory
     Scenario: On the Home tab the User creates a new Collection
