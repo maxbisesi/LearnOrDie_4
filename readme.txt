@@ -200,6 +200,10 @@ Profiles
   lockedBirthStars: [],
   bosses: []
 
+  Edge Cases:
+
+  What happens if you filter by a category then delete that category ? 
+
 
 
 

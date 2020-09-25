@@ -383,7 +383,10 @@ Feature: Interact with Home tab
 
     @HomeDeleteCategory
     Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
+        When The user navigates to FlashCardShark
+        When The user queries for a FlashCard with the following properties:
+            | Field    | Operator | Value                |
+            | category | =        | Birchums war stories |
 
     @HomeRemoveFilter
     Scenario: On the Home tab the User creates a new Collection
