@@ -382,8 +382,47 @@ Feature: Interact with Home tab
         When The user removes the "Birchum Pop Warner" Category from the "CollectionCategoryFilterTest" Collection
 
     @HomeDeleteCategory
-    Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
+    Scenario: On the Home tab the User deletes an entire collection of Cards
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Chum" Tab
+        And The user fills the form with the following values:
+            | Field Name | Value                   |
+            | Card       | Delete Category Test 01 |
+            | Answer     | It works                |
+            | Category   | DeleteCategoryTest      |
+        And The user clicks the "Submit" button
+        And The user waits "2" seconds
+        And The user fills the form with the following values:
+            | Field Name | Value                   |
+            | Card       | Delete Category Test 02 |
+            | Answer     | It works                |
+        And The user clicks the "Submit" button
+        And The user waits "2" seconds
+        And The user fills the form with the following values:
+            | Field Name | Value                   |
+            | Card       | Delete Category Test 03 |
+            | Answer     | It works                |
+        And The user clicks the "Submit" button
+        And The user waits "2" seconds
+        And The user switches to the "Home" Tab
+        Then The following Categories are shown:
+            | Field Name         | Value |
+            | DeleteCategoryTest | 3     |
+        When The user selects the following Categories' checkboxes:
+            | Category           |
+            | DeleteCategoryTest |
+        And The user clicks the "Delete" button
+        And The user waits "1" seconds
+        Then The "Are you sure you want to permenantly delete all the questions in these categories ?" alert message is shown
+        And The user waits "5" seconds
+        Then The following Categories are shown:
+            | Field Name         | Value |
+            | DeleteCategoryTest | 0     |
+        When The user queries for a FlashCard with the following properties:
+            | Field    | Operator | Value              |
+            | category | =        | DeleteCategoryTest |
+        Then No "FlashCard" records were found
 
     @HomeRemoveFilter
     Scenario: On the Home tab the User creates a new Collection

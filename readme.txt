@@ -111,25 +111,6 @@ Utils
 ------
 () - test cases for bs and rank.
 
-DEFECTS
-========
- () - points animation plays when updating
-  () - something weird with math module, using unicode in answer
- (*) - reset auto inc ids after tests, to not greatly throw off id numbers.
- (*) - Usersession saving
- (*) - POINTS
- () - CAN STILL USE KEYBOARD without loggin in 
- () - User logs in as guest
- () - Harpoonist badge
- () - key in galley questions
- () - Make sure they know when they are deleting the last cards from a Set
- () - user with no cards, error in galley
- () - re dump DB before sending to production. 
- () - Rating undefined, Id not updating in Test tab
- (*) - Filter without selecting categories causes error
- (*) - Maintain sessions redux-persist.
- () - When renaming categories, all categories are displayed outside of collections.
-
  () - Category size inaccurate 
 
  () - Randomization algorithm throws off 'Next' sequence because there is a chance the 
@@ -137,25 +118,6 @@ DEFECTS
       The smaller the size of the filtered cards the greater chance of this happening.
 (*) - With new persistance feature, token is not created becuase it is only created in login method.
       So all future requests will fail after persisting. WAS happening when server restarts.
-
-  New Features Needed
-  --------------------
-  () - Unit testing on expressApp
-  () - Animations
-  () - Logger
-  () - Sessions  
-  () - Key listeners
-  () - Backups to Azure.
-  () - Logout !
-  () - Notes
-  () - track changes by users, git style
-  () - Give option to access general categories when registering
-  () - Animation when filter gets set. 
-  () - Newly added categories to collections don't show up when filtering
-  () - Move Categories out of collections. 
-  () - filter categories from collections 
-  () - Shark graphic on loading screen.
-  () - Back to login button on registration
 
 Collections and Categories
 --------------------------
@@ -168,18 +130,6 @@ Images
 --------
 () - Can add them through chum, only predefined images though. Guest users too.
 () - Can see them on question through test.
-
-
-Test Cases
-=============
-() - Can chum card as guest or user. Guest cards save in store, User cards go to DB and Store
-() - All selenium tests need to also be done for guests
-
-() - The category must be one of the following... need to exclude a category after a positive test,
-  otherwise you get false positives.
-
-() - Move api tests to Jest
-
 
 
 Profiles
@@ -199,6 +149,80 @@ Profiles
   lockedSecondWeapons: [],
   lockedBirthStars: [],
   bosses: []
+
+  Test Cases
+  ===========
+  () - Can chum card as guest or user. Guest cards save in store, User cards go to DB and Store
+  () - All selenium tests need to also be done for guests
+
+  () - The category must be one of the following... need to exclude a category after a positive test,
+    otherwise you get false positives.
+
+  () - Move api tests to Jest
+
+  Defects:
+  =============
+  () - points animation plays when updating
+  () - something weird with math module, using unicode in answer
+  (*) - reset auto inc ids after tests, to not greatly throw off id numbers.
+  (*) - Usersession saving
+  (*) - POINTS
+  () - CAN STILL USE KEYBOARD without logging in 
+  () - User logs in as guest
+  () - Harpoonist badge
+  () - key in galley questions
+  () - Make sure they know when they are deleting the last cards from a Set
+  () - user with no cards, error in galley
+  () - re dump DB before sending to production. 
+  () - Rating undefined, Id not updating in Test tab
+  (*) - Filter without selecting categories causes error
+  (*) - Maintain sessions redux-persist.
+  () - When renaming categories, all categories are displayed outside of collections.
+
+  Edge Cases:
+  =============
+  () - What happens if you filter by a category then delete that category ? 
+  
+      Not a problem. The card gets deleted in 
+      the DB, but it stays in memory, it just gets a new property
+      that says 'DELETED'
+      
+  () - What happens if you delete a card by card_id that doesn't exist in the DB ? :
+       router.post('/deleteCards', async (req,res) => {
+        const ids = req.body.cardids;
+        logger(`...      Deleting cards: ${ids}`);
+        let delTestCard;
+        for(let i = 0; i < ids.length; i++) {
+          delTestCard = await dataDAO.runQuery(`DELETE FROM FlashCards WHERE card_id = ?`,[ids[i]]);
+          if(delTestCard.affectedRows === 1) {
+            logger(`  ... deleted card_id: ${ids[i]}`);
+          } else { 
+            // Not always the case what if they delete a card that doesn't exist in the DB ? 
+            logger(`...   /deleteCards, Error deleting: ${ids}`);
+            res.status(500).send('Internal Server Error');
+          }
+        }
+        res.status(200).send('OK'); 
+      });
+
+
+    New Features Needed
+    --------------------
+    () - Animations
+    () - Logger
+    () - Sessions  
+    () - Key listeners
+    () - Backups to Azure.
+    () - Logout !
+    () - Notes
+    () - track changes by users, git style
+    () - Give option to access general categories when registering
+    () - Newly added categories to collections don't show up when filtering
+    () - Move Categories out of collections. 
+    () - filter categories from collections 
+    () - Shark graphic on loading screen.
+    () - Back to login button on registration
+
 
 
 
