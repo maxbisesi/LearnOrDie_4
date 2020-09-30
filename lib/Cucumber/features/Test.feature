@@ -76,9 +76,10 @@ Feature: Interact with the Test Tab
         When The user clicks the "Nailed it" button 5 times
         And The user clicks the "Show" button
         And The user fills the form with the following values:
-            | Field Name | Value         |
-            | Card       | random:Card   |
-            | Answer     | random:Answer |
+            | Field Name | Value        |
+            | Card       | randomCard   |
+            | Answer     | randomAnswer |
+        And The user clicks the "Update" button
 
 
     @TestPreviousCard
