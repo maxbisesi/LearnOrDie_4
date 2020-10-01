@@ -84,10 +84,12 @@ Feature: Interact with the Test Tab
         When The user queries for a FlashCard with the following properties:
             | Field  | Operator | Value        |
             | card   | =        | randomCard   |
-            #| answer | =        | randomAnswer |
+            | answer | =        | randomAnswer |
         Then The queried for "FlashCard" has the following values:
-            | Field Name | Value           |
+            | Field Name | Value            |
             | card_id    | testData:card_id |
+            | card       | randomCard       |
+            | answer     | randomAnswer     |
 
 
     @TestPreviousCard
