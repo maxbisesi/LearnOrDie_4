@@ -70,6 +70,27 @@ Feature: Interact with the Test Tab
 
     @TestUpdateCard
     Scenario: The user can update a card they own
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Test" Tab
+        When The user clicks the "Nailed it" button 5 times
+        And The user saves the "Card Number" field as "card_id"
+        And The user clicks the "Show" button
+        And The user fills the form with the following values:
+            | Field Name | Value        |
+            | Card       | randomCard   |
+            | Answer     | randomAnswer |
+        And The user clicks the "Update" button
+        When The user queries for a FlashCard with the following properties:
+            | Field  | Operator | Value        |
+            | card   | =        | randomCard   |
+            | answer | =        | randomAnswer |
+        Then The queried for "FlashCard" has the following values:
+            | Field Name | Value            |
+            | card_id    | testData:card_id |
+            | card       | randomCard       |
+            | answer     | randomAnswer     |
+
 
     @TestPreviousCard
     Scenario: The user can go back to the previous Card, with no effect on points.
