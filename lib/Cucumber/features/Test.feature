@@ -94,6 +94,29 @@ Feature: Interact with the Test Tab
 
     @TestPreviousCard
     Scenario: The user can go back to the previous Card, with no effect on points.
+        . But if they just saw that card, they don't get anymore points
+        . Move forward randomly move back randomly
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Test" Tab
+        When The user clicks the "Nailed it" button
+        And The user saves the "Card Number" field as "card_id_one"
+        When The user clicks the "Nailed it" button
+        And The user saves the "Card Number" field as "card_id_two"
+        When The user clicks the "Nailed it" button
+        And The user saves the "Card Number" field as "card_id_three"
+        When The user clicks the "Nailed it" button
+        And The user saves the "Card Number" field as "card_id_four"
+        When The user clicks the "Nailed it" button
+        And The user saves the "Card Number" field as "card_id_five"
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | 14    |
+        When The user clicks the "Previous" button
+        Then The form matches the following values:
+            | Field Name  | Value                 |
+            | Points      | 14                    |
+            | Card Number | testData:card_id_four |
 
     @TestSaveForReview
     Scenario: The user can save a card for later, Clicking 'Come back..' goes to the next card.
