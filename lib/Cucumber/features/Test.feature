@@ -134,18 +134,85 @@ Feature: Interact with the Test Tab
             | Card Number | testData:card_id_one |
 
     @TestSaveForReview
-    Scenario: The user can save a card for later, Clicking 'Come back..' goes to the next card.
-
-    @TestSaveForReview
-    Scenario: The user can review all cards saved for later, after all saved cards are reviewed, they resume the normal sequence of cards.
+    Scenario: The user can save a card for later, Clicking 'Come back..' saves the card clicking 'Review' goes to the next card.
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Test" Tab
+        When The user clicks the "Nailed it" button
+        And The user saves the "Card Number" field as "card_id_one"
+        And The user clicks the "Come back to this one!" button
+        Then The form matches the following values:
+            | Field Name          | Value |
+            | Questions To Review | 1     |
+        When The user clicks the "Nailed it" button
+        And The user clicks the "Come back to this one!" button
+        Then The form matches the following values:
+            | Field Name          | Value |
+            | Questions To Review | 2     |
+        And The user saves the "Card Number" field as "card_id_two"
+        When The user clicks the "Nailed it" button
+        And The user clicks the "Come back to this one!" button
+        Then The form matches the following values:
+            | Field Name          | Value |
+            | Questions To Review | 3     |
+        And The user saves the "Card Number" field as "card_id_three"
+        When The user clicks the "Nailed it" button
+        And The user clicks the "Come back to this one!" button
+        Then The form matches the following values:
+            | Field Name          | Value |
+            | Questions To Review | 4     |
+        And The user saves the "Card Number" field as "card_id_four"
+        When The user clicks the "Nailed it" button
+        And The user clicks the "Come back to this one!" button
+        Then The form matches the following values:
+            | Field Name          | Value |
+            | Questions To Review | 5     |
+            | Points              | 14    |
+        And The user saves the "Card Number" field as "card_id_five"
+        # Cards saved for review, Field matches now use the review feature
+        When The user clicks the "Review" button
+        Then The form matches the following values:
+            | Field Name          | Value                 |
+            | Questions To Review | 4                     |
+            | Card Number         | testData:card_id_five |
+        When The user clicks the "Review" button
+        Then The form matches the following values:
+            | Field Name          | Value                 |
+            | Questions To Review | 3                     |
+            | Card Number         | testData:card_id_four |
+        When The user clicks the "Review" button
+        Then The form matches the following values:
+            | Field Name          | Value                  |
+            | Questions To Review | 2                      |
+            | Card Number         | testData:card_id_three |
+        When The user clicks the "Review" button
+        Then The form matches the following values:
+            | Field Name          | Value                |
+            | Questions To Review | 1                    |
+            | Card Number         | testData:card_id_two |
+        When The user clicks the "Review" button
+        Then The form matches the following values:
+            | Field Name          | Value                |
+            | Questions To Review | 0                    |
+            | Card Number         | testData:card_id_one |
+        When The user clicks the "Nailed it" button
+        Then The form matches the following values:
+            | Field Name          | Value |
+            | Points              | 24    |
 
     @TestUserOnlySeesFilteredCards
     Scenario: If the user turns a filter on they only see cards in the filter,
-    .They keep seeing the filtered cards until the filter is removed.
-    .An indicator for the filter is shown.
+        .They keep seeing the filtered cards until the filter is removed.
+        .An indicator for the filter is shown.
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Test" Tab
 
     @TestUserStudiesCardSet
     Scenario: If the user studies a CardSet, they see only those cards until the Set is removed.
-.An indicator for the Set is shown.
+        .An indicator for the Set is shown.
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Test" Tab
 
 
