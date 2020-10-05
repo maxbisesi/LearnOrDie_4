@@ -117,6 +117,21 @@ Feature: Interact with the Test Tab
             | Field Name  | Value                 |
             | Points      | 14                    |
             | Card Number | testData:card_id_four |
+        When The user clicks the "Previous" button
+        Then The form matches the following values:
+            | Field Name  | Value                  |
+            | Points      | 14                     |
+            | Card Number | testData:card_id_three |
+        When The user clicks the "Previous" button
+        Then The form matches the following values:
+            | Field Name  | Value                |
+            | Points      | 14                   |
+            | Card Number | testData:card_id_two |
+        When The user clicks the "Previous" button
+        Then The form matches the following values:
+            | Field Name  | Value                |
+            | Points      | 14                   |
+            | Card Number | testData:card_id_one |
 
     @TestSaveForReview
     Scenario: The user can save a card for later, Clicking 'Come back..' goes to the next card.
