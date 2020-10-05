@@ -2,18 +2,20 @@
     border-bottom: 2px solid black;
     margin-bottom: 30px;
     top: 100px;
+    font-size: 20px;
 }
 
 .profile-settings-container { 
     position: absolute;
     top: 100px;
+    left: 750px;
 }
 
 .profile-modules-container {
     border: 1px solid black;
     margin: 2px 2px 2px 2px;
     padding-left: 10px;
-    display: block;
+    display: table;
     position: absolute;
     left: 5px;
 }
@@ -42,4 +44,36 @@
     border: solid black;
     width: 250px;
     height: 250px;
+}
+
+.modules-module {
+    display: table-cell;
+    padding-left: 5px;
+}
+
+.profile-tabs-label {
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    top: 80px;
+    font-size: 20px;
+}
+
+.profile-tabs-container {
+    border: 1px solid black;
+    margin: 2px 2px 2px 2px;
+    padding-left: 10px;
+    display: table;
+    position: absolute;
+    left: 5px;
+    top: 90px;
+}
+
+.profile-sortorder-container {
+    border: 1px solid black;
+    margin: 2px 2px 2px 2px;
+    padding-left: 10px;
+    display: table;
+    position: absolute;
+    left: 5px;
+    top: 150px;
 }
