@@ -78,3 +78,19 @@
     top:20px;
     z-index:3;
 }
+
+.studySet-indicator {
+    font-size: 13px;
+    color: pink;
+}
+
+.studySet-incator-container {
+    position: absolute;
+    border-style: solid;
+    border-width: thin;
+    right: 20px;
+    top:200px;
+    width:250px;
+    height: 320px;
+    z-index: 0;
+}

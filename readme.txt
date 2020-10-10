@@ -106,6 +106,7 @@ GALLEY
 (*) - DEFECT = Moving to next page de selects question
 () - Fix up confirm boxes with Custom dialogs or dailog library
 () - randomize study set
+() - Unstudy a set
 
 Utils
 ------
