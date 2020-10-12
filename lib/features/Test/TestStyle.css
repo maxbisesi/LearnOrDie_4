@@ -80,9 +80,19 @@
 }
 
 .studySet-indicator {
-    font-size: 13px;
-    color: pink;
-}
+    height: 50px;
+    background-color: rgb(50, 168, 153);
+    box-shadow: 5px 5px black;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    cursor: pointer;
+    position: relative;
+  }
 
 .studySet-incator-container {
     position: absolute;
@@ -94,3 +104,4 @@
     height: 320px;
     z-index: 0;
 }
+

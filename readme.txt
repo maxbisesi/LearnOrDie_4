@@ -107,6 +107,7 @@ GALLEY
 () - Fix up confirm boxes with Custom dialogs or dailog library
 () - randomize study set
 () - Unstudy a set
+() - in Galley, indicate when a Set is being studied
 
 Utils
 ------
