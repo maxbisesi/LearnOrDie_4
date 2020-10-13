@@ -93,6 +93,11 @@
   position: relative;
 }
 
+.cardset-beingstudied {
+  background-color: rgb(236, 233, 46);
+  border: 2px solid black;
+}
+
 .cardset-set:hover {
   height: 52px;
   background-color: black;
