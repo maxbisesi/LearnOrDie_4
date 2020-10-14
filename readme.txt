@@ -106,8 +106,8 @@ GALLEY
 (*) - DEFECT = Moving to next page de selects question
 () - Fix up confirm boxes with Custom dialogs or dailog library
 () - randomize study set
-() - Unstudy a set
-() - in Galley, indicate when a Set is being studied
+(*) - Unstudy a set
+(*) - in Galley, indicate when a Set is being studied
 
 Utils
 ------
