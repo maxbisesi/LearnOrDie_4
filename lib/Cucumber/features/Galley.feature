@@ -20,7 +20,12 @@ Feature: Current users can interact with the Galley tab to
             | Is this the mailroom ? (Shoulda Sent it Sooner)    |
             | You guys hiring ? (Birchum Security Guard)         |
             | What was your dad doing slinging hash state side ? |
-        And The user waits "10" seconds
+        And The user clicks the "Save to Set" button
+        And The user fills the form with the following values:
+            | Field Name    | Value                                   |
+            | Card Set Name | BirchumCardSet                          |
+            | Description   | Leeches the size of frisbees on my neck |
+        And The user clicks the "Save" button
 
     Scenario: I can create new CardSet
     Scenario: I can edit a Card From Galley
