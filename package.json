@@ -58,7 +58,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-register": "^6.26.0",
-    "chromedriver": "^84.0.1",
+    "chromedriver": "^86.0.0",
     "css-loader": "^3.2.1",
     "cucumber": "^6.0.5",
     "dotenv-cli": "^3.2.0",
@@ -126,6 +126,7 @@
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "uuid": "^8.3.0",
+    "webdriver-manager": "^12.1.7",
     "webpack": "^4.41.2"
   }
 }
