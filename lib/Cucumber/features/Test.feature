@@ -200,11 +200,5 @@ Feature: Interact with the Test Tab
             | Field Name          | Value |
             | Points              | 24    |
 
-    @TestUserStudiesCardSet
-    Scenario: If the user studies a CardSet, they see only those cards until the Set is removed.
-        .An indicator for the Set is shown.
-        When The user navigates to FlashCardShark
-        And The user logs in as: "QATestUser"
-        And The user switches to the "Test" Tab
 
 
