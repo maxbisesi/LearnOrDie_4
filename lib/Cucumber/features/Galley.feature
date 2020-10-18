@@ -34,6 +34,9 @@ Feature: Current users can interact with the Galley tab to
         Then The form matches the following values:
             | Field Name | Value |
             | Points     | 0     |
+        Then The following Card Set Indicators are shown:
+            | Set Name        | Set Size | Description                              |
+            | BirchumCardSet  | 3        | Leeches the size of frisbees on my neck  |
 
 
     Scenario: I can create new CardSet
