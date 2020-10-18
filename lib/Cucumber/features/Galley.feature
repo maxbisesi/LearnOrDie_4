@@ -30,7 +30,11 @@ Feature: Current users can interact with the Galley tab to
             | Description   | Leeches the size of frisbees on my neck |
         And The user clicks the "Save" button
         And The user clicks the "BirchumCardSet" Card Set
-        And The user waits "5" seconds
+        And The user studies the "BirchumCardSet" Card Set
+        Then The form matches the following values:
+            | Field Name | Value |
+            | Points     | 0     |
+
 
     Scenario: I can create new CardSet
     Scenario: I can edit a Card From Galley
