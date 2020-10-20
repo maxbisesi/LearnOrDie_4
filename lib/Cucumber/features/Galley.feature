@@ -40,15 +40,12 @@ Feature: Current users can interact with the Galley tab to
         And The user switches to the "Galley" Tab
         And The user deletes the "BirchumCardSet" Card Set
 
-
-    Scenario: I can create new CardSet
     Scenario: I can edit a Card From Galley
     Scenario: I can search for a Card in the Galley
 
-    Scenario: The user deletes a CardSet
+
 
     Scenario: The user can edit a CardSet
-
     Scenario: I can share a CardSet
     Scenario: I can page through all my Cards
     Scenario: I can delete a FlashCard
