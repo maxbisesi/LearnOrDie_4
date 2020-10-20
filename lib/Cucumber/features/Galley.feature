@@ -6,8 +6,9 @@ Feature: Current users can interact with the Galley tab to
     . Delete a Card
     . Counter shows all Clicked Cards.
 
-    @TestUserStudiesCardSet
-    @TestUserCreatesaCardSet
+    @StudyCardSet
+    @CreatesaCardSet
+    @DeleteCardSet
     Scenario: The user creates a CardSet then loads it for studying
         . If the user studies a CardSet, they see only those cards until the Set is removed.
         . An indicator for the Set is shown.
@@ -29,7 +30,6 @@ Feature: Current users can interact with the Galley tab to
             | Card Set Name | BirchumCardSet                          |
             | Description   | Leeches the size of frisbees on my neck |
         And The user clicks the "Save" button
-        And The user clicks the "BirchumCardSet" Card Set
         And The user studies the "BirchumCardSet" Card Set
         Then The form matches the following values:
             | Field Name | Value |
@@ -37,6 +37,8 @@ Feature: Current users can interact with the Galley tab to
         Then The following Card Set Indicators are shown:
             | Set Name        | Set Size | Description                              |
             | BirchumCardSet  | 3        | Leeches the size of frisbees on my neck  |
+        And The user switches to the "Galley" Tab
+        And The user deletes the "BirchumCardSet" Card Set
 
 
     Scenario: I can create new CardSet
