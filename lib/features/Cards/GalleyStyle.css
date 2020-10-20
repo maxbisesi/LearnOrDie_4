@@ -206,7 +206,7 @@
   animation-name: showModal;
   animation-iteration-count: 1;
   animation-direction: normal;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes showModal {
@@ -254,13 +254,31 @@ margin: 30px 70px 30px;
 border: 1px solid black;
 width: 60%;
 padding: 30px;
-height: 240px;
+height: 500px;
 right: 300px;
 position: absolute;
 animation-name: showModal;
 animation-iteration-count: 1;
 animation-direction: normal;
-animation-duration: 2s;
+animation-duration: 1s;
+}
+
+.editcardmodal-card {
+    resize: none;
+    font-size: 13px;
+    height: 200px;
+    width: 600px;
+    outline: none;
+    display: inline-block;
+}
+
+.editcardmodal-answer {
+    resize: none;
+    font-size: 13px;
+    height: 200px;
+    width: 600px;
+    outline: none;
+    display: inline-block;
 }
 
 /* ================================================================= */
