@@ -281,4 +281,11 @@ animation-duration: 1s;
     display: inline-block;
 }
 
+.editcardmodal-selectionId {
+  color: pink;
+  text-decoration: bold;
+  font-size: 14px;
+  padding: 1px 1px 1px 1px;
+}
+
 /* ================================================================= */
