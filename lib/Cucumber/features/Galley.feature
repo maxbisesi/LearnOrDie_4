@@ -35,12 +35,32 @@ Feature: Current users can interact with the Galley tab to
             | Field Name | Value |
             | Points     | 0     |
         Then The following Card Set Indicators are shown:
-            | Set Name        | Set Size | Description                              |
-            | BirchumCardSet  | 3        | Leeches the size of frisbees on my neck  |
+            | Set Name       | Set Size | Description                             |
+            | BirchumCardSet | 3        | Leeches the size of frisbees on my neck |
         And The user switches to the "Galley" Tab
         And The user deletes the "BirchumCardSet" Card Set
 
     Scenario: I can edit a Card From Galley
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Galley" Tab
+        And The user selects the following question cards:
+            | Question                                           |
+            | Is this the mailroom ? (Shoulda Sent it Sooner)    |
+            | You guys hiring ? (Birchum Security Guard)         |
+            | What was your dad doing slinging hash state side ? |
+        Then The form matches the following values:
+            | Field Name              | Value |
+            | Card Set size indicator | 3     |
+        And I click the "Edit Card" button
+        # Edit Cards in order clicked ? 
+        Then The form matches the following values:
+            | Field Name          | Value |
+            | Edit Card: Question | 3     |
+            | Edit Card: Answer   | 3     |
+            | Edit Card: Category | 3     |
+            | Edit Card: Question | 3     |
+            | Edit Card: card_id indicator | |
     Scenario: I can search for a Card in the Galley
 
 
