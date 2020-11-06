@@ -40,8 +40,8 @@ Feature: Current users can interact with the Galley tab to
         And The user switches to the "Galley" Tab
         And The user deletes the "BirchumCardSet" Card Set
 
-    @EditCardGalley
-    Scenario: I can edit a Card From Galley, Clicked cards show correctly in the modal
+    @GalleyEditCardModal
+    Scenario: Edit Card Modal, Clicked cards show correctly in the modal
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
