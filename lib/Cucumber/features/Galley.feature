@@ -40,7 +40,8 @@ Feature: Current users can interact with the Galley tab to
         And The user switches to the "Galley" Tab
         And The user deletes the "BirchumCardSet" Card Set
 
-    Scenario: I can edit a Card From Galley
+    @EditCardGalley
+    Scenario: I can edit a Card From Galley, Clicked cards show correctly in the modal
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
@@ -52,15 +53,27 @@ Feature: Current users can interact with the Galley tab to
         Then The form matches the following values:
             | Field Name              | Value |
             | Card Set size indicator | 3     |
-        And I click the "Edit Card" button
-        # Edit Cards in order clicked ? 
+        And The user clicks the "Edit Card" button
+        # Edit Cards in order clicked ?
         Then The form matches the following values:
-            | Field Name          | Value |
-            | Edit Card: Question | 3     |
-            | Edit Card: Answer   | 3     |
-            | Edit Card: Category | 3     |
-            | Edit Card: Question | 3     |
-            | Edit Card: card_id indicator | |
+            | Field Name          | Value                  |
+            | Edit Card: Question | Is this the mailroom ? |
+            | Edit Card: Answer   | I'm not the mailroom ! |
+            | Edit Card: Category | Shoulda Sent it Sooner |
+        #| Edit Card: card_id indicator | |
+        And The user clicks the "Edit Card: Next" button
+        Then The form matches the following values:
+            | Field Name          | Value                  |
+            | Edit Card: Question | You guys hiring ?      |
+            | Edit Card: Answer   | wah wah wah            |
+            | Edit Card: Category | Birchum Security Guard |
+        And The user clicks the "Edit Card: Next" button
+        Then The form matches the following values:
+            | Field Name          | Value                                                           |
+            | Edit Card: Question | What was your dad doing slinging hash state side ?              |
+            | Edit Card: Answer   | Probably blew Bob Hope when he rolled into town on the USO show |
+            | Edit Card: Category | Birchum Lost Leg                                                |
+
     Scenario: I can search for a Card in the Galley
 
 
