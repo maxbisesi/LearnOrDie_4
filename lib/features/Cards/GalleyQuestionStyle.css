@@ -30,3 +30,9 @@
     opacity: .7;
     border: 1px solid rgb(0, 0, 0);
 }
+
+.galley-question-card_id {
+    color: black;
+    font-weight: bold;
+    font-size: 12;
+}

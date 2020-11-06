@@ -206,7 +206,7 @@
   animation-name: showModal;
   animation-iteration-count: 1;
   animation-direction: normal;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes showModal {
@@ -234,4 +234,58 @@
   display: block;
   border-radius: 8px;
 }
+/* ================================================================= */
+
+/* ========================== EDIT CARD MODAL ========================== */
+.editcard-modal {
+  /*display: none;  Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0,.4); 
+  background-size: cover;
+}
+
+.editcard-modalContent {
+background-color: rgb(3, 111, 252);
+margin: 30px 70px 30px;
+border: 1px solid black;
+width: 60%;
+padding: 30px;
+height: 500px;
+right: 300px;
+position: absolute;
+animation-name: showModal;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-duration: 1s;
+}
+
+.editcardmodal-card {
+    resize: none;
+    font-size: 13px;
+    height: 200px;
+    width: 600px;
+    outline: none;
+    display: inline-block;
+}
+
+.editcardmodal-answer {
+    resize: none;
+    font-size: 13px;
+    height: 200px;
+    width: 600px;
+    outline: none;
+    display: inline-block;
+}
+
+.editcardmodal-selectionId {
+  color: pink;
+  text-decoration: bold;
+  font-size: 14px;
+  padding: 1px 1px 1px 1px;
+}
+
 /* ================================================================= */
