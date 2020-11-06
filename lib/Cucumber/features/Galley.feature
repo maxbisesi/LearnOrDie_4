@@ -74,10 +74,31 @@ Feature: Current users can interact with the Galley tab to
             | Edit Card: Answer   | Probably blew Bob Hope when he rolled into town on the USO show |
             | Edit Card: Category | Birchum Lost Leg                                                |
 
+    @EditRandomCard
+    Scenario: Editing a card correctly updates its representation in the DB
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Galley" Tab
+        And The user clicks a random question card
+        And The user clicks the "Edit Card" button
+        And The user fills the form with the following values:
+            | Field Name          | Value        |
+            | Edit Card: Question | randomCard   |
+            | Edit Card: Answer   | randomAnswer |
+            | Edit Card: Category | UPDATE TEST  |
+        And The user clicks the "Edit Card: Save" button
+        And The user queries for a FlashCard with the following properties:
+            | Field    | Operator | Value        |
+            | card     | =        | randomCard   |
+            | answer   | =        | randomAnswer |
+            | category | =        | UPDATE TEST  |
+        Then The queried for "FlashCard" has the following values:
+            | Field Name | Value        |
+            | card       | randomCard   |
+            | answer     | randomAnswer |
+            | category   | UPDATE TEST  |
+
     Scenario: I can search for a Card in the Galley
-
-
-
     Scenario: The user can edit a CardSet
     Scenario: I can share a CardSet
     Scenario: I can page through all my Cards
