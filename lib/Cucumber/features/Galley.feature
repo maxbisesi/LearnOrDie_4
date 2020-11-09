@@ -105,6 +105,7 @@ Feature: Current users can interact with the Galley tab to
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
         And The user queries for their Card Count
+        Then There are "queryData:cardCount" Questions on Page number "1"
 
     #The following features still need to be implemented
     @GalleySearchForCard
