@@ -1,3 +1,4 @@
+@Regression
 Feature: Current users can interact with the Galley tab to
     . Create new Card Sets
     . Edit a card

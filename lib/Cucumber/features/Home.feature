@@ -1,3 +1,4 @@
+@Regression
 @Home
 Feature: Interact with Home tab
     On the home tab you can filter testing by Category or Collection.

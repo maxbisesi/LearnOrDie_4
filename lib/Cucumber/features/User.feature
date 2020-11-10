@@ -1,3 +1,4 @@
+@Regression
 @User
 Feature: A user can log in and interact with their profile
     If a newly registered user is created, they can interact with their profile

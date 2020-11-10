@@ -1,3 +1,4 @@
+@Regression
 Feature: Interact with the Test Tab
     Update a Card.
     Save a Card for review then review it.
