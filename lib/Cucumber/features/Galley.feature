@@ -9,6 +9,7 @@ Feature: Current users can interact with the Galley tab to
     @StudyCardSet
     @CreatesaCardSet
     @DeleteCardSet
+    @GalleyCounter
     Scenario: The user creates a CardSet then loads it for studying
         . If the user studies a CardSet, they see only those cards until the Set is removed.
         . An indicator for the Set is shown.
@@ -98,9 +99,33 @@ Feature: Current users can interact with the Galley tab to
             | answer     | randomAnswer |
             | category   | UPDATE TEST  |
 
+    @GalleyPaging
+    Scenario: I can page through all my Cards.
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Galley" Tab
+        And The user queries for their Card Count
+        Then There are "queryData:cardCount" Questions on Page number "1"
+
+    #The following features still need to be implemented
+    @GalleySearchForCard
     Scenario: I can search for a Card in the Galley
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Galley" Tab
+        And The user fills the form with the following values:
+            | Field Name | Value        |
+            | Search Bar | palcehoolder |
+        And The user clicks the "Search" button
+        Then The form matches the following values:
+            | Field Name | Value |
+            |            |       |
+
+    @GalleyEditCardSet
     Scenario: The user can edit a CardSet
+
+    @GalleyShareCardSet
     Scenario: I can share a CardSet
-    Scenario: I can page through all my Cards
+
+    @GalleyDeleteCard
     Scenario: I can delete a FlashCard
-    Scenario: The counter shows how many clicked FlashCards
