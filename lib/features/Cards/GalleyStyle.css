@@ -41,7 +41,7 @@
 .galley-question_table {
   position: absolute;
   left: 50px;
-  top: 100px;
+  top: 130px;
   overflow-x: visible;
   list-style-type: none;
   overflow-y: auto;
@@ -257,6 +257,18 @@
   display: inline-block;
   cursor: pointer;
   border: 2px solid navy;
+}
+
+.galley-paging {
+  position: absolute;
+  left: 460px;
+  top: 110px;
+}
+
+.galley-pagenumbers {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
 }
 
 /* ================================================================= */
