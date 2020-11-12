@@ -106,22 +106,44 @@ Feature: Current users can interact with the Galley tab to
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
         And The user queries for their Card Count
-        Then There are "queryData:cardCount" Questions on Page number "1"
+        Then There's "queryData:cardCount" Questions on Page number "1"
 
-    #The following features still need to be implemented
-    @GalleySearchForCard
+
+    @GalleySearchForCardandEdit
     Scenario: I can search for a Card in the Galley
+        . Insert two Cards with a randomized unique Questions in the Chum window
+        . Then Search for them in Galley, ensure they appear
+        . Also validates that new Cards get into the Galley
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
+        And The user queries for their Card Count
+        Then There's "queryData:cardCount" Questions on Page number "1"
+        When The user switches to the "Chum" Tab
+        When The user fills the form with the following values:
+            | Field Name | Value          |
+            | Card       | randomCard     |
+            | Answer     | randomAnswer   |
+            | Category   | randomCategory |
+        And The user clicks the "Submit" button
+        And The user switches to the "Galley" Tab
         And The user fills the form with the following values:
-            | Field Name | Value        |
-            | Search Bar | palcehoolder |
+            | Field Name | Value      |
+            | Search Bar | randomCard |
         And The user clicks the "Search" button
+        Then There's "1" Questions on Page number "1"
+        When The user selects the following question cards:
+            | GalleyQuestion |
+            | randomCard     |
+        And The user clicks the "Edit Card" button
         Then The form matches the following values:
-            | Field Name | Value |
-            |            |       |
+            | Field Name          | Value          |
+            | Edit Card: Question | randomCard     |
+            | Edit Card: Answer   | randomAnswer   |
+            | Edit Card: Category | randomCategory |
+        
 
+    #The following features still need to be implemented
     @GalleyEditCardSet
     Scenario: The user can edit a CardSet
 
