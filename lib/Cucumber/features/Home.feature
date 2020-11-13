@@ -1,3 +1,4 @@
+@Regression
 @Home
 Feature: Interact with Home tab
     On the home tab you can filter testing by Category or Collection.
@@ -28,14 +29,14 @@ Feature: Interact with Home tab
             | Field Name | Value                 |
             | Card       | Drag and Drop Testing |
             | Answer     | It works              |
-            | Category   | randomcategory        |
+            | Category   | randomCategory        |
         And The user clicks the "Submit" button
         And The user switches to the "Home" Tab
         Then The following Categories are shown:
             | Field Name     | Value |
-            | randomcategory | 1     |
+            | randomCategory | 1     |
         And The user creates a new Collection named: "SeleniumCollection"
-        And The user drags the "randomcategory" Category into the "SeleniumCollection" Collection
+        And The user drags the "randomCategory" Category into the "SeleniumCollection" Collection
         Then The "SeleniumCollection" Collection has the following Categories:
             | DragAndDropTesting |
         And The user removes the "DragAndDropTesting" Category from the "SeleniumCollection" Collection

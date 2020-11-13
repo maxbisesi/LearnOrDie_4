@@ -1,3 +1,4 @@
+@Regression
 Feature: Create, Organize, and Delete FlashCards
     This is done through the Chum and Galley tabs.
     Use the profile tab to activate modules used to add 

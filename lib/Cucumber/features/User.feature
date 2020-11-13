@@ -1,3 +1,4 @@
+@Regression
 @User
 Feature: A user can log in and interact with their profile
     If a newly registered user is created, they can interact with their profile
@@ -143,24 +144,24 @@ Feature: A user can log in and interact with their profile
             | Field Name | Value                         |
             | Card       | Why did you forget to log in? |
             | Answer     | Because this test will pass   |
-            | Category   | randomcategory                |
+            | Category   | randomCategory                |
         Then The form matches the following values:
             | Field Name | Value                         |
             | Card       | Why did you forget to log in? |
             | Answer     | Because this test will pass   |
-            | Category   | randomcategory                |
+            | Category   | randomCategory                |
         And The user clicks the "Submit" button
         Then The form matches the following values:
             | Field Name | Value          |
             | Card       |                |
             | Answer     |                |
-            | Category   | randomcategory |
+            | Category   | randomCategory |
         And The user switches to the "Login/Profile" Tab
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
         Then The following Categories are shown:
             | Field Name     | Value |
-            | randomcategory | 1     |
+            | randomCategory | 1     |
 
     @UserSessionSavedLogout
     Scenario: Session is saved after logging out
