@@ -1,9 +1,7 @@
-@Regression
 Feature: API unit tests
 
 @AdminAPI
 Scenario: API calls return the right response with good parameters
-    When The client logs in as a test User
     And creates a Card
     And creates a Card List
     And saves a Session

@@ -425,9 +425,9 @@ Feature: Interact with Home tab
             | category | =        | DeleteCategoryTest |
         Then No "FlashCard" records were found
 
-    @HomeRemoveFilter
-    Scenario: On the Home tab the User creates a new Collection
-        When The client logs in as a test User
+    # @HomeRemoveFilter
+    # Scenario: On the Home tab the User creates a new Collection
+    #     When The client logs in as a test User
 
 
 
