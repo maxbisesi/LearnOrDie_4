@@ -31,17 +31,19 @@ Feature: Create, Organize, and Delete FlashCards
             | Field Name | Value |
             | owner_id   | 4     |
 
-    @ChumNewCardwithEquilateral
-    Scenario: On the Chum tab the User creates a new FlashCard with an Image of an Equilateral
-        When The client logs in as a test User
+    # @ChumNewCardwithEquilateral
+    # Scenario: On the Chum tab the User creates a new FlashCard with an Image of an Equilateral
+    #     When The user navigates to FlashCardShark
+    #     And The user logs in as: "QATestUser"
 
     @ChumNewCardwithUnicode
     Scenario: On the Chum tab the User creates a new FlashCard with Unicode characters in the Question Answer and Category
-        When The client logs in as a test User
-
-    @ChumCreatedCategoryShowsInList
-    Scenario: When I create a new Card in a new Category, that category shows up in the Category list with the right count
-        When The client logs in as a test User
+        When The user navigates to FlashCardShark
+        And The user logs in as: "QATestUser"
+        And The user switches to the "Home" Tab
+        And The user activates the "Math" module
+        And The user switches to the "Chum" Tab
+        Then The "Math Module" is displayed
 
 
 
