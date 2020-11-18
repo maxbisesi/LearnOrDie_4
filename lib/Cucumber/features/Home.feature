@@ -5,7 +5,7 @@ Feature: Interact with Home tab
     You can logout, Create new Collections, Rename Collection, and remove categories from collections
 
     @HomeCreateNewCollection
-    Scenario: On the Home tab the User creates a new Collection
+    Scenario: On the Home tab the User creates a new Collection.
         . This will create a new Collection locally but until
         . a category is saved to it a Collection is just an empty vessle
         . and won't be saved into the DB
@@ -18,7 +18,7 @@ Feature: Interact with Home tab
             | Collections | SeleniumCollection |
 
     @HomeDragNDrop_CategoryToCollection
-    Scenario: On the Home tab the User creates a new Collection
+    Scenario: The user drags a new category into a new collection.
         . This will create a new Collection locally but until
         . a category is saved to it a Collection is just an empty vessle
         . and won't be saved into the DB

@@ -1,39 +1,39 @@
 [
   {
-    "description": "    On the home tab you can filter testing by Category or Collection.\n    You can logout, Create new Collections, Rename Collection, and remove categories from collections",
+    "description": "    If a newly registered user is created, they can interact with their profile\n    Guest users can: Add and Study cards, see categories and filter by them\n    but unless they login and register nothing will be saved.\n    If a guest user adds some cards then registers their cards will be saved.\n    If a current user adds some cards then logs in, those new cards will be saved.\n    Session is saved when logging out.\n    Only users can use the Galley.\n    Users are promoted if they meet the new criteria.\n    Newly Registered users are given the Recruit rank when they first register.",
     "keyword": "Feature",
-    "name": "Interact with Home tab",
+    "name": "A user can log in and interact with their profile",
     "line": 3,
-    "id": "interact-with-home-tab",
+    "id": "a-user-can-log-in-and-interact-with-their-profile",
     "tags": [
       {
         "name": "@Regression",
         "line": 1
       },
       {
-        "name": "@Home",
+        "name": "@User",
         "line": 2
       }
     ],
-    "uri": "lib/cucumber/features/Home.feature",
+    "uri": "lib/cucumber/features/User.feature",
     "elements": [
       {
-        "id": "interact-with-home-tab;on-the-home-tab-the-user-filters-their-cards-from-a-collection",
+        "id": "a-user-can-log-in-and-interact-with-their-profile;if-guest-user-adds-some-cards-then-registers,-their-cards-get-saved-and-are-accessible",
         "keyword": "Scenario",
-        "line": 133,
-        "name": "On the Home tab the User filters their cards from a Collection",
+        "line": 81,
+        "name": "If guest user adds some cards then registers, their cards get saved and are accessible",
         "tags": [
           {
             "name": "@Regression",
             "line": 1
           },
           {
-            "name": "@Home",
+            "name": "@User",
             "line": 2
           },
           {
-            "name": "@HomeFilterByCollection",
-            "line": 132
+            "name": "@UserGuestCardsSavedonRegister",
+            "line": 80
           }
         ],
         "type": "scenario",
@@ -46,419 +46,42 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1488000000
+              "duration": 1371000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 134,
+            "line": 82,
             "name": "The user navigates to FlashCardShark",
             "match": {
               "location": "lib/Cucumber/steps/GlobalSteps.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 1592000000
+              "duration": 1571000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 135,
-            "name": "The user logs in as: \"QATestUser\"",
+            "line": 83,
+            "name": "The user uses the app as a Guest",
             "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:55"
+              "location": "lib/Cucumber/steps/GlobalSteps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 1221000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 136,
-            "name": "The user switches to the \"Home\" Tab",
+            "line": 84,
+            "name": "The user switches to the \"Chum\" Tab",
             "match": {
               "location": "lib/Cucumber/steps/GlobalSteps.js:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1098000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Category"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Bounty Hunter"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Big Foot"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Pop Warner"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 137,
-            "name": "The user selects the following Categories' checkboxes:",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:66"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 183000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 142,
-            "name": "The user waits \"2\" seconds",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2003000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 143,
-            "name": "The user creates a new Collection named: \"CollectionFilterTest\"",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2130000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Category"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Bounty Hunter"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Big Foot"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Pop Warner"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 144,
-            "name": "The \"CollectionFilterTest\" Collection has the following Categories:",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 121000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 149,
-            "name": "The user waits \"2\" seconds",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2004000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Collection"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "CollectionFilterTest"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 150,
-            "name": "The user selects the following Collections' checkboxes:",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:83"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 53000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 153,
-            "name": "The user clicks the \"Filter\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1054000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 154,
-            "name": "The user switches to the \"Test\" Tab",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1064000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Rating",
-                      "0 / 0"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Card Number",
-                      "STARTER"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Questions To Review",
-                      "0"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Points",
-                      "0"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Question",
-                      "starterMessage"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 155,
-            "name": "The form matches the following values:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1081000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 162,
-            "name": "The user waits \"2\" seconds",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2005000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 163,
-            "name": "The user clicks the \"Nailed it\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1076000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Values"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Bounty Hunter"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Big Foot"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Pop Warner"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 164,
-            "name": "The \"Category\" field value is one of the following:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:180"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 17000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 169,
-            "name": "The user waits \"2\" seconds",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2004000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 170,
-            "name": "The user clicks the \"Nailed it\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1071000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Values"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Bounty Hunter"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Big Foot"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Birchum Pop Warner"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 171,
-            "name": "The \"Category\" field value is one of the following:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:180"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 21000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 176,
-            "name": "The user waits \"2\" seconds",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2005000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 177,
-            "name": "The user clicks the \"Nailed it\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
             },
             "result": {
               "status": "passed",
@@ -471,49 +94,40 @@
                 "rows": [
                   {
                     "cells": [
-                      "Values"
+                      "Field Name",
+                      "Value"
                     ]
                   },
                   {
                     "cells": [
-                      "Birchum Bounty Hunter"
+                      "Card",
+                      "What's a QA's goal in life?"
                     ]
                   },
                   {
                     "cells": [
-                      "Birchum Big Foot"
+                      "Answer",
+                      "Not quality, Equality."
                     ]
                   },
                   {
                     "cells": [
-                      "Birchum Pop Warner"
+                      "Category",
+                      "SeleniumQA"
                     ]
                   }
                 ]
               }
             ],
-            "keyword": "Then ",
-            "line": 178,
-            "name": "The \"Category\" field value is one of the following:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:180"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 32000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "And ",
-            "line": 183,
-            "name": "The user waits \"2\" seconds",
+            "line": 85,
+            "name": "The user fills the form with the following values:",
             "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
+              "location": "lib/Cucumber/steps/GlobalSteps.js:88"
             },
             "result": {
               "status": "passed",
-              "duration": 2004000000
+              "duration": 388000000
             }
           },
           {
@@ -528,113 +142,431 @@
                   },
                   {
                     "cells": [
-                      "Points",
-                      "3"
+                      "Card",
+                      "What's a QA's goal in life?"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Answer",
+                      "Not quality, Equality."
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Category",
+                      "SeleniumQA"
                     ]
                   }
                 ]
               }
             ],
             "keyword": "Then ",
-            "line": 184,
+            "line": 90,
             "name": "The form matches the following values:",
             "match": {
               "location": "lib/Cucumber/steps/GlobalSteps.js:172"
             },
             "result": {
               "status": "passed",
-              "duration": 1016000000
+              "duration": 1040000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 187,
+            "line": 95,
+            "name": "The user clicks the \"Submit\" button",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1068000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Answer",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Category",
+                      "SeleniumQA"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 96,
+            "name": "The form matches the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1035000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card",
+                      "How many Dev's equal a QA?"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Answer",
+                      "1 QA for every 4 Devs"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 101,
+            "name": "The user fills the form with the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 196000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card",
+                      "How many Dev's equal a QA?"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Answer",
+                      "1 QA for every 4 Devs"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 105,
+            "name": "The form matches the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 109,
+            "name": "The user clicks the \"Submit\" button",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1054000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Answer",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Category",
+                      "SeleniumQA"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 110,
+            "name": "The form matches the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 115,
             "name": "The user switches to the \"Home\" Tab",
             "match": {
               "location": "lib/Cucumber/steps/GlobalSteps.js:108"
             },
             "result": {
               "status": "passed",
-              "duration": 1078000000
+              "duration": 1063000000
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 188,
-            "name": "The user removes the \"Birchum Bounty Hunter\" Category from the \"CollectionFilterTest\" Collection",
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SeleniumQA",
+                      "2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 116,
+            "name": "The following Categories are shown:",
             "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:96"
+              "location": "lib/Cucumber/steps/HomeSteps.js:117"
             },
             "result": {
               "status": "passed",
-              "duration": 146000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 189,
-            "name": "The user waits \"1\" seconds",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 190,
-            "name": "The user removes the \"Birchum Big Foot\" Category from the \"CollectionFilterTest\" Collection",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:96"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 65000000
+              "duration": 1049000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 191,
-            "name": "The user waits \"1\" seconds",
+            "line": 119,
+            "name": "The user switches to the \"Login/Profile\" Tab",
             "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
+              "location": "lib/Cucumber/steps/GlobalSteps.js:108"
             },
             "result": {
               "status": "passed",
-              "duration": 1005000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 192,
-            "name": "The user removes the \"Birchum Pop Warner\" Category from the \"CollectionFilterTest\" Collection",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:96"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 57000000
+              "duration": 1045000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 193,
-            "name": "The user waits \"5\" seconds",
+            "line": 120,
+            "name": "The user clicks the \"Come Aboard\" button",
             "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:136"
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
             },
             "result": {
               "status": "passed",
-              "duration": 5002000000
+              "duration": 1050000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "username",
+                      "randomusername"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "lodqa0828"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "confirm",
+                      "lodqa0828"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "max.bisesi@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 121,
+            "name": "The user fills the form with the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 127,
+            "name": "The user clicks the \"Choose Your Destiny\" button",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1200000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Username",
+                      "randomusername"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Rank",
+                      "Recruit"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Points",
+                      "0"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 128,
+            "name": "The form matches the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1061000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 133,
+            "name": "The user switches to the \"Home\" Tab",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1033000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SeleniumQA",
+                      "2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 134,
+            "name": "The following Categories are shown:",
+            "match": {
+              "location": "lib/Cucumber/steps/HomeSteps.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1054000000
             }
           },
           {
@@ -645,7 +577,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 53000000
             }
           }
         ]

@@ -126,10 +126,10 @@ Feature: A user can log in and interact with their profile
             | email      | max.bisesi@gmail.com |
         And The user clicks the "Choose Your Destiny" button
         Then The form matches the following values:
-            | Field Name  | Value  |
-            | Math Module | exists |
-            | Chat Module | exists |
-            | Draw tab    | exists |
+            | Field Name | Value          |
+            | Username   | randomusername |
+            | Rank       | Recruit        |
+            | Points     | 0              |
         And The user switches to the "Home" Tab
         Then The following Categories are shown:
             | Field Name | Value |
