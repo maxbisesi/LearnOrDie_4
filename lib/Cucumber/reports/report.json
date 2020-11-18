@@ -1,39 +1,39 @@
 [
   {
-    "description": "    If a newly registered user is created, they can interact with their profile\n    Guest users can: Add and Study cards, see categories and filter by them\n    but unless they login and register nothing will be saved.\n    If a guest user adds some cards then registers their cards will be saved.\n    If a current user adds some cards then logs in, those new cards will be saved.\n    Session is saved when logging out.\n    Only users can use the Galley.\n    Users are promoted if they meet the new criteria.\n    Newly Registered users are given the Recruit rank when they first register.",
+    "description": "    Update a Card.\n    Save a Card for review then review it.\n    Show the Answer.\n    Go back to previous Card.\n    Study a Card Set.\n    Points should update as intended.",
     "keyword": "Feature",
-    "name": "A user can log in and interact with their profile",
+    "name": "Interact with the Test Tab",
     "line": 3,
-    "id": "a-user-can-log-in-and-interact-with-their-profile",
+    "id": "interact-with-the-test-tab",
     "tags": [
       {
         "name": "@Regression",
         "line": 1
       },
       {
-        "name": "@User",
+        "name": "@Test",
         "line": 2
       }
     ],
-    "uri": "lib/cucumber/features/User.feature",
+    "uri": "lib/cucumber/features/Test.feature",
     "elements": [
       {
-        "id": "a-user-can-log-in-and-interact-with-their-profile;if-guest-user-adds-some-cards-then-registers,-their-cards-get-saved-and-are-accessible",
+        "id": "interact-with-the-test-tab;the-user-can-update-a-card-they-own-(testupdatecard)",
         "keyword": "Scenario",
-        "line": 81,
-        "name": "If guest user adds some cards then registers, their cards get saved and are accessible",
+        "line": 74,
+        "name": "The user can update a card they own (TestUpdateCard)",
         "tags": [
           {
             "name": "@Regression",
             "line": 1
           },
           {
-            "name": "@User",
+            "name": "@Test",
             "line": 2
           },
           {
-            "name": "@UserGuestCardsSavedonRegister",
-            "line": 80
+            "name": "@TestUpdateCard",
+            "line": 73
           }
         ],
         "type": "scenario",
@@ -46,46 +46,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1371000000
+              "duration": 1542000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 82,
+            "line": 75,
             "name": "The user navigates to FlashCardShark",
             "match": {
               "location": "lib/Cucumber/steps/GlobalSteps.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 1571000000
+              "duration": 1603000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 83,
-            "name": "The user uses the app as a Guest",
+            "line": 76,
+            "name": "The user logs in as: \"QATestUser\"",
             "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:61"
+              "location": "lib/Cucumber/steps/GlobalSteps.js:55"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 1235000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 84,
-            "name": "The user switches to the \"Chum\" Tab",
+            "line": 77,
+            "name": "The user switches to the \"Test\" Tab",
             "match": {
               "location": "lib/Cucumber/steps/GlobalSteps.js:108"
             },
             "result": {
               "status": "passed",
-              "duration": 1056000000
+              "duration": 1067000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 78,
+            "name": "The user clicks the \"Nailed it\" button 5 times",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1324000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "The user saves the \"Card Number\" field as \"card_id\"",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "The user clicks the \"Show\" button",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1043000000
             }
           },
           {
@@ -101,33 +140,79 @@
                   {
                     "cells": [
                       "Card",
-                      "What's a QA's goal in life?"
+                      "randomCard"
                     ]
                   },
                   {
                     "cells": [
                       "Answer",
-                      "Not quality, Equality."
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Category",
-                      "SeleniumQA"
+                      "randomAnswer"
                     ]
                   }
                 ]
               }
             ],
             "keyword": "And ",
-            "line": 85,
+            "line": 81,
             "name": "The user fills the form with the following values:",
             "match": {
               "location": "lib/Cucumber/steps/GlobalSteps.js:88"
             },
             "result": {
               "status": "passed",
-              "duration": 388000000
+              "duration": 461000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "The user clicks the \"Update\" button",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1037000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Operator",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "card",
+                      "=",
+                      "randomCard"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "answer",
+                      "=",
+                      "randomAnswer"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 86,
+            "name": "The user queries for a FlashCard with the following properties:",
+            "match": {
+              "location": "lib/Cucumber/steps/DataSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
             }
           },
           {
@@ -142,20 +227,20 @@
                   },
                   {
                     "cells": [
-                      "Card",
-                      "What's a QA's goal in life?"
+                      "card_id",
+                      "testData:card_id"
                     ]
                   },
                   {
                     "cells": [
-                      "Answer",
-                      "Not quality, Equality."
+                      "card",
+                      "randomCard"
                     ]
                   },
                   {
                     "cells": [
-                      "Category",
-                      "SeleniumQA"
+                      "answer",
+                      "randomAnswer"
                     ]
                   }
                 ]
@@ -163,410 +248,13 @@
             ],
             "keyword": "Then ",
             "line": 90,
-            "name": "The form matches the following values:",
+            "name": "The queried for \"FlashCard\" has the following values:",
             "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
+              "location": "lib/Cucumber/steps/DataSteps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1040000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 95,
-            "name": "The user clicks the \"Submit\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1068000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Card",
-                      ""
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Answer",
-                      ""
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Category",
-                      "SeleniumQA"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 96,
-            "name": "The form matches the following values:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1035000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Card",
-                      "How many Dev's equal a QA?"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Answer",
-                      "1 QA for every 4 Devs"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 101,
-            "name": "The user fills the form with the following values:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:88"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 196000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Card",
-                      "How many Dev's equal a QA?"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Answer",
-                      "1 QA for every 4 Devs"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 105,
-            "name": "The form matches the following values:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1020000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 109,
-            "name": "The user clicks the \"Submit\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1054000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Card",
-                      ""
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Answer",
-                      ""
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Category",
-                      "SeleniumQA"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 110,
-            "name": "The form matches the following values:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1033000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 115,
-            "name": "The user switches to the \"Home\" Tab",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1063000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "SeleniumQA",
-                      "2"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 116,
-            "name": "The following Categories are shown:",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:117"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1049000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 119,
-            "name": "The user switches to the \"Login/Profile\" Tab",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1045000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 120,
-            "name": "The user clicks the \"Come Aboard\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1050000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "username",
-                      "randomusername"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "password",
-                      "lodqa0828"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "confirm",
-                      "lodqa0828"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "max.bisesi@gmail.com"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 121,
-            "name": "The user fills the form with the following values:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:88"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 183000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 127,
-            "name": "The user clicks the \"Choose Your Destiny\" button",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1200000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Username",
-                      "randomusername"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Rank",
-                      "Recruit"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Points",
-                      "0"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 128,
-            "name": "The form matches the following values:",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:172"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1061000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 133,
-            "name": "The user switches to the \"Home\" Tab",
-            "match": {
-              "location": "lib/Cucumber/steps/GlobalSteps.js:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1033000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Field Name",
-                      "Value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "SeleniumQA",
-                      "2"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 134,
-            "name": "The following Categories are shown:",
-            "match": {
-              "location": "lib/Cucumber/steps/HomeSteps.js:117"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1054000000
+              "duration": 2000000
             }
           },
           {
@@ -577,7 +265,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53000000
+              "duration": 54000000
             }
           }
         ]

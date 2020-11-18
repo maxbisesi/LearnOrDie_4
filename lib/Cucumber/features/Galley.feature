@@ -12,7 +12,7 @@ Feature: Current users can interact with the Galley tab to
     @CreatesaCardSet
     @DeleteCardSet
     @GalleyCounter
-    Scenario: The user creates a CardSet then loads it for studying
+    Scenario: The user creates a CardSet then loads it for studying (StudyCardSet)
         . If the user studies a CardSet, they see only those cards until the Set is removed.
         . An indicator for the Set is shown.
         . When they remove the Set, they go back to regular sequencing
@@ -44,7 +44,7 @@ Feature: Current users can interact with the Galley tab to
         And The user deletes the "BirchumCardSet" Card Set
 
     @GalleyEditCardModal
-    Scenario: Edit Card Modal, Clicked cards show correctly in the modal
+    Scenario: Edit Card Modal, Clicked cards show correctly in the modal (GalleyEditCardModal)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
@@ -78,7 +78,7 @@ Feature: Current users can interact with the Galley tab to
             | Edit Card: Category | Birchum Lost Leg                                                |
 
     @EditRandomCard
-    Scenario: Editing a card correctly updates its representation in the DB
+    Scenario: Editing a card correctly updates its representation in the DB (EditRandomCard)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
@@ -102,7 +102,7 @@ Feature: Current users can interact with the Galley tab to
             | category   | UPDATE TEST  |
 
     @GalleyPaging
-    Scenario: I can page through all my Cards.
+    Scenario: I can page through all my Cards. (GalleyPaging)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Galley" Tab
@@ -111,7 +111,7 @@ Feature: Current users can interact with the Galley tab to
 
 
     @GalleySearchForCardandEdit
-    Scenario: I can search for a Card in the Galley
+    Scenario: I can search for a Card in the Galley (GalleySearchForCardandEdit)
         . Insert two Cards with a randomized unique Questions in the Chum window
         . Then Search for them in Galley, ensure they appear
         . Also validates that new Cards get into the Galley
@@ -145,11 +145,11 @@ Feature: Current users can interact with the Galley tab to
         
 
     #The following features still need to be implemented
-    @GalleyEditCardSet
-    Scenario: The user can edit a CardSet
+    # @GalleyEditCardSet
+    # Scenario: The user can edit a CardSet
 
-    @GalleyShareCardSet
-    Scenario: I can share a CardSet
+    # @GalleyShareCardSet
+    # Scenario: I can share a CardSet
 
-    @GalleyDeleteCard
-    Scenario: I can delete a FlashCard
+    # @GalleyDeleteCard
+    # Scenario: I can delete a FlashCard

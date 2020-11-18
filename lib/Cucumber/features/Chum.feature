@@ -6,7 +6,7 @@ Feature: Create, Organize, and Delete FlashCards
     speciel characters a question or answer.
 
     @ChumNewCard
-    Scenario: On the Chum tab User creates a new FlashCard
+    Scenario: On the Chum tab User creates a new FlashCard (ChumNewCard)
         . Other tests used the Chum tab to make sure cards showed up in categories
         . This one will test that the card makes it to the DB.
         When The user navigates to FlashCardShark
@@ -38,7 +38,7 @@ Feature: Create, Organize, and Delete FlashCards
     #     And The user logs in as: "QATestUser"
 
     @ChumNewCardwithUnicode
-    Scenario: On the Chum tab the User creates a new FlashCard with Unicode characters in the Question Answer and Category
+    Scenario: On the Chum tab the User creates a new FlashCard with Unicode characters in the Question Answer and Category (ChumNewCardwithUnicode)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
