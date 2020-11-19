@@ -12,7 +12,7 @@ Feature: A user can log in and interact with their profile
     Newly Registered users are given the Recruit rank when they first register.
 
     @FCSisShown
-    Scenario: The user opens the App, Login is the first tab
+    Scenario: The user opens the App, Login is the first tab (FCSisShown)
         When The user navigates to FlashCardShark
         And The user uses the app as a Guest
         Then The "Login" Tab is shown
@@ -20,36 +20,8 @@ Feature: A user can log in and interact with their profile
         And The user switches to the "Chum" Tab
         And The user switches to the "Test" Tab
 
-    @UserAfterLoginSeeProfile
-    Scenario: After a user successfully logs in they see their profile
-        When The user navigates to FlashCardShark
-        And The user logs in as: "QATestUser"
-        Then The "Profile" Tab is shown
-        Then The form matches the following values:
-            | Field Name  | Value  |
-            | Math Module | exists |
-            | Chat Module | exists |
-            | Draw tab    | exists |
-
-    @UserRegisterUser
-    Scenario: Newly registered users can interact with their profile
-        When The user navigates to FlashCardShark
-        And The user clicks the "Come Aboard" button
-        And The user fills the form with the following values:
-            | Field Name | Value                |
-            | username   | QATester02           |
-            | password   | lodqa0828            |
-            | confirm    | lodqa0828            |
-            | email      | max.bisesi@gmail.com |
-        And The user clicks the "Choose Your Destiny" button
-        Then The form matches the following values:
-            | Field Name  | Value  |
-            | Math Module | exists |
-            | Chat Module | exists |
-            | Draw tab    | exists |
-
     @UserGuestUserAddCards
-    Scenario: Guest users can add Cards, Study Cards, see catogries and Filter, but that's it
+    Scenario: Guest users can add Cards, Study Cards, see catogries and Filter, but that's it (UserGuestUserAddCards)
         When The user navigates to FlashCardShark
         And The user uses the app as a Guest
         And The user switches to the "Chum" Tab
@@ -78,7 +50,7 @@ Feature: A user can log in and interact with their profile
 
 
     @UserGuestCardsSavedonRegister
-    Scenario: If guest user adds some cards then registers, their cards get saved and are accessible
+    Scenario: If guest user adds some cards then registers, their cards get saved and are accessible (UserGuestCardsSavedonRegister)
         When The user navigates to FlashCardShark
         And The user uses the app as a Guest
         And The user switches to the "Chum" Tab
@@ -126,17 +98,17 @@ Feature: A user can log in and interact with their profile
             | email      | max.bisesi@gmail.com |
         And The user clicks the "Choose Your Destiny" button
         Then The form matches the following values:
-            | Field Name  | Value  |
-            | Math Module | exists |
-            | Chat Module | exists |
-            | Draw tab    | exists |
+            | Field Name | Value          |
+            | Username   | randomusername |
+            | Rank       | Recruit        |
+            | Points     | 0              |
         And The user switches to the "Home" Tab
         Then The following Categories are shown:
             | Field Name | Value |
             | SeleniumQA | 2     |
 
     @currentUserAddsCardsAsGuest
-    Scenario: If a current user adds cards then logs in, those cards are saved and accessible.
+    Scenario: If a current user adds cards then logs in, those cards are saved and accessible. (currentUserAddsCardsAsGuest)
         When The user navigates to FlashCardShark
         And The user uses the app as a Guest
         And The user switches to the "Chum" Tab
@@ -164,7 +136,7 @@ Feature: A user can log in and interact with their profile
             | randomCategory | 1     |
 
     @UserSessionSavedLogout
-    Scenario: Session is saved after logging out
+    Scenario: Session is saved after logging out (UserSessionSavedLogout)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
@@ -173,19 +145,10 @@ Feature: A user can log in and interact with their profile
             | Field Name                   | Value  |
             | Brave the Treacherour Waters | exists |
 
-    @UserOnlyUsersSeeGalley
-    Scenario: Only Users can use the Galley, not guest Users
-        When The user navigates to FlashCardShark
-        And The user logs in as: "QATestUser"
-        And The user switches to the "Galley" Tab
-        Then The form matches the following values:
-            | Field Name                     | Value  |
-            | Add some cards to a collection | exists |
-
-    @UserRanksUp
-    Scenario: Users are promoted if they earn the next rank
-        When The user navigates to FlashCardShark
-        And The user logs in as: "QATestUser"
+    # @UserRanksUp
+    # Scenario: Users are promoted if they earn the next rank (UserRanksUp)
+    #     When The user navigates to FlashCardShark
+    #     And The user logs in as: "QATestUser"
 
 
 # Scenario: Newly registered users are given the Recruit rank after register.

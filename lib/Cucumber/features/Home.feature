@@ -5,7 +5,7 @@ Feature: Interact with Home tab
     You can logout, Create new Collections, Rename Collection, and remove categories from collections
 
     @HomeCreateNewCollection
-    Scenario: On the Home tab the User creates a new Collection
+    Scenario: On the Home tab the User creates a new Collection. (HomeCreateNewCollection)
         . This will create a new Collection locally but until
         . a category is saved to it a Collection is just an empty vessle
         . and won't be saved into the DB
@@ -17,40 +17,40 @@ Feature: Interact with Home tab
             | Field Name  | Value              |
             | Collections | SeleniumCollection |
 
-    @HomeDragNDrop_CategoryToCollection
-    Scenario: On the Home tab the User creates a new Collection
-        . This will create a new Collection locally but until
-        . a category is saved to it a Collection is just an empty vessle
-        . and won't be saved into the DB
-        When The user navigates to FlashCardShark
-        And The user logs in as: "QATestUser"
-        And The user switches to the "Chum" Tab
-        And The user fills the form with the following values:
-            | Field Name | Value                 |
-            | Card       | Drag and Drop Testing |
-            | Answer     | It works              |
-            | Category   | randomCategory        |
-        And The user clicks the "Submit" button
-        And The user switches to the "Home" Tab
-        Then The following Categories are shown:
-            | Field Name     | Value |
-            | randomCategory | 1     |
-        And The user creates a new Collection named: "SeleniumCollection"
-        And The user drags the "randomCategory" Category into the "SeleniumCollection" Collection
-        Then The "SeleniumCollection" Collection has the following Categories:
-            | DragAndDropTesting |
-        And The user removes the "DragAndDropTesting" Category from the "SeleniumCollection" Collection
-        Then The form matches the following values:
-            | Field Name  | Value              |
-            | Collections | SeleniumCollection |
-        Then The following Categories are shown:
-            | Field Name         | Value |
-            | DragAndDropTesting | 1     |
+    # @HomeDragNDrop_CategoryToCollection
+    # Scenario: The user drags a new category into a new collection. (HomeDragNDrop_CategoryToCollection)
+    #     . This will create a new Collection locally but until
+    #     . a category is saved to it a Collection is just an empty vessle
+    #     . and won't be saved into the DB
+    #     When The user navigates to FlashCardShark
+    #     And The user logs in as: "QATestUser"
+    #     And The user switches to the "Chum" Tab
+    #     And The user fills the form with the following values:
+    #         | Field Name | Value                 |
+    #         | Card       | Drag and Drop Testing |
+    #         | Answer     | It works              |
+    #         | Category   | randomCategory        |
+    #     And The user clicks the "Submit" button
+    #     And The user switches to the "Home" Tab
+    #     Then The following Categories are shown:
+    #         | Field Name     | Value |
+    #         | randomCategory | 1     |
+    #     And The user creates a new Collection named: "SeleniumCollection"
+    #     And The user drags the "randomCategory" Category into the "SeleniumCollection" Collection
+    #     Then The "SeleniumCollection" Collection has the following Categories:
+    #         | randomCategory |
+    #     And The user removes the "DragAndDropTesting" Category from the "SeleniumCollection" Collection
+    #     Then The form matches the following values:
+    #         | Field Name  | Value              |
+    #         | Collections | SeleniumCollection |
+    #     Then The following Categories are shown:
+    #         | Field Name         | Value |
+    #         | DragAndDropTesting | 1     |
 
 
     @HomeRemoveCategoryFromCollection
     @HomeAddCategoriesByCheckboxes
-    Scenario: On the Home tab the User creates a new Collection
+    Scenario: On the Home tab the User creates a new Collection (HomeRemoveCategoryFromCollection)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
@@ -83,7 +83,7 @@ Feature: Interact with Home tab
 
 
     @HomeFilterByCategory
-    Scenario: On the Home tab the User creates a new Collection
+    Scenario: On the Home tab the User creates a new Collection (HomeFilterByCategory)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
@@ -130,7 +130,7 @@ Feature: Interact with Home tab
 
 
     @HomeFilterByCollection
-    Scenario: On the Home tab the User filters their cards from a Collection
+    Scenario: On the Home tab the User filters their cards from a Collection (HomeFilterByCollection)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
@@ -193,7 +193,7 @@ Feature: Interact with Home tab
         And The user waits "5" seconds
 
     @HomeFilterByMultipleCollections
-    Scenario: On the Home tab the user filters by two collections and a cateogry
+    Scenario: On the Home tab the user filters by two collections and a cateogry (HomeFilterByMultipleCollections)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
@@ -314,7 +314,7 @@ Feature: Interact with Home tab
         When The user removes the "Birchum Lost Leg" Category from the "BirchumGreatestHits" Collection
 
     @HomeFilterByCategoryAndCollection
-    Scenario: The user can filter test cards by a category and collection.
+    Scenario: The user can filter test cards by a category and collection. (HomeFilterByCategoryAndCollection)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Home" Tab
@@ -383,7 +383,7 @@ Feature: Interact with Home tab
         When The user removes the "Birchum Pop Warner" Category from the "CollectionCategoryFilterTest" Collection
 
     @HomeDeleteCategory
-    Scenario: On the Home tab the User deletes an entire collection of Cards
+    Scenario: On the Home tab the User deletes an entire collection of Cards (HomeDeleteCategory)
         When The user navigates to FlashCardShark
         And The user logs in as: "QATestUser"
         And The user switches to the "Chum" Tab

@@ -1,0 +1,275 @@
+[
+  {
+    "description": "    Update a Card.\n    Save a Card for review then review it.\n    Show the Answer.\n    Go back to previous Card.\n    Study a Card Set.\n    Points should update as intended.",
+    "keyword": "Feature",
+    "name": "Interact with the Test Tab",
+    "line": 3,
+    "id": "interact-with-the-test-tab",
+    "tags": [
+      {
+        "name": "@Regression",
+        "line": 1
+      },
+      {
+        "name": "@Test",
+        "line": 2
+      }
+    ],
+    "uri": "lib/cucumber/features/Test.feature",
+    "elements": [
+      {
+        "id": "interact-with-the-test-tab;the-user-can-update-a-card-they-own-(testupdatecard)",
+        "keyword": "Scenario",
+        "line": 74,
+        "name": "The user can update a card they own (TestUpdateCard)",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 1
+          },
+          {
+            "name": "@Test",
+            "line": 2
+          },
+          {
+            "name": "@TestUpdateCard",
+            "line": 73
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1542000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 75,
+            "name": "The user navigates to FlashCardShark",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1603000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "The user logs in as: \"QATestUser\"",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "The user switches to the \"Test\" Tab",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1067000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 78,
+            "name": "The user clicks the \"Nailed it\" button 5 times",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1324000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "The user saves the \"Card Number\" field as \"card_id\"",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "The user clicks the \"Show\" button",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1043000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card",
+                      "randomCard"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Answer",
+                      "randomAnswer"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 81,
+            "name": "The user fills the form with the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 461000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "The user clicks the \"Update\" button",
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1037000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Operator",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "card",
+                      "=",
+                      "randomCard"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "answer",
+                      "=",
+                      "randomAnswer"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 86,
+            "name": "The user queries for a FlashCard with the following properties:",
+            "match": {
+              "location": "lib/Cucumber/steps/DataSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field Name",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "card_id",
+                      "testData:card_id"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "card",
+                      "randomCard"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "answer",
+                      "randomAnswer"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 90,
+            "name": "The queried for \"FlashCard\" has the following values:",
+            "match": {
+              "location": "lib/Cucumber/steps/DataSteps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "lib/Cucumber/steps/GlobalSteps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
