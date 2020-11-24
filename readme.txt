@@ -162,6 +162,8 @@ Profiles
 
   () - Move api tests to Jest
 
+  () - Rename categories to see if they merge with existing
+
   Defects:
   =============
   () - points animation plays when updating
