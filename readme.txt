@@ -183,7 +183,8 @@ Profiles
   (*) - Maintain sessions redux-persist.
   () - When renaming categories, all categories are displayed outside of collections.
   () - using Pi in answer copys the question above where pi was used..
-  () - adding a question of an existing category does not update categories in Home tab
+  (*) - adding a question of an existing category does not update categories in Home tab
+  () - Auth token undefined for logout
 
   Edge Cases:
   =============

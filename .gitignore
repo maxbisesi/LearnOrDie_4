@@ -4,5 +4,3 @@ bundle
 bundle.js
 keys
 .env
-lib/Cucumber/reports/report.json
-report.html
