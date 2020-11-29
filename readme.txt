@@ -166,12 +166,7 @@ Profiles
 
   Defects:
   =============
-  () - points animation plays when updating
-  () - something weird with math module, using unicode in answer
-  (*) - reset auto inc ids after tests, to not greatly throw off id numbers.
-  (*) - Usersession saving
   (*) - POINTS
-  () - CAN STILL USE KEYBOARD without logging in 
   () - User logs in as guest
   () - Harpoonist badge
   () - key in galley questions
@@ -179,11 +174,7 @@ Profiles
   () - user with no cards, error in galley
   () - re dump DB before sending to production. 
   () - Rating undefined, Id not updating in Test tab
-  (*) - Filter without selecting categories causes error
-  (*) - Maintain sessions redux-persist.
   () - When renaming categories, all categories are displayed outside of collections.
-  (*) - using Pi in answer copys the question above where pi was used..
-  () - adding a question of an existing category does not update categories in Home tab
   () - Auth token undefined for logout
 
   Edge Cases:
