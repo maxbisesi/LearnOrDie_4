@@ -43,43 +43,49 @@ Characters
 Fish wife
 
 
+
+
+
+
+  Features
+  --------------------
+  () - Animations
+  () - Logger files
+  () - Sessions  
+  () - Key listeners
+  () - Backups to Azure.
+  () - Logout !
+  () - Notes
+  () - track changes by users, git style
+  () - Give option to access general categories when registering
+  () - Newly added categories to collections don't show up when filtering
+  () - Move Categories out of collections. 
+  () - filter categories from collections 
+  () - Shark graphic on loading screen.
+  () - Back to login button on registration
+
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 TESTS
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Home tab:
 ----------
-(*) - Categories 
 () - Rank
 () - Settings
-(*) - DELETE ALL CARDS IN Category
-() - Super-categories
+() - Guest users cannot delete cards
 
 Test tab:
 ----------
-(*) - randomize questions
-(*) - Next
-(*) - Show
-(*) - Review
-(*) - Update
-(*) - switch tabs stay on same question
-(*) - refresh don't log out
-(*) - As guest and as user
-(*) - Points
-(*) - Review for guests 
+() - randomize questions
+() - Show
+() - Review
+() - switch tabs stay on same question
+() - refresh don't log out
+() - As guest and as user
+() - Points
+() - Review for guests 
 () - Study random filter on
 () - implement other point levels
-
-Chum tab
-----------
-(*) - Add cards as user
-(*) - Add cards as guest and see them
-(*) - Add cards as guest, register, then keep those cards.
-(*) - Add cards as guest, login as existing user, then keep those cards
-(*) - Increase font size
-() - Chum animation
-(*) - Quesiton count in session
-() - Make Category a combo box.
 
 Login tab
 ---------
@@ -203,23 +209,6 @@ Profiles
         res.status(200).send('OK'); 
       });
 
-
-    New Features Needed
-    --------------------
-    () - Animations
-    () - Logger
-    () - Sessions  
-    () - Key listeners
-    () - Backups to Azure.
-    () - Logout !
-    () - Notes
-    () - track changes by users, git style
-    () - Give option to access general categories when registering
-    () - Newly added categories to collections don't show up when filtering
-    () - Move Categories out of collections. 
-    () - filter categories from collections 
-    () - Shark graphic on loading screen.
-    () - Back to login button on registration
 
 
 
