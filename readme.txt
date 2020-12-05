@@ -29,6 +29,9 @@ GreatWhite: 30000 and 25 badges
 
 Only thing on the mind of a shark is eat.
 
+Sessions.
+Sessions represented in the Database are formed from fields from TestSlice, UserSlice, and CardSlice
+
 An Avatar consists of 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-
  - Character
