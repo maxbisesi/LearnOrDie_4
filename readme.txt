@@ -45,20 +45,18 @@ Characters
 ===========
 Fish wife
 
-Features
+FEATURES NEEDED BEFORE RELEASE 1
 --------------------
-() - Animations
-() - Logger files
+() - Animations 
+() - Logger files 
 () - Sessions  
-() - Key listeners
-() - Backups to Azure.
-() - Logout !
 () - Notes
 () - track changes by users, git style
 () - Give option to access general categories when registering
-() - Newly added categories to collections don't show up when filtering
-() - Move Categories out of collections. 
 () - filter categories from collections 
-() - Shark graphic on loading screen.
-() - Back to login button on registration
+() - MORE SHARK GRAPHICS 
+    - On loading screen.
+    - CHUM
+() - MORE SHAPES
+() - DRAW TAB
 
