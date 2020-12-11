@@ -60,5 +60,6 @@ FEATURES NEEDED BEFORE RELEASE 1
     - On loading screen.
     - CHUM
 () - MORE SHAPES
-() - DRAW TAB
+() - DRAW TABf
+() - Unicode doesn't go to cursor, goes to end of line...
 
