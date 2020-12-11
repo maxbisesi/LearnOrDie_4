@@ -51,9 +51,11 @@ FEATURES NEEDED BEFORE RELEASE 1
 () - Logger files 
 () - Sessions  
 () - Notes
+() - Hot keys for frequently used unicode characters
 () - track changes by users, git style
 () - Give option to access general categories when registering
 () - filter categories from collections 
+() - Randomized testing
 () - MORE SHARK GRAPHICS 
     - On loading screen.
     - CHUM
