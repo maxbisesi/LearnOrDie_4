@@ -58,4 +58,10 @@ Features
 () - filter categories from collections 
 () - Shark graphic on loading screen.
 () - Back to login button on registration
+() - Can't submit a card with no data
+() - tab index on chum
+() - text decorations for cardds
+() - Total card count 
+() - Use tab in cards and answer
+() - l
 
