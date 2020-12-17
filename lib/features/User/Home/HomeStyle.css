@@ -12,6 +12,16 @@
     margin: 6px 6px 6px 6px;
 }
 
+.home-total {
+    color: black;
+    width: 100px;
+    height: 35px; 
+    font-size: 18px;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+    display: block;
+}
+
 .home-button:hover {
     border: 3px solid pink;
     cursor: pointer;
