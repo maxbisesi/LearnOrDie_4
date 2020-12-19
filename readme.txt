@@ -45,23 +45,23 @@ Fish wife
 Features
 --------------------
 () - Animations
-() - Logger files
+(*) - Logger files
 () - Sessions  
-() - Key listeners
+(*) - Key listeners (window+enter)
 () - Backups to Azure.
 () - Logout !
-() - Notes
 () - track changes by users, git style
 () - Give option to access general categories when registering
 () - Newly added categories to collections don't show up when filtering
-() - Move Categories out of collections. 
-() - filter categories from collections 
+(*) - Move Categories out of collections. 
+(*) - filter categories from collections 
 () - Shark graphic on loading screen.
 () - Back to login button on registration
 (*) - Can't submit a card with no data
 () - tab index on chum
 () - text decorations for cardds
-() - Total card count 
+(*) - Total card count 
 () - Use tab in cards and answer
-() - l
+() - type in the page number 
+() - Exit button on edit card modal
 
