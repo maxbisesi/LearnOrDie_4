@@ -44,11 +44,13 @@ Fish wife
 
 Features
 --------------------
+() - Earn fins by adding cards.. 
+() - Earn Badges..
+
 () - Animations
 (*) - Logger files
 () - Sessions  
 (*) - Key listeners (window+enter)
-() - Backups to Azure.
 () - Logout !
 () - track changes by users, git style
 () - Give option to access general categories when registering
