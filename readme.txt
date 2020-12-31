@@ -42,11 +42,17 @@ Characters
 ===========
 Fish wife
 
+DEFECTS
+Adding new cards to category that's in collection does not add those new category cards to collection
+
 Features
 --------------------
 () - Earn fins by adding cards.. 
 () - Earn Badges..
-
+() - Drag one category from one collection to another 
+() - Total cards in a collection..
+() - Add theta 
+() - Daily notes
 () - Animations
 (*) - Logger files
 () - Sessions  
