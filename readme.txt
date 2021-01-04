@@ -73,3 +73,18 @@ Features
 () - type in the page number 
 () - Exit button on edit card modal
 
+Fins are gained by adding cards 
+
+- Add fin field to the user table
+- Show display of number of fins for users in Home
+- Fin animation
+- What do you do with fins ? Earn badges ? 
+- Fin graphic
+
+Fin Schedule
+------------
+Add 5 cards
+Add 20 cards
+Add 100 cards
+Add 200 cards
+
