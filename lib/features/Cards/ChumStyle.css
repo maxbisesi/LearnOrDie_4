@@ -81,3 +81,13 @@
     position: relative;
     background: linear-gradient(to top,#001a66,#e6ecff 70%);
 }
+
+.chum-fin-container {
+    background-color: rgba(10, 10, 10, 0.568);
+    width:500px;
+    height: 300px;
+    position:absolute;
+    z-index: 3;
+    left:200px;
+    top:300px;
+}
