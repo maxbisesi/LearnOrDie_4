@@ -42,26 +42,34 @@ Characters
 ===========
 Fish wife
 
+DEFECTS
+Adding new cards to category that's in collection does not add those new category cards to collection
+
 Features
 --------------------
+() - Earn fins by adding cards.. 
+() - Earn Badges..
+() - Drag one category from one collection to another 
+() - Total cards in a collection..
+() - Add theta 
+() - Daily notes
 () - Animations
-() - Logger files
+(*) - Logger files
 () - Sessions  
-() - Key listeners
-() - Backups to Azure.
+(*) - Key listeners (window+enter)
 () - Logout !
-() - Notes
 () - track changes by users, git style
 () - Give option to access general categories when registering
 () - Newly added categories to collections don't show up when filtering
-() - Move Categories out of collections. 
-() - filter categories from collections 
+(*) - Move Categories out of collections. 
+(*) - filter categories from collections 
 () - Shark graphic on loading screen.
 () - Back to login button on registration
-() - Can't submit a card with no data
+(*) - Can't submit a card with no data
 () - tab index on chum
 () - text decorations for cardds
-() - Total card count 
+(*) - Total card count 
 () - Use tab in cards and answer
-() - l
+() - type in the page number 
+() - Exit button on edit card modal
 
