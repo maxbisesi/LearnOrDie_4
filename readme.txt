@@ -47,6 +47,7 @@ Adding new cards to category that's in collection does not add those new categor
 
 Features
 --------------------
+() - Stack OF integration
 () - Earn fins by adding cards.. 
 () - Earn Badges..
 () - Drag one category from one collection to another 
