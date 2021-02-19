@@ -47,6 +47,7 @@ Adding new cards to category that's in collection does not add those new categor
 
 Features
 --------------------
+() - Point score increase automation: Bullet hole and smoke.
 () - Instead of "show" text on Answer Cards, show a different graphic of a FCS every card, to scare them shitless.
 () - Stack OF integration
 () - Earn fins by adding cards.. 
