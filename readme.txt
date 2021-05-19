@@ -47,6 +47,9 @@ Adding new cards to category that's in collection does not add those new categor
 
 Features
 --------------------
+() - Point score increase automation: Bullet hole and smoke.
+() - Instead of "show" text on Answer Cards, show a different graphic of a FCS every card, to scare them shitless.
+() - Stack OF integration
 () - Earn fins by adding cards.. 
 () - Earn Badges..
 () - Drag one category from one collection to another 
@@ -72,4 +75,19 @@ Features
 () - Use tab in cards and answer
 () - type in the page number 
 () - Exit button on edit card modal
+
+Fins are gained by adding cards 
+
+- Add fin field to the user table
+- Show display of number of fins for users in Home
+- Fin animation
+- What do you do with fins ? Earn badges ? 
+- Fin graphic
+
+Fin Schedule
+------------
+Add 5 cards
+Add 20 cards
+Add 100 cards
+Add 200 cards
 
