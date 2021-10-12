@@ -136,3 +136,24 @@ Weapons
 | damage         | int(11)     | NO   |     | NULL    |                |
 | primary_weapon | tinyint(1)  | NO   |     | NULL    |                |
 +----------------+-------------+------+-----+---------+----------------+
+
+
+mysql -u root -p
+use FlashCardShark;
+show tables;
+
+09/25/21
++--------------------------+
+| Tables_in_flashcardshark |
++--------------------------+
+| Avatars                  |
+| CardSetCards             |
+| CardSets                 |
+| CardSetUsers             |
+| FlashCards               |
+| FlashCardUsers           |
+| FlashUsers               |
+| Notes                    |
+| UserSessions             |
+| Weapons                  |
++--------------------------+
