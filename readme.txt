@@ -76,6 +76,8 @@ Features
 () - type in the page number 
 () - Exit button on edit card modal
 
+() - Questions where you have to type in an answer !
+
 Fins are gained by adding cards 
 
 - Add fin field to the user table
