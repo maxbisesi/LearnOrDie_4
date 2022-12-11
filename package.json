@@ -86,7 +86,7 @@
     "dotenv": "^8.2.0",
     "dotenv-export": "^2.0.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.1",
     "file-loader": "^6.0.0",
     "gsap": "^3.2.6",
